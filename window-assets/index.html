@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper Mono window studies</title>
+<style>
+#survey {color:var(--foreground,#24252a);font:14px system-ui,sans-serif}
+#survey h2 {font-size:14px;margin:20px 0 8px}
+#survey .stage {position:relative;height:340px;overflow:hidden;border:1px solid var(--border,#a7b6ca);border-radius:8px;background:radial-gradient(var(--border,#a7b6ca) 1px,transparent 1px) 0 0/14px 14px}
+#survey .beat {position:absolute;white-space:nowrap;opacity:0;z-index:3}
+#survey .frame {box-sizing:border-box;min-width:0;overflow:hidden;border:1px solid currentColor;background:var(--card,#fff);color:var(--foreground,#222);box-shadow:2px 3px 0 var(--border,#8796a9);font:11px/1.35 var(--font-mono,monospace)}
+#survey .stage .frame {position:absolute}
+#survey .stage .main {left:45%;top:44%;width:51%;height:138px;z-index:2;box-shadow:4px 4px 0 currentColor}
+#survey .bar {display:flex;justify-content:space-between;gap:4px;padding:3px 6px;border-bottom:1px solid currentColor;white-space:nowrap;overflow:hidden}
+#survey .bar b {font-weight:500;overflow:hidden;text-overflow:ellipsis}
+#survey .main .bar {background:repeating-linear-gradient(0deg,transparent 0 2px,var(--border,#bbc5d2) 2px 3px)}
+#survey .main .bar > * {background:var(--card,#fff);padding:0 3px}
+#survey .body {padding:6px;white-space:pre-line}
+#survey .big {font-size:28px;line-height:1.1}
+#survey .outline .big {color:transparent;-webkit-text-stroke:1px var(--foreground,#24252a)}
+#survey .dark {background:#222832;color:#edf2fa}
+#survey .tint {border-color:var(--info,#5475aa);box-shadow:2px 3px 0 var(--info,#5475aa)}
+#survey .round {border-radius:9px}
+#survey .stripe .bar {background:var(--muted,#e8edf4)}
+#survey .palette .bar {border-bottom-style:dashed}
+#survey .tint .bar {border-bottom-color:var(--info,#5475aa)}
+#survey .round .bar {border-bottom-color:var(--border,#a7b6ca)}
+#survey .pill {border-radius:16px}
+#survey .pill .bar {border-bottom:0}
+#survey .photo .art {background:linear-gradient(144deg,#628bb5 0 45%,#d59b57 46% 74%,#674438 75%);clip-path:none}
+#survey .gray .art {filter:grayscale(1)}
+#survey .blur .art {filter:blur(5px)}
+#survey .dither .art {background:radial-gradient(currentColor 1px,transparent 1px) 0 0/4px 4px}
+#survey .controls {display:flex;gap:10px;align-items:center;margin-top:10px}
+#survey .controls input {flex:1;min-width:0}
+#survey output {min-width:4em;font-variant-numeric:tabular-nums}
+#survey .groups {display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+#survey .catalog {display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:8px}
+#survey .catalog button {padding:0;text-align:left;color:inherit;background:none;border:0;border-radius:2px;cursor:pointer}
+#survey .catalog button:hover .frame,#survey .catalog button:focus-visible .frame {outline:2px solid var(--info,#5475aa);outline-offset:-2px}
+#survey .catalog .frame {height:82px}
+#survey .catalog .big {font-size:22px}
+#survey .catalog progress {display:block;height:9px}
+#survey progress {width:100%;height:12px}
+#survey .bars {display:flex;align-items:end;gap:3px;height:35px}
+#survey .bars i {height:var(--level);flex:1;background:currentColor}
+#survey .art {height:32px;background:repeating-linear-gradient(135deg,currentColor 0 1px,transparent 1px 5px);clip-path:polygon(0 85%,24% 20%,48% 60%,71% 5%,100% 86%)}
+#survey .stage .detail {left:12%;top:14%;width:76%;height:115px;z-index:4}
+#survey .detail .body {padding:9px}
+@media(max-width:480px) {#survey .stage .main {left:41%;width:55%} #survey .stage {height:300px}}
+@media(max-width:480px) {#survey .catalog {grid-template-columns:repeat(3,minmax(0,1fr))} #survey .catalog .bar span {display:none} #survey .catalog .body {overflow-wrap:anywhere}}
+</style>
+<main id="survey">
+<div class="stage" aria-label="Startup and desktop window composition">
+<span class="beat" style="left:8%;top:15%;font:700 clamp(20px,5vw,34px) 'Courier New',monospace">Booting…</span>
+<span class="beat" style="left:44%;top:35%;font:400 clamp(16px,4vw,27px) Georgia,serif">Checking display</span>
+<span class="beat" style="left:12%;top:65%;font:600 clamp(14px,3vw,21px) Arial,sans-serif">Reading preferences</span>
+<span class="beat" style="left:41%;top:13%;font:italic 500 clamp(19px,5vw,35px) Palatino,'Book Antiqua',serif">Loading desktop</span>
+<span class="beat" style="left:8%;top:43%;font:800 clamp(22px,6vw,42px) 'Arial Black',system-ui,sans-serif">Restoring session</span>
+<span class="beat" style="left:21%;top:78%;font:300 clamp(17px,4vw,28px) 'Trebuchet MS',sans-serif">A few</span>
+<span class="beat" style="left:54%;top:63%;font:900 clamp(25px,7vw,53px) 'Times New Roman',serif">windows.</span>
+</div>
+<div class="controls"><button type="button" class="replay">Replay full sequence</button><input type="range" min="0" max="14100" value="14100" aria-label="Playback position"><output></output></div>
+<nav class="groups" aria-label="Jump to desktop scene"></nav>
+<div class="inventory"></div>
+</main>
+<script>
+(() => {
+  const root = document.querySelector('#survey')
+  const stage = root.querySelector('.stage')
+  const beats = [...stage.querySelectorAll('.beat')]
+  const slider = root.querySelector('input')
+  const output = root.querySelector('output')
+  const inventory = root.querySelector('.inventory')
+  const nav = root.querySelector('nav')
+  const duration = Number(slider.max)
+  const clamp = value => Math.max(0, Math.min(1, value))
+  const barGraph = '<div class="bars">' + [20,35,28,55,64,86,73,95,60,39,29].map(level => '<i style="--level:' + level + '%"></i>').join('') + '</div>'
+  const scenes = [
+    ['Boot & system', 3100, [
+      ['Installer', 'stripe', '<progress value="82" max="100"></progress>82% · restoring workspace', 'wipe'],
+      ['File list', 'tint', 'NAME          KIND<br>▸ notes       text<br>▸ projects    folder', 'drop'],
+      ['Display', 'tint stripe', 'Scale      100%<br>Grid          on', 'drop'],
+      ['Status', 'outline', 'DESKTOP READY', 'snap'],
+      ['Document', 'round', 'Today.txt<br>Notes from the workspace.', 'slide'],
+      ['Browser shell', 'tint', '⌂　←　→　 workspace.local<br>Projects / Archive', 'slide'],
+      ['Logo tile', 'outline', '<span class="big">↗</span>', 'snap'],
+      ['Thumbnail', 'photo round', '<div class="art"></div>', 'drop'],
+    ]],
+    ['Type & tools', 5050, [
+      ['Glyph specimen', 'tint', '<span class="big">Jt</span>', 'snap'],
+      ['Glyph editor', 'outline', '<span class="big">g</span>　·　·　·', 'drop'],
+      ['Character grid', 'stripe', 'A B C D E F G<br>H I J K L M N<br>O P Q R S T U', 'drop'],
+      ['Font weights', 'stripe', '300 Light<br>500 Medium<br><b>700 Bold</b>', 'slide'],
+      ['Variable type', 'round', '<b>Aa</b>　──●──　620', 'slide'],
+      ['Tool palette', 'tint palette', '✚　↖　⌗　□<br>○　◇　✎　T', 'snap'],
+      ['Glyph metrics', 'outline', 'Advance　 640<br>Cap height 710<br>Baseline　　 0', 'wipe'],
+      ['Theme toggle', 'dark pill', 'Light　[ Dark ]', 'snap'],
+    ]],
+    ['Audio & code', 7050, [
+      ['Transport', 'stripe', '<span class="big">0:24.08</span><br>◀　▶　■', 'slide'],
+      ['Spectrum', 'dark tint', barGraph, 'snap'],
+      ['Level meters', 'round', 'L <progress value="73" max="100"></progress> R <progress value="52" max="100"></progress>', 'wipe'],
+      ['Mixer', 'stripe', '│ ├ │ │ ├ │<br>├ │ │ ├ │ │<br>A B C D E F', 'drop'],
+      ['Code editor', 'dark', 'const desktop = [<br>　"notes", "tools"<br>]', 'wipe'],
+      ['Text editor', 'stripe', 'Leave a little room<br>for the next idea.', 'slide'],
+      ['Routing matrix', 'tint', '▪ □ ▪ □<br>□ ▪ □ ▪<br>▪ ▪ □ □', 'snap'],
+      ['Terminal', 'dark', '$ resume workspace<br>✓ ready', 'drop'],
+    ]],
+    ['Images & output', 9050, [
+      ['Video viewer', 'dark round', '<div class="art"></div>▶　 ──●──', 'snap'],
+      ['Text entry', 'round', '<b>Title</b><br>Field notes ▏', 'slide'],
+      ['Publication proof', 'outline', '<span class="big">Field notes.</span>', 'slide'],
+      ['ASCII preview', 'tint', '　01010<br>011010110<br>　01110<br>　　0', 'drop'],
+      ['Render progress', 'tint', '<progress value="70" max="100"></progress>Building preview…', 'wipe'],
+      ['Binary glyph', 'outline', '　01100<br>010001<br>011110', 'snap'],
+      ['Letter triptych', 'tint', '<span class="big">J / T / G</span>', 'drop'],
+      ['Sticker', 'pill', '<b>WORK IN PROGRESS</b>', 'snap'],
+    ]],
+    ['Image treatments', 11100, [
+      ['Color proof', 'stripe photo', '<div class="art"></div>', 'slide'],
+      ['Grayscale proof', 'photo gray', '<div class="art"></div>', 'drop'],
+      ['Dither proof', 'dither', '<div class="art"></div>', 'snap'],
+      ['Motion blur proof', 'photo blur round', '<div class="art"></div>', 'slide'],
+      ['ASCII proof', 'dark', '　.::.<br>.:####:.<br>　\x27::\x27', 'wipe'],
+    ]],
+  ]
+  const positions = [
+    [5,7,35],[55,6,40],[24,32,32],[4,34,24],
+    [5,68,33],[50,26,44],[38,13,24],[22,54,25],
+  ]
+  const startupTiming = [[0,680],[300,980],[610,1320],[940,1660],[1290,2130],[1810,2560],[2160,3040]]
+  const referenceTimes = ['0–17 s', '11–33 s', '18–44 s', '23–44 s', '51–54 s']
+  let playback
+  let detail
+
+  function makeWindow(name, style, body) {
+    const pane = document.createElement('div')
+    pane.className = 'frame ' + style
+    const controls = pane.classList.contains('round') ? '○ ○ ○'
+      : pane.classList.contains('tint') ? '− ×'
+      : pane.classList.contains('dark') ? '◂ ×'
+      : pane.classList.contains('pill') ? '●' : '□ ×'
+    pane.innerHTML = '<div class="bar"><b>' + name + '</b><span aria-hidden="true">' + controls + '</span></div><div class="body">' + body + '</div>'
+    return pane
+  }
+
+  const main = makeWindow('session.log', 'main', 'session restored<br>workspace ready<br>▸ opening windows')
+  stage.append(main)
+
+  const sceneWindows = scenes.map(([label, start, entries], sceneIndex) => {
+    const groupButton = document.createElement('button')
+    groupButton.type = 'button'
+    groupButton.textContent = label
+    groupButton.addEventListener('click', () => jump(start + 1550))
+    nav.append(groupButton)
+
+    const heading = document.createElement('h2')
+    heading.textContent = label + ' · film ' + referenceTimes[sceneIndex]
+    const catalog = document.createElement('div')
+    catalog.className = 'catalog'
+    inventory.append(heading, catalog)
+
+    return entries.map(([name, style, body, motion], index) => {
+      const [left, top, width] = positions[index]
+      const pane = makeWindow(name, style, body)
+      Object.assign(pane.style, {left: left + '%', top: top + '%', width: width + '%'})
+      stage.insertBefore(pane, main)
+
+      const card = document.createElement('button')
+      card.type = 'button'
+      card.setAttribute('aria-label', 'Inspect ' + name)
+      card.append(makeWindow(name, style, body))
+      card.addEventListener('click', () => {
+        jump(start + 1550)
+        detail = makeWindow(name, style + ' detail', body)
+        stage.append(detail)
+        stage.scrollIntoView({block:'nearest'})
+      })
+      catalog.append(card)
+      return {pane, motion}
+    })
+  })
+
+  function draw(pane, motion, progress, fade = 1) {
+    pane.hidden = progress <= 0 || fade <= 0
+    pane.style.opacity = fade * (motion === 'slide' || motion === 'snap' ? progress : 1)
+    pane.style.clipPath = motion === 'wipe' ? 'inset(0 ' + (100 * (1 - progress)) + '% 0 0)'
+      : motion === 'drop' ? 'inset(0 0 ' + (100 * (1 - progress)) + '% 0)' : 'none'
+    pane.style.transform = motion === 'slide' ? 'translateX(' + (18 * (1 - progress)) + 'px)'
+      : motion === 'snap' ? 'scale(' + (.9 + .1 * progress) + ')' : 'none'
+  }
+
+  function seek(time) {
+    beats.forEach((beat, index) => {
+      const [start, end] = startupTiming[index]
+      beat.style.opacity = Math.min(clamp((time - start) / 170), clamp((end - time) / 260))
+    })
+    draw(main, 'wipe', clamp((time - 2460) / 260))
+    sceneWindows.forEach((panes, group) => {
+      const start = scenes[group][1]
+      const next = scenes[group + 1]?.[1]
+      const fade = next ? clamp((next - time) / 180) : 1
+      panes.forEach(({pane, motion}, index) => draw(pane, motion, clamp((time - start - index * 145) / 210), fade))
+    })
+    slider.value = time
+    output.value = (time / 1000).toFixed(2) + ' s'
+  }
+
+  function jump(time) {
+    cancelAnimationFrame(playback)
+    detail?.remove()
+    seek(time)
+  }
+
+  function replay() {
+    jump(0)
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return seek(duration)
+    const start = performance.now()
+    function tick(now) {
+      const time = Math.min(duration, Math.max(0, now - start))
+      seek(time)
+      if (time < duration) playback = requestAnimationFrame(tick)
+    }
+    playback = requestAnimationFrame(tick)
+  }
+
+  root.querySelector('.replay').addEventListener('click', replay)
+  slider.addEventListener('input', () => jump(Number(slider.value)))
+  seek(4650)
+})()
+</script>
+</html>
