@@ -6,9 +6,70 @@
   .fault-strip, .damaged-artwork, .error-stack, .report-cursor, .utility-window, .comp-window { visibility: visible; }
   .handoff-card { animation: show-report 1ms step-end 8799ms both; }
   @keyframes show-report { from { opacity: 0; } to { opacity: 1; } }
-
-
-
+  .comp-window { animation: show-comp 350ms ease-out 8050ms both; }
+  @keyframes show-comp { from { opacity: 0; } to { opacity: 1; } }
+  [data-motion="fault-1"] { animation: fault-frames-1 700ms linear 9000ms both; }
+  [data-motion="fault-2"] { animation: fault-frames-2 180ms linear 8970ms forwards; }
+  [data-motion="fault-3"] { animation: fault-frames-3 590ms linear 9420ms both; }
+  [data-motion="fault-4"] { animation: fault-frames-3 590ms linear 9535ms both; }
+  [data-motion="fault-5"] { animation: fault-frames-3 590ms linear 9650ms both; }
+  [data-motion="fault-6"] { animation: fault-frames-3 590ms linear 9765ms both; }
+  [data-motion="fault-7"] { animation: fault-frames-3 590ms linear 9880ms both; }
+  [data-motion="fault-8"] { animation: fault-frames-3 590ms linear 9995ms both; }
+  [data-motion="fault-9"] { animation: fault-frames-4 160ms linear 9795ms forwards; }
+  [data-motion="fault-10"] { animation: fault-frames-5 160ms steps(3) 9795ms both; }
+  [data-motion="fault-11"] { animation: fault-frames-4 160ms linear 10040ms forwards; }
+  [data-motion="fault-12"] { animation: fault-frames-5 160ms steps(3) 10040ms both; }
+  [data-motion="fault-13"] { animation: fault-frames-4 160ms linear 10190ms forwards; }
+  [data-motion="fault-14"] { animation: fault-frames-5 160ms steps(3) 10190ms both; }
+  [data-motion="fault-15"] { animation: fault-frames-4 160ms linear 10265ms forwards; }
+  [data-motion="fault-16"] { animation: fault-frames-5 160ms steps(3) 10265ms both; }
+  [data-motion="fault-17"] { animation: fault-frames-4 160ms linear 10320ms forwards; }
+  [data-motion="fault-18"] { animation: fault-frames-5 160ms steps(3) 10320ms both; }
+  [data-motion="fault-19"] { animation: fault-frames-4 160ms linear 10360ms forwards; }
+  [data-motion="fault-20"] { animation: fault-frames-5 160ms steps(3) 10360ms both; }
+  [data-motion="fault-21"] { animation: fault-frames-4 160ms linear 10390ms forwards; }
+  [data-motion="fault-22"] { animation: fault-frames-5 160ms steps(3) 10390ms both; }
+  [data-motion="fault-23"] { animation: fault-frames-4 160ms linear 10780ms forwards; }
+  [data-motion="fault-24"] { animation: fault-frames-5 160ms steps(3) 10780ms both; }
+  [data-motion="fault-25"] { animation: fault-frames-4 160ms linear 11000ms forwards; }
+  [data-motion="fault-26"] { animation: fault-frames-5 160ms steps(3) 11000ms both; }
+  [data-motion="fault-27"] { animation: fault-frames-4 160ms linear 11210ms forwards; }
+  [data-motion="fault-28"] { animation: fault-frames-5 160ms steps(3) 11210ms both; }
+  [data-motion="fault-29"] { animation: fault-frames-6 1220ms linear 9330ms forwards; }
+  @keyframes fault-frames-1 {
+    0% { opacity: 0; }
+    33.33333333% { opacity: 1; }
+    66.66666667% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  @keyframes fault-frames-2 {
+    0% { fill: rgb(173, 243, 191); }
+    100% { fill: rgb(227, 124, 96); }
+  }
+  @keyframes fault-frames-3 {
+    0% { transform: translateX(158px); opacity: 0; }
+    16% { transform: translateX(-8px); opacity: 0.93; }
+    27% { transform: translateX(2px); opacity: 1; }
+    39% { transform: translateX(0px); opacity: 1; }
+    70% { transform: translateX(0px); opacity: 1; }
+    100% { transform: translateX(0px); opacity: 1; }
+  }
+  @keyframes fault-frames-4 {
+    0% { visibility: hidden; }
+    100% { visibility: hidden; }
+  }
+  @keyframes fault-frames-5 {
+    0% { transform: translateX(6px); opacity: 0; }
+    1% { transform: translateX(6px); opacity: 1; }
+    42% { transform: translateX(-3px); opacity: 1; }
+    100% { transform: none; opacity: 1; }
+  }
+  @keyframes fault-frames-6 {
+    0% { opacity: 1; }
+    42% { opacity: 0.72; }
+    100% { opacity: 0.14; }
+  }
 }
 </style>
 
@@ -155,7 +216,7 @@
     }
   }
 </style>
-<g class="lettering" fill="none" stroke-width="1.2">
+<g class="lettering" fill="none" stroke-width="1.2" data-motion="fault-29">
   <path d="M101.89 334.7Q80.62 334.7 68.3 324.31Q55.99 313.91 55.99 296.09Q55.99 277.46 67.88 267.06Q79.78 256.67 106.93 253.97L145.55 250.46V243.98Q145.55 232.1 139.95 226.56Q134.35 221.03 120.92 221.03Q107.77 221.03 102.45 225.75Q97.13 230.48 96.29 238.85H60.19Q61.03 225.89 67.04 215.09Q73.06 204.29 85.94 197.81Q98.81 191.33 120.64 191.33Q153.1 191.33 166.96 204.29Q180.81 217.25 180.81 242.9V332H147.51L146.67 314.18Q140.23 323.36 128.48 329.03Q116.72 334.7 101.89 334.7ZM91.25 292.58Q91.25 300.14 96.43 303.51Q101.61 306.89 111.12 306.89Q127.08 306.89 136.31 299.06Q145.55 291.23 145.55 278.27V273.68L109.17 276.92Q99.65 277.73 95.45 281.51Q91.25 285.29 91.25 292.58ZM471.87 335.24Q458.16 335.24 446.97 328.62Q435.77 322.01 429.33 310.94L428.49 332H395.19V130.31H430.73V214.82Q436.61 204.56 447.25 197.94Q457.88 191.33 471.87 191.33Q499.02 191.33 513.71 210.9Q528.41 230.48 528.41 263.42Q528.41 285.02 521.83 301.08Q515.25 317.15 502.66 326.19Q490.07 335.24 471.87 335.24ZM461.52 305.27Q491.74 305.27 491.74 263.42Q491.74 242.9 484.05 232.1Q476.35 221.3 461.52 221.3Q446.69 221.3 438.71 232.64Q430.73 243.98 430.73 263.42Q430.73 282.86 438.71 294.06Q446.69 305.27 461.52 305.27ZM800.16 335.24Q778.33 335.24 762.52 326.33Q746.7 317.42 738.31 301.22Q729.91 285.02 729.91 263.42Q729.91 241.55 738.31 225.35Q746.7 209.15 762.52 200.24Q778.33 191.33 800.16 191.33Q828.71 191.33 846.06 205.91Q863.41 220.49 866.49 245.87H830.66Q828.43 234.26 820.73 227.64Q813.03 221.03 799.88 221.03Q785.61 221.03 776.09 231.42Q766.57 241.82 766.57 263.42Q766.57 285.02 776.23 295.28Q785.89 305.54 799.88 305.54Q813.03 305.54 820.73 298.79Q828.43 292.04 830.66 280.43H866.49Q863.41 305.81 846.06 320.52Q828.71 335.24 800.16 335.24Z"/>
   <path class="guides" d="M43 123H873M43 341H873M57 102V370M861 102V370" stroke-dasharray="4 5"/>
   <path d="M103 268h80m-40-40v80M770 240h80m-40-40v80"/>
@@ -164,14 +225,37 @@
     <circle cx="770" cy="240" r="3"/><circle cx="850" cy="240" r="3"/><circle cx="810" cy="200" r="3"/><circle cx="810" cy="280" r="3"/>
   </g>
 </g>
-<g transform="translate(34 16)">
-  
+<g transform="translate(34 16)" class="utility-window">
+  <g class="pane pane-cache" fill="#284555" style="--open-at: 7800ms;">
+<g class="clean-artwork" data-motion="fault-19">
+    <rect width="144" height="42" rx="4" fill="#e0eee9" stroke="#618882"/>
+    <text x="9" y="14" class="window-title">Tile cache</text>
+    <path d="M10 27h8m4 0h8m4 0h8m4 0h8m4 0h8" stroke="#507e79" stroke-width="3"/>
+    <text x="80" y="31">5 tiles</text>
+  </g>
+<g class="damaged-artwork" fill="#ffdbca" aria-hidden="true" data-motion="fault-20">
+<rect width="144" height="42" rx="4" fill="#394353" stroke="#e18e9d"/>
+    <text x="9" y="14" class="window-title">Tile cache</text>
+    <path d="M10 24h13v7H10zm17 4h9v5h-9zm16-8h9v8h-9z" fill="#f49893"/>
+    <text x="62" y="31">tiles lost</text></g></g>
 </g>
-<g transform="translate(750 8)">
-  
+<g transform="translate(750 8)" class="utility-window">
+  <g class="pane pane-queue" fill="#41354d" style="--open-at: 7800ms;">
+<g class="clean-artwork" data-motion="fault-21">
+    <rect width="136" height="33" rx="4" fill="#eee3f2" stroke="#957ca8"/>
+    <text x="8" y="13" class="window-title">Paint queue</text>
+    <text x="8" y="26">03 pending</text>
+    <circle cx="123" cy="12" r="3" fill="#8d71a0"/>
+  </g>
+<g class="damaged-artwork" fill="#ffdbca" aria-hidden="true" data-motion="fault-22">
+<rect width="136" height="33" rx="4" fill="#55384d" stroke="#e5918c"/>
+    <text x="8" y="13" class="window-title">Paint queue</text>
+    <text x="8" y="26">queue stalled</text>
+<path d="M119 8l8 8m0-8l-8 8" stroke="#ff9b89"/></g></g>
 </g>
 <g transform="translate(108 70)">
   <g class="pane pane0" fill="#152c46">
+<g class="clean-artwork" data-motion="fault-17">
     <rect x="3" y="4" width="190" height="60" rx="10" fill="#688aad"/>
     <rect width="190" height="60" rx="10" fill="#c9e4fd" stroke="#38597a"/>
     <g class="notification-icon">
@@ -181,9 +265,16 @@
     <text x="42" y="26" class="window-title">Coding session</text>
     <text x="42" y="43">A long one</text>
   </g>
+<g class="damaged-artwork" fill="#ffdbca" aria-hidden="true" data-motion="fault-18">
+<rect width="190" height="60" rx="10" fill="#442d54" stroke="#d883a4"/>
+    <path d="M0 43h38l9 6h70l7-7h66v10l-9 8H8L0 52z" fill="#793e62"/>
+    <path d="M15 21h18v18H15z M19 25l10 10m0-10L19 35" fill="none" stroke="#ffb38e" stroke-width="2"/>
+    <text x="42" y="26" class="window-title">Coding sessi▮</text>
+<text x="42" y="44">session frame lost</text></g></g>
 </g>
 <g transform="translate(22 159)">
   <g class="pane pane1" fill="#362710">
+<g class="clean-artwork" data-motion="fault-13">
     <rect x="3" y="4" width="130" height="142" rx="3" fill="#9e773c"/>
     <path d="M0 12V5h45l6 7h79v130H0z" fill="#f4d69c" stroke="#67502d"/>
     <text x="10" y="30" class="window-title">repository/</text>
@@ -200,18 +291,36 @@
     <text x="10" y="104" class="repo-row" style="--row-delay:625ms">CONTRIBUTING.md</text>
     <text x="10" y="121" class="repo-row" style="--row-delay:740ms">CLAUDE.md</text>
   </g>
+<g class="damaged-artwork" fill="#ffdbca" aria-hidden="true" data-motion="fault-14">
+<path d="M0 12V5h45l6 7h79v130H0z" fill="#512d3c" stroke="#e58d78"/>
+    <text x="10" y="30" class="window-title">repository/</text>
+<path d="M9 38h111" stroke="#d08587"/>
+    <path d="M10 45h7l3 4-4 3 3 4h-9zm0 18h9l-5 6 4 4h-8z" fill="#ff9b76"/>
+    <text x="27" y="54">scri█ts/</text>
+<text x="27" y="72">▒▒▒▒▒▒/</text>
+    <path d="M10 91h35v4h29v-7h46v14H92v10H51v-8H10z" fill="#a85261"/>
+    <text x="10" y="129">index unreadable</text></g></g>
 </g>
 <g transform="translate(50 319)">
   <g class="pane pane2" fill="#bdeaff">
+<g class="clean-artwork" data-motion="fault-9">
     <rect x="4" y="4" width="346" height="113" rx="4" fill="#44728d"/>
     <rect width="346" height="113" rx="4" fill="#142b3b" stroke="#8ac5df"/>
     <text x="12" y="19" class="window-title">Tool output</text>
     <path d="M12 32H330M12 54H330M12 76H330M12 98H330" stroke="#47728a" stroke-dasharray="2 4"/>
     <path class="output-bars" d="M14 90h8v8h-8zm14-6h8v14h-8zm14 4h8v10h-8zm14-9h8v19h-8zm14-8h8v27h-8zm14 3h8v24h-8zm14-16h8v40h-8zm14 7h8v33h-8zm14-14h8v47h-8zm14-7h8v54h-8zm14 4h8v50h-8zm14-13h8v63h-8zm14 5h8v58h-8zm14-12h8v70h-8z" fill="#8ac5df"/>
   </g>
+<g class="damaged-artwork" fill="#ffdbca" aria-hidden="true" data-motion="fault-10">
+<rect width="346" height="113" rx="4" fill="#33293c" stroke="#ac819d"/>
+    <text x="12" y="19" class="window-title">Tool output</text>
+    <path d="M12 32H330M12 54H330M12 76H330M12 98H330" stroke="#795469" stroke-dasharray="2 4"/>
+    <path d="M14 90h8v8h-8zm14-6h8v14h-8zm14 4h8v10h-8zm14-9h8v19h-8zm14-8h8v27h-8zm14 3h8v24h-8z" fill="#7da2aa"/>
+    <path d="M96 97l16-34 12 9 14-26 13 47 12-55 13 30 18-16 15 45" fill="none" stroke="#f29488" stroke-width="3"/>
+    <path d="M113 36h27v6h-27zm46 41h25v4h-25z" fill="#f29488"/></g></g>
 </g>
 <g transform="translate(151 221)">
   <g class="pane pane3" fill="#f4eafb">
+<g class="clean-artwork" data-motion="fault-23">
     <rect x="3" y="4" width="104" height="145" rx="9" fill="#806394"/>
     <rect width="104" height="145" rx="9" fill="#382445" stroke="#ad8cbd"/>
     <text x="10" y="17" class="window-title">Chat</text>
@@ -224,6 +333,13 @@
     <text x="12" y="112">Plugins</text>
     <text x="12" y="128">Provider</text>
   </g>
+<g class="damaged-artwork" fill="#ffdbca" aria-hidden="true" data-motion="fault-24">
+<rect width="104" height="145" rx="9" fill="#43304a" stroke="#9774a3"/>
+    <rect width="104" height="25" rx="9" fill="#503556"/>
+<text x="10" y="17" class="window-title">Chat</text>
+    <path d="M13 37h91v9H13zm3 17h70l8 7H16zm-3 20h46l7 4h24v8H13z" fill="#9b698c"/>
+    <path d="M12 101h80" stroke="#e49a9b" stroke-dasharray="12 4 4 3"/>
+    <text x="12" y="121">history lost</text></g></g>
 </g>
 <g transform="translate(502 45)">
   <g class="pane pane4" fill="#13372d">
@@ -240,6 +356,7 @@
 </g>
 <g transform="translate(246 157)">
   <g class="pane pane5" fill="#333320">
+<g class="clean-artwork" data-motion="fault-11">
     <rect x="3" y="4" width="107" height="108" rx="2" fill="#8c885a"/>
     <rect width="107" height="108" rx="2" fill="#eeedc6" stroke="#686846"/>
     <rect width="107" height="23" rx="2" fill="#d8d7a0"/>
@@ -250,9 +367,17 @@
     <text x="9" y="66" class="note-detail" style="--note-delay:880ms">The chat is</text>
     <text x="9" y="82" class="note-detail" style="--note-delay:1050ms">still useful.</text>
   </g>
+<g class="damaged-artwork" fill="#ffdbca" aria-hidden="true" data-motion="fault-12">
+<rect width="107" height="108" rx="2" fill="#593647" stroke="#d58b7a"/>
+    <path d="M0 0h107v23H0z" fill="#814959"/>
+<text x="9" y="16" class="window-title">Field notes</text>
+    <text x="9" y="42">Logs go s▮le.</text>
+<path d="M9 53h36l8 6h44v5H55l-8 6H9zM9 78h41v6H9z" fill="#ca7980"/>
+    <text x="9" y="99">page damaged</text></g></g>
 </g>
 <g transform="translate(734 171)">
   <g class="pane pane7" fill="#47281c">
+<g class="clean-artwork" data-motion="fault-15">
     <rect x="4" y="4" width="153" height="92" rx="12" fill="#9e6551"/>
     <rect width="153" height="92" rx="12" fill="#ffd5bd" stroke="#895947"/>
     <text x="10" y="23" class="window-title">Next experiment</text>
@@ -262,9 +387,16 @@
       <text x="10" y="68">from zeros and ones?</text>
     </g>
   </g>
+<g class="damaged-artwork" fill="#ffdbca" aria-hidden="true" data-motion="fault-16">
+<rect width="153" height="92" rx="12" fill="#60374a" stroke="#e8907e"/>
+    <text x="10" y="23" class="window-title">Next experiment</text>
+    <path d="M11 33h43l7 5h42l6-5h33m-131 35h21l8 7h49l7-10h46" stroke="#f39d86" fill="none" stroke-width="2"/>
+    <text x="10" y="57">Preview lost.</text>
+<text x="10" y="84">surface unavailable</text></g></g>
 </g>
 <g transform="translate(355 121)">
   <g class="pane pane8" fill="#f1e3ff">
+<g class="clean-artwork" data-motion="fault-25">
     <rect x="4" y="4" width="224" height="201" rx="3" fill="#8967a7"/>
     <rect width="224" height="201" rx="3" fill="#261d39" stroke="#b49bca"/>
     <path d="M12 32h12m-6-6v12M198 32h12m-6-6v12M12 178h12m-6-6v12" stroke="#9b7eb8"/>
@@ -272,9 +404,17 @@
     <text x="16" y="121" class="type-sample">Keep</text>
     <text x="16" y="151">The thread of the work.</text>
   </g>
+<g class="damaged-artwork" fill="#ffdbca" aria-hidden="true" data-motion="fault-26">
+<rect width="224" height="201" rx="3" fill="#34293f" stroke="#926c9b"/>
+    <text x="12" y="19" class="window-title">Context preview</text>
+    <path d="M12 33h196m-196 8h120m-120 79h94m-94 12h171" stroke="#8b667f" stroke-dasharray="13 3 3 4"/>
+    <text x="12" y="101" style="font: bold 55px Georgia, serif">Ke▮p</text>
+    <path d="M14 104h57l15-8h47l9 6h57" fill="none" stroke="#e78b91" stroke-width="5"/>
+    <text x="12" y="151">preview frame missing</text></g></g>
 </g>
 <g transform="translate(272 310)">
   <g class="pane pane9" fill="#b7f4cc">
+<g class="clean-artwork" data-motion="fault-27">
     <rect x="4" y="4" width="108" height="133" rx="5" fill="#54816c"/>
     <rect width="108" height="133" rx="5" fill="#142e25" stroke="#8dbfa3"/>
     <path d="M0 24h108" stroke="#638d79"/>
@@ -286,6 +426,15 @@
     <text x="44" y="101" class="seed-row" style="--seed-delay:380ms">1</text>
     <text x="44" y="118" class="seed-row" style="--seed-delay:260ms">0</text>
   </g>
+<g class="damaged-artwork" fill="#ffdbca" aria-hidden="true" data-motion="fault-28">
+<rect width="108" height="133" rx="5" fill="#293f40" stroke="#cb8b85"/>
+    <path d="M0 24h108" stroke="#a47b78"/>
+<text x="10" y="16" class="window-title">seed.bin</text>
+    <text x="42" y="48">01▮</text>
+<text x="29" y="65">01▒10</text>
+<text x="19" y="82">010▮0▒1</text>
+    <path d="M9 90h36l13 8h43v7H54l-15-8H9z" fill="#b77d77"/>
+    <text x="10" y="123">block unreadable</text></g></g>
 </g>
 <g transform="translate(553 276)">
   <g class="log" font-family="'Courier New', monospace" fill="#171916">
@@ -332,7 +481,38 @@
   <text class="beat handoff" x="570" y="357" font-family="'Times New Roman', serif" font-size="73" font-weight="900" style="--enter:2160ms;--exit:2780ms">windows.</text>
 </g>
 </g>
-
+<g class="comp-window" transform="translate(385 369)" aria-hidden="true">
+  <rect x="4" y="5" width="154" height="78" rx="3" fill="#152631" opacity=".55"/>
+  <rect width="154" height="78" rx="3" fill="#16252e" stroke="#7c9dab"/>
+  <path d="M0 23H154" stroke="#7c9dab"/>
+  <text x="10" y="16" font-family="monospace" font-size="12" fill="#eff3e8">comp</text>
+  <circle cx="140" cy="12" r="3" fill="#adf3bf" data-motion="fault-2"/>
+  <path d="M9 59h14l8-11 9 17 10-29 8 23h18l8-10 8 10h53" fill="none" stroke="#adf3bf" stroke-width="1.5"/>
+<text x="10" y="40" fill="#ffc697" font-size="10" font-family="monospace" data-motion="fault-1">frame checksum mismatch</text><svg x="0" y="0" width="158" height="83" viewBox="0 0 158 83" class="fault-strip" aria-hidden="true" overflow="hidden" style="clip-path: inset(0 round 3px)">
+<g data-motion="fault-3">
+<rect x="0" y="69" width="158" height="14" fill="#14252b"/>
+<path d="M0 69h158" stroke="#da775b" stroke-opacity=".65"/>
+<text x="4" y="82" fill="#d9e9e3">101001011011010010</text></g>
+<g data-motion="fault-4">
+<rect x="0" y="55" width="158" height="14" fill="#25414a"/>
+<path d="M0 55h158" stroke="#da775b" stroke-opacity=".65"/>
+<text x="4" y="68" fill="#9ee3be">100101101101001011</text></g>
+<g data-motion="fault-5">
+<rect x="0" y="41" width="158" height="14" fill="#14252b"/>
+<path d="M0 41h158" stroke="#da775b" stroke-opacity=".65"/>
+<text x="4" y="54" fill="#d9e9e3">010110110100101101</text></g>
+<g data-motion="fault-6">
+<rect x="0" y="27" width="158" height="14" fill="#25414a"/>
+<path d="M0 27h158" stroke="#da775b" stroke-opacity=".65"/>
+<text x="4" y="40" fill="#9ee3be">011011010010110110</text></g>
+<g data-motion="fault-7">
+<rect x="0" y="13" width="158" height="14" fill="#14252b"/>
+<path d="M0 13h158" stroke="#da775b" stroke-opacity=".65"/>
+<text x="4" y="26" fill="#d9e9e3">101101001011011010</text></g>
+<g data-motion="fault-8">
+<rect x="0" y="-1" width="158" height="14" fill="#25414a"/>
+<path d="M0 -1h158" stroke="#da775b" stroke-opacity=".65"/>
+<text x="4" y="12" fill="#9ee3be">110100101101101001</text></g></svg></g>
 
 <g class="handoff-card" transform="translate(0 508)">
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="216" viewBox="0 0 920 216">
