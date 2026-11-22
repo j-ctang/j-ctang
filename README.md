@@ -1,8 +1,6 @@
 ![Startup messages fade into a desktop anchored by session.log](assets/starting-transition-transparent.svg)
 
-![](assets/about-match-cut.svg)
-
-**Open a few windows. I’ll show you what I’ve been doing.**
+![Open a few windows. I’ll show you what I’ve been doing.](assets/about-match-cut.svg)
 
 [▶ Listen to hello mono | visualizer on YouTube](https://www.youtube.com/watch?v=4deDga_hTig)
 
