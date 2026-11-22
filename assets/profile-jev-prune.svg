@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="406" viewBox="0 0 640 406" role="img" aria-labelledby="title description">
+  <title id="title">Jev Prune for Claude Code</title>
+  <desc id="description">Long coding sessions pile up tool output you may never need again. Jev Prune clears stale tool output from the session while keeping the visible conversation intact, so you can still go back and read how you got there.</desc>
+  <style>
+    .copy { font: 22px Georgia, serif; }
+    .heading { font: bold 38px Georgia, serif; }
+    .mono { font: 17px monospace; }
+  </style>
+  <rect x="22" y="18" width="602" height="377" rx="6" fill="#252128" opacity=".28"/>
+  <rect x="16" y="12" width="602" height="377" rx="6" fill="#e2efe6" stroke="#779e8c"/>
+  <path d="M16 18q0-6 6-6h590q6 0 6 6v28H16z" fill="#294c40"/>
+  <text class="mono" x="39" y="34" fill="#fff7e6">Featured project</text>
+  <g fill="#252d2a">
+    <text class="heading" x="42" y="99">Jev Prune</text>
+    <text class="mono" x="43" y="129" fill="#36564a">For Claude Code</text>
+    <text class="copy" x="42" y="172"><tspan x="42" dy="0">Long coding sessions pile up tool output you may</tspan> <tspan x="42" dy="29">never need again. Jev Prune clears stale tool</tspan> <tspan x="42" dy="29">output from the session while keeping the</tspan> <tspan x="42" dy="29">visible conversation intact, so you can still go</tspan> <tspan x="42" dy="29">back and read how you got there.</tspan></text>
+    <g class="mono">
+      <path d="M42 302H590" stroke="#8cab9b"/>
+      <text x="44" y="337">Stale tool output</text>
+      <text x="590" y="337" text-anchor="end">trimmed</text>
+      <text x="44" y="370">Visible conversation</text>
+      <text x="590" y="370" text-anchor="end">kept</text>
+    </g>
+  </g>
+</svg>

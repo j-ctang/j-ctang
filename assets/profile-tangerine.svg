@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="422" viewBox="0 0 640 422" role="img" aria-labelledby="title description">
+  <title id="title">What I’m exploring now</title>
+  <desc id="description">I’m prototyping a tangerine tree that grows from a seed into a canopy of zeros and ones. I want the growth to feel continuous, from the first branch to the moment the oranges appear.</desc>
+  <style>
+    .copy { font: 22px Georgia, serif; }
+    .heading { font: bold 38px Georgia, serif; }
+    .mono { font: 17px monospace; }
+    @media (prefers-reduced-motion: no-preference) {
+      .seed { animation: seed-drop 450ms ease-in 180ms both; }
+      .trunk { animation: grow 650ms ease-out 630ms both; }
+      .branch { animation: grow 500ms ease-out 1150ms both; }
+      .canopy { animation: appear 480ms ease-out 1470ms both; }
+      .fruit { animation: appear 410ms ease-out 1950ms both; }
+      @keyframes seed-drop { from { transform: translateY(-38px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+      @keyframes grow { from { stroke-dasharray: 1; stroke-dashoffset: 1; } to { stroke-dasharray: 1; stroke-dashoffset: 0; } }
+      @keyframes appear { from { opacity: 0; } to { opacity: 1; } }
+    }
+  </style>
+  <rect x="22" y="18" width="602" height="393" rx="6" fill="#252128" opacity=".28"/>
+  <rect x="16" y="12" width="602" height="393" rx="6" fill="#f1ebd5" stroke="#a29a71"/>
+  <path d="M16 18q0-6 6-6h590q6 0 6 6v28H16z" fill="#58553b"/>
+  <text class="mono" x="39" y="34" fill="#fff7e6">What I’m exploring now</text>
+  <g fill="#393721">
+    <text class="heading" x="42" y="98">Tangerine tree</text>
+    <text class="copy" x="42" y="141"><tspan x="42" dy="0">I’m prototyping a tangerine tree that grows from</tspan> <tspan x="42" dy="29">a seed into a canopy of zeros and ones. I want</tspan> <tspan x="42" dy="29">the growth to feel continuous, from the first</tspan> <tspan x="42" dy="29">branch to the moment the oranges appear.</tspan></text>
+    <g aria-hidden="true">
+      <path d="M42 398H590" stroke="#9aa584"/>
+      <ellipse class="seed" cx="323" cy="392" rx="5" ry="7" fill="#89684b"/>
+      <g fill="none" stroke="#79523a" stroke-width="5" stroke-linecap="round">
+        <path class="trunk" pathLength="1" d="M323 395Q335 373 324 327"/>
+        <path class="branch" pathLength="1" d="M328 366Q299 348 284 326"/>
+        <path class="branch" pathLength="1" d="M329 353Q350 344 369 318"/>
+        <path class="branch" pathLength="1" d="M326 339L318 310"/>
+      </g>
+      <g class="canopy mono" fill="#3b674c" text-anchor="middle">
+        <text x="320" y="285">0 1 0 1 0</text>
+        <text x="325" y="306">1 0 0 1 0 0 1</text>
+        <text x="324" y="328">0 1 0 1 0 1 0 1</text>
+      </g>
+      <g class="fruit" fill="#d77135">
+        <circle cx="289" cy="342" r="7"/>
+        <circle cx="348" cy="341" r="7"/>
+        <circle cx="365" cy="338" r="6"/>
+      </g>
+    </g>
+  </g>
+</svg>
