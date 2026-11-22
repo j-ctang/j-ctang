@@ -4,27 +4,23 @@
 <style>
   .pane { transform-origin: 18px 12px; }
   @media (prefers-reduced-motion: no-preference) {
-    .pane { animation-duration:3.8s; animation-iteration-count:infinite; animation-timing-function:ease-out; }
-    @keyframes pane0 { 0%, 10.00% {opacity:0;transform:translateY(7px) scale(.84)} 10.25% {opacity:1;transform:translateY(2px) scale(.93)} 12.15% {transform:translateY(-1px) scale(1.025)} 13.65%,100% {opacity:1;transform:none} }
-.pane0 {animation-name:pane0}
-@keyframes pane1 { 0%, 13.15% {opacity:0;transform:translateY(7px) scale(.84)} 13.40% {opacity:1;transform:translateY(2px) scale(.93)} 15.30% {transform:translateY(-1px) scale(1.025)} 16.80%,100% {opacity:1;transform:none} }
-.pane1 {animation-name:pane1}
-@keyframes pane2 { 0%, 16.30% {opacity:0;transform:translateY(7px) scale(.84)} 16.55% {opacity:1;transform:translateY(2px) scale(.93)} 18.45% {transform:translateY(-1px) scale(1.025)} 19.95%,100% {opacity:1;transform:none} }
-.pane2 {animation-name:pane2}
-@keyframes pane3 { 0%, 19.45% {opacity:0;transform:translateY(7px) scale(.84)} 19.70% {opacity:1;transform:translateY(2px) scale(.93)} 21.60% {transform:translateY(-1px) scale(1.025)} 23.10%,100% {opacity:1;transform:none} }
-.pane3 {animation-name:pane3}
-@keyframes pane4 { 0%, 22.60% {opacity:0;transform:translateY(7px) scale(.84)} 22.85% {opacity:1;transform:translateY(2px) scale(.93)} 24.75% {transform:translateY(-1px) scale(1.025)} 26.25%,100% {opacity:1;transform:none} }
-.pane4 {animation-name:pane4}
-@keyframes pane5 { 0%, 25.75% {opacity:0;transform:translateY(7px) scale(.84)} 26.00% {opacity:1;transform:translateY(2px) scale(.93)} 27.90% {transform:translateY(-1px) scale(1.025)} 29.40%,100% {opacity:1;transform:none} }
-.pane5 {animation-name:pane5}
-@keyframes pane6 { 0%, 28.90% {opacity:0;transform:translateY(7px) scale(.84)} 29.15% {opacity:1;transform:translateY(2px) scale(.93)} 31.05% {transform:translateY(-1px) scale(1.025)} 32.55%,100% {opacity:1;transform:none} }
-.pane6 {animation-name:pane6}
-@keyframes pane7 { 0%, 32.05% {opacity:0;transform:translateY(7px) scale(.84)} 32.30% {opacity:1;transform:translateY(2px) scale(.93)} 34.20% {transform:translateY(-1px) scale(1.025)} 35.70%,100% {opacity:1;transform:none} }
-.pane7 {animation-name:pane7}
-@keyframes pane8 { 0%, 35.20% {opacity:0;transform:translateY(7px) scale(.84)} 35.45% {opacity:1;transform:translateY(2px) scale(.93)} 37.35% {transform:translateY(-1px) scale(1.025)} 38.85%,100% {opacity:1;transform:none} }
-.pane8 {animation-name:pane8}
-@keyframes pane9 { 0%, 38.35% {opacity:0;transform:translateY(7px) scale(.84)} 38.60% {opacity:1;transform:translateY(2px) scale(.93)} 40.50% {transform:translateY(-1px) scale(1.025)} 42.00%,100% {opacity:1;transform:none} }
-.pane9 {animation-name:pane9}
+    .pane { animation: pop-in 140ms ease-out 1 both; }
+    @keyframes pop-in {
+      from { opacity: 0; transform: translateY(7px) scale(.84); }
+      7% { opacity: 1; transform: translateY(2px) scale(.93); }
+      59% { opacity: 1; transform: translateY(-1px) scale(1.025); }
+      to { opacity: 1; transform: none; }
+    }
+    .pane0 { animation-delay: 380ms; }
+    .pane1 { animation-delay: 880ms; }
+    .pane2 { animation-delay: 1380ms; }
+    .pane3 { animation-delay: 1880ms; }
+    .pane4 { animation-delay: 2380ms; }
+    .pane5 { animation-delay: 2880ms; }
+    .pane6 { animation-delay: 3380ms; }
+    .pane7 { animation-delay: 3880ms; }
+    .pane8 { animation-delay: 4380ms; }
+    .pane9 { animation-delay: 4880ms; }
   }
 </style>
 <rect width="920" height="480" fill="#eeeee6"/>
