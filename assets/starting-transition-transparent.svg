@@ -1,12 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" role="img" aria-labelledby="title">
-<title id="title">Ten small desktop windows open in sequence over outlined letters</title>
+<title id="title">Startup messages fade into a desktop with session.log in the foreground</title>
 <!-- Lettering outlined from Paper Mono v1.000 by Paper Design. -->
 <style>
   .pane { transform-origin: 18px 12px; }
+  .boot { display: none; fill: #24272d; }
+  .boot .handoff { paint-order: stroke; stroke: #fbfaf4; stroke-width: 2px; }
+  .log { transform-box: fill-box; }
   .lettering { stroke: #767d86; }
   .guides { stroke: #8d949d; stroke-opacity: .65; }
   .guide-points { fill: #5276b1; }
   @media (prefers-color-scheme: dark) {
+    .boot { fill: #eef1f6; }
+    .boot .handoff { stroke: #24272d; }
     .lettering { stroke: #a0aab7; }
     .guides { stroke: #7b8798; }
     .guide-points { fill: #8eafe5; }
@@ -17,16 +22,28 @@
       from { opacity: 0; transform: translateY(12px) scale(.94); }
       to { opacity: 1; transform: none; }
     }
-    .pane0 { animation-delay: 380ms; }
-    .pane1 { animation-delay: 1880ms; }
-    .pane2 { animation-delay: 3380ms; }
-    .pane3 { animation-delay: 4880ms; }
-    .pane4 { animation-delay: 6380ms; }
-    .pane5 { animation-delay: 7880ms; }
-    .pane6 { animation-delay: 9380ms; }
-    .pane7 { animation-delay: 10880ms; }
-    .pane8 { animation-delay: 12380ms; }
-    .pane9 { animation-delay: 13880ms; }
+    .boot { display: inline; }
+    .beat {
+      animation: fade-in 170ms linear var(--enter) 1 both,
+                 fade-out 260ms linear var(--exit) 1 forwards;
+    }
+    .lettering { animation: fade-in 620ms ease 2800ms 1 both; }
+    .log { animation: open-log 260ms ease-out 2460ms 1 both; }
+    @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fade-out { from { opacity: 1; } to { opacity: 0; } }
+    @keyframes open-log {
+      from { opacity: 0; clip-path: inset(0 100% 0 0); }
+      to { opacity: 1; clip-path: inset(0); }
+    }
+    .pane0 { animation-delay: 3100ms; }
+    .pane1 { animation-delay: 4600ms; }
+    .pane2 { animation-delay: 6100ms; }
+    .pane3 { animation-delay: 7600ms; }
+    .pane4 { animation-delay: 9100ms; }
+    .pane5 { animation-delay: 10600ms; }
+    .pane7 { animation-delay: 12100ms; }
+    .pane8 { animation-delay: 13600ms; }
+    .pane9 { animation-delay: 15100ms; }
   }
 </style>
 <g class="lettering" fill="none" stroke-width="1.2">
@@ -98,16 +115,6 @@
     <path fill="#171916" d="M23.82 43.16Q23.32 43.16 23.03 42.86Q22.74 42.56 22.74 42.12Q22.74 41.66 23.03 41.37Q23.32 41.08 23.82 41.08Q24.31 41.08 24.6 41.37Q24.9 41.66 24.9 42.12Q24.9 42.56 24.6 42.86Q24.31 43.16 23.82 43.16ZM29.06 39.58V38.52H34.33V39.58ZM36.93 39.58V38.52H42.21V39.58ZM44.81 39.58V38.52H50.09V39.58Z"/><path fill="#171916" d="M23.26 63.2V51.56H24.36V63.2Z"/><path fill="#171916" d="M23.77 74.62 22.54 71.77H24.17L25.09 74.62ZM29.06 77.58V76.52H34.33V77.58ZM36.93 77.58V76.52H42.21V77.58ZM44.81 77.58V76.52H50.09V77.58Z"/>
   </g>
 </g>
-<g transform="translate(553 276)">
-  <g class="pane pane6">
-    <rect x="4" y="4" width="348" height="155" rx="2" fill="#24241f"/>
-    <rect width="348" height="155" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
-    <path d="M0 23H348" stroke="#171916"/>
-    <path fill="#171916" d="M14.2 16.16Q12.87 16.16 12.28 15.64Q11.68 15.13 11.68 13.93V10.36H9.79V9.38H11.68V7.34H12.81V9.38H15.67V10.36H12.81V13.78Q12.81 14.57 13.15 14.87Q13.48 15.17 14.29 15.17Q14.75 15.17 15.16 15.14Q15.58 15.1 15.79 15.05V16.03Q15.6 16.08 15.16 16.12Q14.71 16.16 14.2 16.16ZM19.56 18.52Q19.34 18.52 19.11 18.5Q18.88 18.48 18.76 18.47V17.5Q18.89 17.51 19.09 17.53Q19.28 17.55 19.49 17.55Q19.97 17.55 20.11 17.12L20.4 16.27L17.71 9.38H18.92L20.91 14.77L22.7 9.38H23.91L21.08 17.33Q20.8 18.08 20.45 18.3Q20.09 18.52 19.56 18.52ZM25.87 18.37V9.38H26.93L26.95 10.53Q27.23 9.96 27.77 9.59Q28.3 9.23 29.03 9.23Q30 9.23 30.6 9.71Q31.2 10.2 31.49 10.99Q31.78 11.78 31.78 12.7Q31.78 13.61 31.49 14.39Q31.2 15.18 30.6 15.67Q30 16.16 29.03 16.16Q28.33 16.16 27.8 15.82Q27.27 15.49 27 15.03V18.37ZM28.88 15.12Q29.73 15.12 30.16 14.48Q30.59 13.84 30.59 12.7Q30.59 11.55 30.16 10.91Q29.73 10.27 28.88 10.27Q27.99 10.27 27.5 10.88Q27 11.5 27 12.7Q27 13.88 27.49 14.5Q27.98 15.12 28.88 15.12ZM36.59 16.16Q35.17 16.16 34.36 15.23Q33.54 14.31 33.54 12.7Q33.54 11.64 33.93 10.87Q34.32 10.09 35.01 9.66Q35.7 9.23 36.61 9.23Q37.56 9.23 38.23 9.62Q38.9 10.01 39.25 10.71Q39.6 11.41 39.6 12.33V12.91H34.73Q34.77 14.12 35.26 14.63Q35.75 15.15 36.59 15.15Q37.34 15.15 37.72 14.88Q38.09 14.61 38.25 14.17H39.42Q39.16 15.06 38.45 15.61Q37.74 16.16 36.59 16.16ZM34.75 11.97V12H38.42Q38.37 11.18 37.92 10.7Q37.48 10.23 36.61 10.23Q35.86 10.23 35.36 10.71Q34.86 11.19 34.75 11.97ZM44.45 16.16Q43.96 16.16 43.66 15.86Q43.37 15.56 43.37 15.12Q43.37 14.66 43.66 14.37Q43.96 14.08 44.45 14.08Q44.95 14.08 45.24 14.37Q45.53 14.66 45.53 15.12Q45.53 15.56 45.24 15.86Q44.95 16.16 44.45 16.16ZM53.59 16.16Q52.26 16.16 51.67 15.64Q51.07 15.13 51.07 13.93V10.36H49.18V9.38H51.07V7.34H52.2V9.38H55.06V10.36H52.2V13.78Q52.2 14.57 52.54 14.87Q52.88 15.17 53.68 15.17Q54.14 15.17 54.55 15.14Q54.97 15.1 55.18 15.05V16.03Q54.99 16.08 54.55 16.12Q54.1 16.16 53.59 16.16ZM60.22 16.16Q58.8 16.16 57.99 15.23Q57.18 14.31 57.18 12.7Q57.18 11.64 57.57 10.87Q57.96 10.09 58.65 9.66Q59.34 9.23 60.25 9.23Q61.2 9.23 61.86 9.62Q62.53 10.01 62.89 10.71Q63.24 11.41 63.24 12.33V12.91H58.36Q58.4 14.12 58.89 14.63Q59.39 15.15 60.22 15.15Q60.97 15.15 61.35 14.88Q61.73 14.61 61.88 14.17H63.05Q62.79 15.06 62.09 15.61Q61.38 16.16 60.22 16.16ZM58.39 11.97V12H62.05Q62 11.18 61.56 10.7Q61.12 10.23 60.25 10.23Q59.49 10.23 58.99 10.71Q58.49 11.19 58.39 11.97ZM68.18 16.16Q66.8 16.16 66.13 15.57Q65.47 14.99 65.37 14.05H66.53Q66.64 14.6 67 14.87Q67.36 15.14 68.2 15.14Q69 15.14 69.35 14.92Q69.71 14.7 69.71 14.18Q69.71 13.89 69.58 13.71Q69.45 13.53 69.09 13.4Q68.73 13.27 68.02 13.18Q66.67 13 66.12 12.59Q65.58 12.19 65.58 11.32Q65.58 10.44 66.21 9.83Q66.85 9.23 68.06 9.23Q69.06 9.23 69.62 9.54Q70.18 9.85 70.42 10.32Q70.67 10.79 70.71 11.28H69.57Q69.52 10.79 69.19 10.51Q68.86 10.24 68.06 10.24Q67.34 10.24 67.01 10.54Q66.67 10.84 66.67 11.31Q66.67 11.57 66.79 11.74Q66.92 11.91 67.25 12Q67.59 12.1 68.24 12.18Q69.64 12.35 70.22 12.81Q70.79 13.27 70.79 14.17Q70.79 15.15 70.08 15.66Q69.37 16.16 68.18 16.16ZM77.22 16.16Q75.9 16.16 75.3 15.64Q74.7 15.13 74.7 13.93V10.36H72.82V9.38H74.7V7.34H75.83V9.38H78.69V10.36H75.83V13.78Q75.83 14.57 76.17 14.87Q76.51 15.17 77.31 15.17Q77.77 15.17 78.19 15.14Q78.6 15.1 78.81 15.05V16.03Q78.63 16.08 78.18 16.12Q77.73 16.16 77.22 16.16Z"/>
-    <path d="M333 8l6 6m0-6l-6 6" stroke="#171916" stroke-width="1.2"/>
-    <path fill="#171916" d="M100.37 112.44Q93.74 112.44 90.11 109.28Q86.48 106.12 86.48 100.97Q86.48 96.13 89.76 93.01Q93.04 89.89 99.98 89.27L113 88.1V85.68Q113 81.39 110.98 79.21Q108.95 77.02 104.03 77.02Q98.81 77.02 97.01 78.9Q95.22 80.77 94.91 83.81H87.65Q87.89 80.14 89.6 77.22Q91.32 74.29 94.83 72.58Q98.34 70.86 103.96 70.86Q119.71 70.86 119.71 85.37V111.5H113.55L113.24 105.96Q111.68 108.85 108.17 110.64Q104.66 112.44 100.37 112.44ZM93.5 100.81Q93.5 103.7 95.53 105.1Q97.56 106.51 101.07 106.51Q107.08 106.51 110.04 103.47Q113 100.42 113 95.59V93.72L100.37 94.81Q96.7 95.12 95.1 96.48Q93.5 97.85 93.5 100.81ZM152.47 112.44Q148.18 112.44 144.91 110.29Q141.63 108.15 139.91 105.1L139.6 111.5H133.44V53.23H140.23V78.04Q141.71 75.31 144.83 73.08Q147.95 70.86 152.47 70.86Q157.62 70.86 161.29 73.47Q164.95 76.09 166.9 80.77Q168.85 85.45 168.85 91.69Q168.85 97.93 166.9 102.61Q164.95 107.29 161.29 109.86Q157.62 112.44 152.47 112.44ZM151.22 106.2Q156.53 106.2 159.14 102.37Q161.75 98.55 161.75 91.69Q161.75 84.75 159.14 80.92Q156.53 77.1 151.22 77.1Q146 77.1 143.11 81.04Q140.23 84.98 140.23 91.69Q140.23 98.47 143.11 102.34Q146 106.2 151.22 106.2ZM198.18 112.44Q192.56 112.44 188.35 109.86Q184.14 107.29 181.8 102.61Q179.46 97.93 179.46 91.69Q179.46 85.37 181.8 80.69Q184.14 76.01 188.35 73.44Q192.56 70.86 198.18 70.86Q205.59 70.86 210.27 74.92Q214.95 78.97 215.81 85.84H208.79Q207.93 81.63 205.32 79.29Q202.7 76.95 198.18 76.95Q192.88 76.95 189.72 80.88Q186.56 84.82 186.56 91.69Q186.56 98.47 189.72 102.41Q192.88 106.35 198.18 106.35Q202.7 106.35 205.32 103.97Q207.93 101.59 208.79 97.38H215.81Q214.95 104.25 210.27 108.34Q205.59 112.44 198.18 112.44ZM223.14 117.74V111.5H266.59V117.74Z"/>
-  </g>
-</g>
 <g transform="translate(734 171)">
   <g class="pane pane7">
     <rect x="4" y="4" width="153" height="92" rx="2" fill="#24241f"/>
@@ -137,5 +144,29 @@
     <path d="M93 8l6 6m0-6l-6 6" stroke="#171916" stroke-width="1.2"/>
     <path fill="#171916" d="M46.89 44.2V32.56H48V44.2Z"/><path fill="#171916" d="M23.82 62.16Q23.32 62.16 23.03 61.86Q22.74 61.56 22.74 61.12Q22.74 60.66 23.03 60.37Q23.32 60.08 23.82 60.08Q24.31 60.08 24.6 60.37Q24.9 60.66 24.9 61.12Q24.9 61.56 24.6 61.86Q24.31 62.16 23.82 62.16ZM29.06 58.58V57.52H34.33V58.58ZM36.93 58.58V57.52H42.21V58.58ZM46.89 63.2V51.56H48V63.2Z"/><path fill="#171916" d="M23.77 74.62 22.54 71.77H24.17L25.09 74.62ZM29.06 77.58V76.52H34.33V77.58ZM36.93 77.58V76.52H42.21V77.58ZM46.89 82.2V70.56H48V82.2Z"/>
   </g>
+</g>
+<g transform="translate(553 276)">
+  <g class="log" font-family="'Courier New', monospace" fill="#171916">
+    <rect x="4" y="5" width="348" height="155" rx="2" fill="#24241f"/>
+    <rect width="348" height="155" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
+    <path d="M1 6H347M1 10H347M1 14H347M1 18H347" stroke="#abb1ba"/>
+    <path d="M0 24H348" stroke="#171916"/>
+    <rect x="9" y="3" width="99" height="18" fill="#fbfaf4"/>
+    <rect x="312" y="3" width="30" height="18" fill="#fbfaf4"/>
+    <text x="13" y="16" font-size="13" font-weight="700">session.log</text>
+    <path d="M316 8h7v7h-7zM330 8l7 7m0-7l-7 7" fill="none" stroke="#171916"/>
+    <text x="14" y="94" font-size="15">session restored</text>
+    <text x="14" y="116" font-size="15">workspace ready</text>
+    <text x="14" y="138" font-size="15">› opening windows</text>
+  </g>
+</g>
+<g class="boot" aria-hidden="true">
+  <text class="beat" x="74" y="110" font-family="'Courier New', monospace" font-size="47" font-weight="700" style="--enter:0ms;--exit:420ms">Booting…</text>
+  <text class="beat" x="405" y="199" font-family="Georgia, serif" font-size="37" style="--enter:300ms;--exit:720ms">Checking display</text>
+  <text class="beat" x="110" y="339" font-family="Arial, sans-serif" font-size="30" font-weight="600" style="--enter:610ms;--exit:1060ms">Reading preferences</text>
+  <text class="beat" x="377" y="110" font-family="Palatino, 'Book Antiqua', serif" font-size="46" font-style="italic" style="--enter:940ms;--exit:1400ms">Loading desktop</text>
+  <text class="beat" x="74" y="256" font-family="'Arial Black', system-ui, sans-serif" font-size="55" font-weight="800" style="--enter:1290ms;--exit:1870ms">Restoring session</text>
+  <text class="beat" x="193" y="397" font-family="'Trebuchet MS', sans-serif" font-size="39" font-weight="300" style="--enter:1810ms;--exit:2300ms">A few</text>
+  <text class="beat handoff" x="570" y="357" font-family="'Times New Roman', serif" font-size="73" font-weight="900" style="--enter:2160ms;--exit:2780ms">windows.</text>
 </g>
 </svg>

@@ -1,1 +1,1 @@
-![Ten desktop windows open in sequence over outlined letters](assets/starting-transition-transparent.svg)
+![Startup messages fade into a desktop anchored by session.log](assets/starting-transition-transparent.svg)
