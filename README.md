@@ -1,1 +1,1 @@
-![Ten desktop windows pop open over outlined letters](assets/starting-transition.svg)
+![Ten desktop windows open in sequence over outlined letters](assets/starting-transition-once.svg)
