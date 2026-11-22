@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" role="img" aria-labelledby="title">
+<title id="title">Ten small desktop windows snap open over outlined letters</title>
+<style>
+  text { font: 13px ui-monospace, Menlo, monospace; }
+  .outline { font: bold 270px ui-monospace, Menlo, monospace; }
+  text[font-size="94"] { font-size:94px; }
+  text[font-size="78"] { font-size:78px; }
+  .pane { transform-origin: 18px 12px; }
+  @media (prefers-reduced-motion: no-preference) {
+    .pane { animation-duration:3.8s; animation-iteration-count:infinite; animation-timing-function:ease-out; }
+    @keyframes pane0 { 0%, 10.00% {opacity:0;transform:translateY(7px) scale(.84)} 10.25% {opacity:1;transform:translateY(2px) scale(.93)} 12.15% {transform:translateY(-1px) scale(1.025)} 13.65%,100% {opacity:1;transform:none} }
+.pane0 {animation-name:pane0}
+@keyframes pane1 { 0%, 13.15% {opacity:0;transform:translateY(7px) scale(.84)} 13.40% {opacity:1;transform:translateY(2px) scale(.93)} 15.30% {transform:translateY(-1px) scale(1.025)} 16.80%,100% {opacity:1;transform:none} }
+.pane1 {animation-name:pane1}
+@keyframes pane2 { 0%, 16.30% {opacity:0;transform:translateY(7px) scale(.84)} 16.55% {opacity:1;transform:translateY(2px) scale(.93)} 18.45% {transform:translateY(-1px) scale(1.025)} 19.95%,100% {opacity:1;transform:none} }
+.pane2 {animation-name:pane2}
+@keyframes pane3 { 0%, 19.45% {opacity:0;transform:translateY(7px) scale(.84)} 19.70% {opacity:1;transform:translateY(2px) scale(.93)} 21.60% {transform:translateY(-1px) scale(1.025)} 23.10%,100% {opacity:1;transform:none} }
+.pane3 {animation-name:pane3}
+@keyframes pane4 { 0%, 22.60% {opacity:0;transform:translateY(7px) scale(.84)} 22.85% {opacity:1;transform:translateY(2px) scale(.93)} 24.75% {transform:translateY(-1px) scale(1.025)} 26.25%,100% {opacity:1;transform:none} }
+.pane4 {animation-name:pane4}
+@keyframes pane5 { 0%, 25.75% {opacity:0;transform:translateY(7px) scale(.84)} 26.00% {opacity:1;transform:translateY(2px) scale(.93)} 27.90% {transform:translateY(-1px) scale(1.025)} 29.40%,100% {opacity:1;transform:none} }
+.pane5 {animation-name:pane5}
+@keyframes pane6 { 0%, 28.90% {opacity:0;transform:translateY(7px) scale(.84)} 29.15% {opacity:1;transform:translateY(2px) scale(.93)} 31.05% {transform:translateY(-1px) scale(1.025)} 32.55%,100% {opacity:1;transform:none} }
+.pane6 {animation-name:pane6}
+@keyframes pane7 { 0%, 32.05% {opacity:0;transform:translateY(7px) scale(.84)} 32.30% {opacity:1;transform:translateY(2px) scale(.93)} 34.20% {transform:translateY(-1px) scale(1.025)} 35.70%,100% {opacity:1;transform:none} }
+.pane7 {animation-name:pane7}
+@keyframes pane8 { 0%, 35.20% {opacity:0;transform:translateY(7px) scale(.84)} 35.45% {opacity:1;transform:translateY(2px) scale(.93)} 37.35% {transform:translateY(-1px) scale(1.025)} 38.85%,100% {opacity:1;transform:none} }
+.pane8 {animation-name:pane8}
+@keyframes pane9 { 0%, 38.35% {opacity:0;transform:translateY(7px) scale(.84)} 38.60% {opacity:1;transform:translateY(2px) scale(.93)} 40.50% {transform:translateY(-1px) scale(1.025)} 42.00%,100% {opacity:1;transform:none} }
+.pane9 {animation-name:pane9}
+  }
+</style>
+<rect width="920" height="480" fill="#eeeee6"/>
+<g fill="none" stroke="#858781" stroke-width="1.2">
+  <text class="outline" x="35" y="332" textLength="848" lengthAdjust="spacingAndGlyphs">a b c</text>
+  <path d="M43 123H873M43 341H873M57 102V370M861 102V370" stroke="#b9bcb2" stroke-dasharray="4 5"/>
+  <path d="M103 268h80m-40-40v80M770 240h80m-40-40v80"/>
+  <g fill="#718bbc">
+    <circle cx="103" cy="268" r="3"/><circle cx="183" cy="268" r="3"/><circle cx="143" cy="228" r="3"/><circle cx="143" cy="308" r="3"/>
+    <circle cx="770" cy="240" r="3"/><circle cx="850" cy="240" r="3"/><circle cx="810" cy="200" r="3"/><circle cx="810" cy="280" r="3"/>
+  </g>
+</g>
+<g transform="translate(108 70)">
+  <g class="pane pane0">
+    <rect x="4" y="4" width="190" height="64" rx="2" fill="#24241f"/>
+    <rect width="190" height="64" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
+    <path d="M0 23H190" stroke="#171916"/>
+    <text x="9" y="16" fill="#171916">boot.log</text>
+    <path d="M175 8l6 6m0-6l-6 6" stroke="#171916" stroke-width="1.2"/>
+    <text x="12" y="43" xml:space="preserve" fill="#171916">loading   [■■■■··]</text>
+  </g>
+</g>
+<g transform="translate(65 182)">
+  <g class="pane pane1">
+    <rect x="4" y="4" width="102" height="120" rx="2" fill="#83a2d7"/>
+    <rect width="102" height="120" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
+    <path d="M0 23H102" stroke="#171916"/>
+    <text x="9" y="16" fill="#171916">a.glyph</text>
+    <path d="M87 8l6 6m0-6l-6 6" stroke="#171916" stroke-width="1.2"/>
+    <text x="12" y="43" xml:space="preserve" fill="#171916">  /\</text><text x="12" y="62" xml:space="preserve" fill="#171916"> /__\</text><text x="12" y="81" xml:space="preserve" fill="#171916">/    \</text>
+  </g>
+</g>
+<g transform="translate(50 319)">
+  <g class="pane pane2">
+    <rect x="4" y="4" width="346" height="113" rx="2" fill="#83a2d7"/>
+    <rect width="346" height="113" rx="2" fill="#171916" stroke="#f3f1e7" stroke-width="1.4"/>
+    <path d="M0 23H346" stroke="#f3f1e7"/>
+    <text x="9" y="16" fill="#f3f1e7">scope</text>
+    <path d="M331 8l6 6m0-6l-6 6" stroke="#f3f1e7" stroke-width="1.2"/>
+    <rect x="16" y="88" width="9" height="10" fill="#83a2d7"/><rect x="30" y="85" width="9" height="13" fill="#83a2d7"/><rect x="44" y="86" width="9" height="12" fill="#83a2d7"/><rect x="58" y="79" width="9" height="19" fill="#83a2d7"/><rect x="72" y="76" width="9" height="22" fill="#83a2d7"/><rect x="86" y="80" width="9" height="18" fill="#83a2d7"/><rect x="100" y="71" width="9" height="27" fill="#83a2d7"/><rect x="114" y="64" width="9" height="34" fill="#83a2d7"/><rect x="128" y="68" width="9" height="30" fill="#83a2d7"/><rect x="142" y="58" width="9" height="40" fill="#83a2d7"/><rect x="156" y="44" width="9" height="54" fill="#83a2d7"/><rect x="170" y="50" width="9" height="48" fill="#83a2d7"/><rect x="184" y="46" width="9" height="52" fill="#83a2d7"/><rect x="198" y="56" width="9" height="42" fill="#83a2d7"/><rect x="212" y="67" width="9" height="31" fill="#83a2d7"/><rect x="226" y="62" width="9" height="36" fill="#83a2d7"/><rect x="240" y="75" width="9" height="23" fill="#83a2d7"/><rect x="254" y="77" width="9" height="21" fill="#83a2d7"/><rect x="268" y="73" width="9" height="25" fill="#83a2d7"/><rect x="282" y="81" width="9" height="17" fill="#83a2d7"/><rect x="296" y="85" width="9" height="13" fill="#83a2d7"/><rect x="310" y="89" width="9" height="9" fill="#83a2d7"/>
+  </g>
+</g>
+<g transform="translate(143 226)">
+  <g class="pane pane3">
+    <rect x="4" y="4" width="108" height="130" rx="2" fill="#83a2d7"/>
+    <rect width="108" height="130" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
+    <path d="M0 23H108" stroke="#171916"/>
+    <text x="9" y="16" fill="#171916">b.glyph</text>
+    <path d="M93 8l6 6m0-6l-6 6" stroke="#171916" stroke-width="1.2"/>
+    <text x="12" y="43" xml:space="preserve" fill="#171916">  |__</text><text x="12" y="62" xml:space="preserve" fill="#171916">  |  )</text><text x="12" y="81" xml:space="preserve" fill="#171916">  |__)</text>
+  </g>
+</g>
+<g transform="translate(502 45)">
+  <g class="pane pane4">
+    <rect x="4" y="4" width="344" height="122" rx="2" fill="#24241f"/>
+    <rect width="344" height="122" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
+    <path d="M0 23H344" stroke="#171916"/>
+    <text x="9" y="16" fill="#171916">index</text>
+    <path d="M329 8l6 6m0-6l-6 6" stroke="#171916" stroke-width="1.2"/>
+    <text x="12" y="43" xml:space="preserve" fill="#171916">01   drafts</text><text x="12" y="62" xml:space="preserve" fill="#171916">02   sketches</text><text x="12" y="81" xml:space="preserve" fill="#171916">03   exports</text>
+  </g>
+</g>
+<g transform="translate(233 162)">
+  <g class="pane pane5">
+    <rect x="4" y="4" width="107" height="121" rx="2" fill="#83a2d7"/>
+    <rect width="107" height="121" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
+    <path d="M0 23H107" stroke="#171916"/>
+    <text x="9" y="16" fill="#171916">c.glyph</text>
+    <path d="M92 8l6 6m0-6l-6 6" stroke="#171916" stroke-width="1.2"/>
+    <text x="12" y="43" xml:space="preserve" fill="#171916"> .---</text><text x="12" y="62" xml:space="preserve" fill="#171916"> |</text><text x="12" y="81" xml:space="preserve" fill="#171916"> `---</text>
+  </g>
+</g>
+<g transform="translate(553 276)">
+  <g class="pane pane6">
+    <rect x="4" y="4" width="348" height="155" rx="2" fill="#24241f"/>
+    <rect width="348" height="155" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
+    <path d="M0 23H348" stroke="#171916"/>
+    <text x="9" y="16" fill="#171916">type.test</text>
+    <path d="M333 8l6 6m0-6l-6 6" stroke="#171916" stroke-width="1.2"/>
+    <text x="174.0" y="111.5" text-anchor="middle" font-size="78" fill="#171916">abc_</text>
+  </g>
+</g>
+<g transform="translate(734 171)">
+  <g class="pane pane7">
+    <rect x="4" y="4" width="153" height="92" rx="2" fill="#24241f"/>
+    <rect width="153" height="92" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
+    <path d="M0 23H153" stroke="#171916"/>
+    <text x="9" y="16" fill="#171916">notes</text>
+    <path d="M138 8l6 6m0-6l-6 6" stroke="#171916" stroke-width="1.2"/>
+    <text x="12" y="43" xml:space="preserve" fill="#171916">width  024</text><text x="12" y="62" xml:space="preserve" fill="#171916">mode   mono</text>
+  </g>
+</g>
+<g transform="translate(355 121)">
+  <g class="pane pane8">
+    <rect x="4" y="4" width="224" height="201" rx="2" fill="#83a2d7"/>
+    <rect width="224" height="201" rx="2" fill="#171916" stroke="#f3f1e7" stroke-width="1.4"/>
+    <path d="M0 23H224" stroke="#f3f1e7"/>
+    <text x="9" y="16" fill="#f3f1e7">preview</text>
+    <path d="M209 8l6 6m0-6l-6 6" stroke="#f3f1e7" stroke-width="1.2"/>
+    <text x="112.0" y="134.5" text-anchor="middle" font-size="94" fill="#f3f1e7">Aa</text>
+  </g>
+</g>
+<g transform="translate(272 310)">
+  <g class="pane pane9">
+    <rect x="4" y="4" width="108" height="133" rx="2" fill="#83a2d7"/>
+    <rect width="108" height="133" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
+    <path d="M0 23H108" stroke="#171916"/>
+    <text x="9" y="16" fill="#171916">d.glyph</text>
+    <path d="M93 8l6 6m0-6l-6 6" stroke="#171916" stroke-width="1.2"/>
+    <text x="12" y="43" xml:space="preserve" fill="#171916">    |</text><text x="12" y="62" xml:space="preserve" fill="#171916"> .--|</text><text x="12" y="81" xml:space="preserve" fill="#171916"> `--|</text>
+  </g>
+</g>
+</svg>

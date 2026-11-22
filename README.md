@@ -1,3 +1,5 @@
+![Ten desktop windows pop open over outlined letters](assets/starting-transition.svg)
+
 # Hi, I'm Jaden 👋
 
 Welcome to my GitHub profile! I use this space to build, explore, and share projects.
