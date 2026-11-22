@@ -1,4 +1,4 @@
-![Startup messages fade into a desktop. Open a few windows. I’ll show you what I’ve been doing.](assets/profile-desktop.svg)
+![Startup messages fade into a desktop. Open a few windows. I’ll show you what I’ve been doing.](assets/profile-display-services.svg)
 
 [▶ Listen to hello mono | visualizer on YouTube](https://www.youtube.com/watch?v=4deDga_hTig)
 
