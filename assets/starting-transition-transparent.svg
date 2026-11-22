@@ -7,6 +7,7 @@
   .pane text.window-title { font-weight: 700; }
   .pane text.type-sample { font: 66px Georgia, serif; }
   .pane text.project-name { font: 700 24px 'Courier New', monospace; }
+  .typing-caret { opacity: 0; }
   .boot { display: none; fill: #24272d; }
   .boot .handoff { paint-order: stroke; stroke: #fbfaf4; stroke-width: 2px; }
   .log { transform-box: fill-box; }
@@ -21,7 +22,7 @@
     .guide-points { fill: #8eafe5; }
   }
   @media (prefers-reduced-motion: no-preference) {
-    .pane { animation: pop-in 620ms cubic-bezier(.2,.75,.25,1) 1 both; }
+    .pane { animation: pop-in 620ms cubic-bezier(.2,.75,.25,1) var(--open-at) 1 both; }
     @keyframes pop-in {
       from { opacity: 0; transform: translateY(12px) scale(.94); }
       to { opacity: 1; transform: none; }
@@ -39,16 +40,105 @@
       from { opacity: 0; clip-path: inset(0 100% 0 0); }
       to { opacity: 1; clip-path: inset(0); }
     }
-    .pane0 { animation-delay: 3100ms; }
-    .pane1 { animation-delay: 4600ms; }
-    .pane2 { animation-delay: 6100ms; }
-    .pane3 { animation-delay: 7600ms; }
-    .pane4 { animation-delay: 9100ms; }
-    .pane5 { animation-delay: 10600ms; }
-    .pane7 { animation-delay: 12100ms; }
-    .pane8 { animation-delay: 13600ms; }
-    .pane9 { animation-delay: 15100ms; }
-    .soundtrack { animation-delay: 15500ms; }
+    .pane0 { --open-at: 2960ms; }
+    .pane1 { --open-at: 3460ms; }
+    .pane2 { --open-at: 3960ms; }
+    .pane3 { --open-at: 4460ms; }
+    .pane4 { --open-at: 4960ms; }
+    .pane5 { --open-at: 5460ms; }
+    .pane7 { --open-at: 5960ms; }
+    .pane8 { --open-at: 6460ms; }
+    .pane9 { --open-at: 6960ms; }
+    .soundtrack { --open-at: 7460ms; }
+
+    .notification-icon { animation: ring-in 600ms ease-out calc(var(--open-at) + 180ms) both; }
+    .repo-row { animation: row-in 200ms ease-out calc(var(--open-at) + var(--row-delay)) both; }
+    .output-bars {
+      transform-box: fill-box;
+      transform-origin: center bottom;
+      animation: draw-output 1050ms steps(14, end) calc(var(--open-at) + 300ms) both,
+                 raise-output 1050ms ease-out calc(var(--open-at) + 300ms) both;
+    }
+    .chat-selection { animation: scan-menu 850ms steps(1, end) calc(var(--open-at) + 320ms) both; }
+    .project-name { animation: stamp-name 400ms cubic-bezier(.2,.8,.4,1) calc(var(--open-at) + 280ms) both; }
+    .typed-note { animation: type-note 590ms steps(14, end) calc(var(--open-at) + 300ms) both; }
+    .typing-caret {
+      animation: move-caret 590ms steps(14, end) calc(var(--open-at) + 300ms) both,
+                 show-caret 760ms linear calc(var(--open-at) + 300ms) forwards;
+    }
+    .note-detail { animation: fade-in 230ms ease calc(var(--open-at) + var(--note-delay)) both; }
+    .experiment-question { animation: unroll-question 590ms ease-out calc(var(--open-at) + 320ms) both; }
+    .type-sample { animation: focus-type 720ms ease-out calc(var(--open-at) + 300ms) both; }
+    .seed-row { animation: grow-seed 900ms steps(3, end) calc(var(--open-at) + var(--seed-delay)) both; }
+    .log-line { animation: print-line 120ms ease-out var(--print-at) both; }
+    .player-progress { animation: trace-progress 950ms ease-out calc(var(--open-at) + 330ms) both; }
+
+    .notification-icon, .project-name, .seed-row {
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .player-progress { stroke-dasharray: 21; }
+
+    @keyframes ring-in {
+      0% { opacity: 0; transform: scale(.5) rotate(-30deg); }
+      55% { opacity: 1; transform: scale(1.16) rotate(9deg); }
+      100% { transform: none; }
+    }
+    @keyframes row-in {
+      from { opacity: 0; transform: translateX(-6px); }
+      to { opacity: 1; transform: none; }
+    }
+    @keyframes draw-output {
+      from { clip-path: inset(0 100% 0 0); }
+      to { clip-path: inset(0); }
+    }
+    @keyframes raise-output {
+      from { transform: scaleY(.15); }
+      to { transform: none; }
+    }
+    @keyframes scan-menu {
+      0% { transform: translateY(0); }
+      18% { transform: translateY(19px); }
+      36% { transform: translateY(35px); }
+      54% { transform: translateY(51px); }
+      72% { transform: translateY(74px); }
+      86% { transform: translateY(90px); }
+      100% { transform: translateY(0); }
+    }
+    @keyframes stamp-name {
+      0% { opacity: 0; transform: scale(1.12); }
+      60% { opacity: 1; transform: scale(.98); }
+      100% { transform: none; }
+    }
+    @keyframes type-note {
+      from { clip-path: inset(0 100% 0 0); }
+      to { clip-path: inset(0); }
+    }
+    @keyframes move-caret { to { transform: translateX(92px); } }
+    @keyframes show-caret {
+      0%, 74%, 86% { opacity: 1; }
+      75%, 85%, 100% { opacity: 0; }
+    }
+    @keyframes unroll-question {
+      from { clip-path: inset(0 0 100% 0); transform: translateY(-3px); }
+      to { clip-path: inset(0); transform: none; }
+    }
+    @keyframes focus-type {
+      from { opacity: .25; filter: blur(5px); letter-spacing: 3px; }
+      to { opacity: 1; filter: none; letter-spacing: 0; }
+    }
+    @keyframes grow-seed {
+      from { opacity: 0; transform: scale(.6); }
+      to { opacity: 1; transform: none; }
+    }
+    @keyframes print-line {
+      from { opacity: 0; transform: translateY(3px); }
+      to { opacity: 1; transform: none; }
+    }
+    @keyframes trace-progress {
+      from { stroke-dashoffset: 21; }
+      to { stroke-dashoffset: 0; }
+    }
   }
 </style>
 <g class="lettering" fill="none" stroke-width="1.2">
@@ -64,8 +154,10 @@
   <g class="pane pane0" fill="#152c46">
     <rect x="3" y="4" width="190" height="60" rx="10" fill="#688aad"/>
     <rect width="190" height="60" rx="10" fill="#c9e4fd" stroke="#38597a"/>
-    <circle cx="23" cy="30" r="11" fill="#23466d"/>
-    <path d="M19 27h8m-8 4h8m-8 4h5" stroke="#e9f4ff"/>
+    <g class="notification-icon">
+      <circle cx="23" cy="30" r="11" fill="#23466d"/>
+      <path d="M19 27h8m-8 4h8m-8 4h5" stroke="#e9f4ff"/>
+    </g>
     <text x="42" y="26" class="window-title">Coding session</text>
     <text x="42" y="43">A long one</text>
   </g>
@@ -76,12 +168,17 @@
     <path d="M0 12V5h45l6 7h79v130H0z" fill="#f4d69c" stroke="#67502d"/>
     <text x="10" y="30" class="window-title">repository/</text>
     <path d="M9 38h111" stroke="#b0874b"/>
-    <path d="M10 45h5l2 2h5v8H10zm0 15h5l2 2h5v8H10z" fill="#9e773c"/>
-    <text x="27" y="54">scripts/</text>
-    <text x="27" y="69">skills/</text>
-    <text x="10" y="87">README.md</text>
-    <text x="10" y="104">CONTRIBUTING.md</text>
-    <text x="10" y="121">CLAUDE.md</text>
+    <g class="repo-row" style="--row-delay:280ms">
+      <path d="M10 45h5l2 2h5v8H10z" fill="#9e773c"/>
+      <text x="27" y="54">scripts/</text>
+    </g>
+    <g class="repo-row" style="--row-delay:395ms">
+      <path d="M10 60h5l2 2h5v8H10z" fill="#9e773c"/>
+      <text x="27" y="69">skills/</text>
+    </g>
+    <text x="10" y="87" class="repo-row" style="--row-delay:510ms">README.md</text>
+    <text x="10" y="104" class="repo-row" style="--row-delay:625ms">CONTRIBUTING.md</text>
+    <text x="10" y="121" class="repo-row" style="--row-delay:740ms">CLAUDE.md</text>
   </g>
 </g>
 <g transform="translate(50 319)">
@@ -90,7 +187,7 @@
     <rect width="346" height="113" rx="4" fill="#142b3b" stroke="#8ac5df"/>
     <text x="12" y="19" class="window-title">Tool output</text>
     <path d="M12 32H330M12 54H330M12 76H330M12 98H330" stroke="#47728a" stroke-dasharray="2 4"/>
-    <path d="M14 90h8v8h-8zm14-6h8v14h-8zm14 4h8v10h-8zm14-9h8v19h-8zm14-8h8v27h-8zm14 3h8v24h-8zm14-16h8v40h-8zm14 7h8v33h-8zm14-14h8v47h-8zm14-7h8v54h-8zm14 4h8v50h-8zm14-13h8v63h-8zm14 5h8v58h-8zm14-12h8v70h-8z" fill="#8ac5df"/>
+    <path class="output-bars" d="M14 90h8v8h-8zm14-6h8v14h-8zm14 4h8v10h-8zm14-9h8v19h-8zm14-8h8v27h-8zm14 3h8v24h-8zm14-16h8v40h-8zm14 7h8v33h-8zm14-14h8v47h-8zm14-7h8v54h-8zm14 4h8v50h-8zm14-13h8v63h-8zm14 5h8v58h-8zm14-12h8v70h-8z" fill="#8ac5df"/>
   </g>
 </g>
 <g transform="translate(151 221)">
@@ -98,7 +195,7 @@
     <rect x="3" y="4" width="104" height="145" rx="9" fill="#806394"/>
     <rect width="104" height="145" rx="9" fill="#382445" stroke="#ad8cbd"/>
     <text x="10" y="17" class="window-title">Chat</text>
-    <rect x="6" y="25" width="91" height="19" rx="7" fill="#69467b"/>
+    <rect class="chat-selection" x="6" y="25" width="91" height="19" rx="7" fill="#69467b"/>
     <text x="12" y="38">+ New chat</text>
     <text x="12" y="57">Search</text>
     <text x="12" y="73">Artifacts</text>
@@ -128,9 +225,10 @@
     <rect width="107" height="23" rx="2" fill="#d8d7a0"/>
     <text x="9" y="16" class="window-title">Field notes</text>
     <path d="M9 49h87" stroke="#b4b17b" stroke-dasharray="2 2"/>
-    <text x="9" y="42">Logs go stale.</text>
-    <text x="9" y="66">The chat is</text>
-    <text x="9" y="82">still useful.</text>
+    <text x="9" y="42" class="typed-note">Logs go stale.</text>
+    <path class="typing-caret" d="M9 33v11" stroke="#333320"/>
+    <text x="9" y="66" class="note-detail" style="--note-delay:880ms">The chat is</text>
+    <text x="9" y="82" class="note-detail" style="--note-delay:1050ms">still useful.</text>
   </g>
 </g>
 <g transform="translate(734 171)">
@@ -139,8 +237,10 @@
     <rect width="153" height="92" rx="12" fill="#ffd5bd" stroke="#895947"/>
     <text x="10" y="23" class="window-title">Next experiment</text>
     <path d="M11 31h28" stroke="#a35235" stroke-width="2"/>
-    <text x="10" y="52">Can you grow a tree</text>
-    <text x="10" y="68">from zeros and ones?</text>
+    <g class="experiment-question">
+      <text x="10" y="52">Can you grow a tree</text>
+      <text x="10" y="68">from zeros and ones?</text>
+    </g>
   </g>
 </g>
 <g transform="translate(355 121)">
@@ -160,11 +260,11 @@
     <path d="M0 24h108" stroke="#638d79"/>
     <circle cx="96" cy="12" r="3" fill="#b7f4cc"/>
     <text x="10" y="16" class="window-title">seed.bin</text>
-    <text x="37" y="50">010</text>
-    <text x="27" y="67">01110</text>
-    <text x="20" y="84">0101010</text>
-    <text x="44" y="101">1</text>
-    <text x="44" y="118">0</text>
+    <text x="37" y="50" class="seed-row" style="--seed-delay:740ms">010</text>
+    <text x="27" y="67" class="seed-row" style="--seed-delay:620ms">01110</text>
+    <text x="20" y="84" class="seed-row" style="--seed-delay:500ms">0101010</text>
+    <text x="44" y="101" class="seed-row" style="--seed-delay:380ms">1</text>
+    <text x="44" y="118" class="seed-row" style="--seed-delay:260ms">0</text>
   </g>
 </g>
 <g transform="translate(553 276)">
@@ -177,10 +277,10 @@
     <rect x="312" y="3" width="30" height="18" fill="#fbfaf4"/>
     <text x="13" y="16" font-size="13" font-weight="700">session.log</text>
     <path d="M316 8h7v7h-7zM330 8l7 7m0-7l-7 7" fill="none" stroke="#171916"/>
-    <text x="14" y="94" font-size="14">Hello, world. I’m Justin.</text>
-    <text x="14" y="110" font-size="14">Sorry about all the tabs.</text>
-    <text x="14" y="126" font-size="14">Let me show you what I’ve</text>
-    <text x="14" y="142" font-size="14">been working on.</text>
+    <text x="14" y="94" font-size="14" class="log-line" style="--print-at:3060ms">Hello, world. I’m Justin.</text>
+    <text x="14" y="110" font-size="14" class="log-line" style="--print-at:3250ms">Sorry about all the tabs.</text>
+    <text x="14" y="126" font-size="14" class="log-line" style="--print-at:3440ms">Let me show you what I’ve</text>
+    <text x="14" y="142" font-size="14" class="log-line" style="--print-at:3630ms">been working on.</text>
   </g>
 </g>
 <g transform="translate(306 13)" aria-hidden="true">
@@ -198,7 +298,7 @@
     <circle cx="73" cy="78" r="8" fill="#76e19c"/>
     <path d="M71 74l6 4-6 4z" fill="#203d2b"/>
     <path d="M88 78h59" stroke="#6e8f7b" stroke-linecap="round"/>
-    <path d="M88 78h21" stroke="#76e19c" stroke-linecap="round"/>
+    <path class="player-progress" d="M88 78h21" stroke="#76e19c" stroke-linecap="round"/>
     <path d="M164 75h-4v8h8v-4m-4 0 8-8m-5 0h5v5" fill="none" stroke="#d4eddb" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 </g>
