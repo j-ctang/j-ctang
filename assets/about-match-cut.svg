@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 216">
+  <style>
+    .cut, .word { visibility: hidden; }
+    .cut { animation: show-frame 5280ms step-end both; }
+    .word { animation: show-frame 480ms step-end var(--start) forwards,
+                       change-type 480ms step-end var(--start) both; }
+    .paper { animation: change-paper 480ms step-end 11 both; }
+    .settled { animation: settle 5280ms step-end both; }
+
+    @keyframes show-frame {
+      0% { visibility: visible; }
+      100% { visibility: hidden; }
+    }
+    @keyframes settle {
+      0% { visibility: hidden; }
+      100% { visibility: visible; }
+    }
+    @keyframes change-type {
+      0% { font-family: Georgia, serif; font-style: italic; }
+      33.333% { font-family: Arial, sans-serif; font-style: normal; }
+      66.666% { font-family: "Courier New", monospace; font-style: normal; }
+    }
+    @keyframes change-paper {
+      0% { fill: #f2e5ca; transform: rotate(-4deg); }
+      33.333% { fill: #e1e8ec; transform: rotate(2deg); }
+      66.666% { fill: #eed5bc; transform: rotate(-1deg); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .cut, .word, .paper, .settled { animation: none; }
+    }
+  </style>
+
+  <rect x="1" y="1" width="918" height="214" rx="9" fill="#e9dfca" stroke="#807159" stroke-width="2"/>
+  <path d="M0 26H920" stroke="#807159"/>
+  <g fill="#807159">
+    <circle cx="15" cy="14" r="3"/>
+    <circle cx="26" cy="14" r="3"/>
+    <circle cx="37" cy="14" r="3"/>
+  </g>
+
+  <g class="cut">
+    <g fill="none" stroke="#a09580" stroke-width="2">
+      <path d="M124 57h171m-171 10h143m-143 10h162m-162 10h117m-117 10h151m-151 10h137m-137 10h169m-169 10h127m-127 10h152m-152 10h109m-109 10h158"/>
+      <path d="M624 74h167m-167 10h131m-131 10h172m-172 10h152m-152 10h113m-113 10h166m-166 10h137m-137 10h159m-159 10h116m-116 10h167m-167 10h143"/>
+    </g>
+    <rect class="paper" x="220" y="61" width="480" height="120" fill="#f2e5ca" stroke="#807159" style="transform-origin: 460px 121px"/>
+    <g transform="translate(460 121)" text-anchor="middle" dominant-baseline="central" font-size="72" font-weight="bold" fill="#25221b">
+    <text class="word" style="--start: 0ms">Open</text>
+    <text class="word" style="--start: 480ms">a</text>
+    <text class="word" style="--start: 960ms">few</text>
+    <text class="word" style="--start: 1440ms">windows.</text>
+    <text class="word" style="--start: 1920ms">I’ll</text>
+    <text class="word" style="--start: 2400ms">show</text>
+    <text class="word" style="--start: 2880ms">you</text>
+    <text class="word" style="--start: 3360ms">what</text>
+    <text class="word" style="--start: 3840ms">I’ve</text>
+    <text class="word" style="--start: 4320ms">been</text>
+    <text class="word" style="--start: 4800ms">doing.</text>
+    </g>
+  </g>
+
+  <g class="settled" fill="#25221b" text-anchor="middle" font-family="Georgia, serif" font-size="44">
+    <text x="460" y="110">Open a few windows.</text>
+    <text x="460" y="162">I’ll show you what I’ve been doing.</text>
+  </g>
+</svg>
