@@ -1,19 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 216">
   <style>
-    .cut, .word { visibility: hidden; }
-    .cut { animation: show-frame 5280ms step-end both; }
-    .word { animation: show-frame 480ms step-end var(--start) forwards,
-                       change-type 480ms step-end var(--start) both; }
-    .paper { animation: change-paper 480ms step-end 11 both; }
-    .settled { animation: settle 5280ms step-end both; }
+    /* The desktop player's progress animation ends at 8.69s. */
+    svg { --opener-delay: 8800ms; --cut-duration: 5280ms; }
+    .cut, .word { opacity: 0; }
+    .cut { animation: show-frame var(--cut-duration) step-end var(--opener-delay) forwards; }
+    .word {
+      --word-delay: calc(var(--opener-delay) + var(--start));
+      animation: show-frame 480ms step-end var(--word-delay) forwards,
+                 change-type 480ms step-end var(--word-delay) both;
+    }
+    .paper { animation: change-paper 480ms step-end var(--opener-delay) 11 both; }
+    .settled { animation: settle var(--cut-duration) step-end var(--opener-delay) both; }
 
     @keyframes show-frame {
-      0% { visibility: visible; }
-      100% { visibility: hidden; }
+      0% { opacity: 1; }
+      100% { opacity: 0; }
     }
     @keyframes settle {
-      0% { visibility: hidden; }
-      100% { visibility: visible; }
+      0% { opacity: 0; }
+      100% { opacity: 1; }
     }
     @keyframes change-type {
       0% { font-family: Georgia, serif; font-style: italic; }
