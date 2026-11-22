@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="432" viewBox="0 0 640 432" role="img" aria-labelledby="title description">
+  <title id="title">About me</title>
+  <desc id="description">I’m Justin. I like building small tools that take friction out of everyday work. When I’m deep in a coding session, I want the tools I use to help me keep my train of thought. I also like experimenting with how work feels on screen. This little desktop is one of those experiments. I wanted my profile to feel like sitting down and showing you what I’ve been working on.</desc>
+  <style>
+    .copy { font: 22px Georgia, serif; }
+    .heading { font: bold 38px Georgia, serif; }
+    .mono { font: 17px monospace; }
+  </style>
+  <rect x="22" y="18" width="602" height="403" rx="6" fill="#252128" opacity=".28"/>
+  <rect x="16" y="12" width="602" height="403" rx="6" fill="#f4e7d1" stroke="#987d65"/>
+  <path d="M16 18q0-6 6-6h590q6 0 6 6v28H16z" fill="#703d3c"/>
+  <text class="mono" x="39" y="34" fill="#fff7e6">about.txt</text>
+  <g fill="#382a23">
+    <text class="heading" x="42" y="99">About me</text>
+    <path d="M42 117H590" stroke="#b79980"/>
+    <text class="copy" x="42" y="153"><tspan x="42" dy="0">I’m Justin. I like building small tools that</tspan> <tspan x="42" dy="29">take friction out of everyday work. When I’m</tspan> <tspan x="42" dy="29">deep in a coding session, I want the tools I use</tspan> <tspan x="42" dy="29">to help me keep my train of thought.</tspan></text>
+    <text class="copy" x="42" y="277"><tspan x="42" dy="0">I also like experimenting with how work feels on</tspan> <tspan x="42" dy="29">screen. This little desktop is one of those</tspan> <tspan x="42" dy="29">experiments. I wanted my profile to feel like</tspan> <tspan x="42" dy="29">sitting down and showing you what I’ve been</tspan> <tspan x="42" dy="29">working on.</tspan></text>
+  </g>
+</svg>
