@@ -1027,6 +1027,9 @@
 <g class="roam-retirement"><g class="roam-cursor" aria-hidden="true"><path d="M0 0L37 31L20 33L28 49L19 53L11 37L0 46Z" fill="#9fd3f2" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/></g></g>
 
   </svg>
+  <g class="paper-backdrop" aria-hidden="true" fill="none" stroke="#8d949d" stroke-opacity=".55" stroke-width="1">
+    <defs><pattern id="dots-about" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".9" fill="#8d949d"/></pattern></defs><rect x="0" y="690" width="920" height="340" fill="url(#dots-about)" opacity=".45"/><path d="M390 820H574M390 734H574" stroke-dasharray="4 5"/><path d="M410 724V830" stroke-dasharray="2 6"/><path d="M482 724V830" stroke-dasharray="2 6"/><path d="M554 724V830" stroke-dasharray="2 6"/><text x="410" y="820" font-family="'Courier New', Courier, monospace" font-size="120" font-weight="700" stroke-width="1.2">hi</text><path d="M422 777H470"/><circle cx="422" cy="777" r="2.6"/><circle cx="470" cy="777" r="2.6"/><rect x="443" y="774" width="6" height="6" fill="#8d949d" stroke="none"/><path d="M494 777H542"/><circle cx="494" cy="777" r="2.6"/><circle cx="542" cy="777" r="2.6"/><rect x="515" y="774" width="6" height="6" fill="#8d949d" stroke="none"/><g font-family="'Courier New', Courier, monospace" font-size="15" fill="#e3a77a" fill-opacity=".55" stroke="none"><text x="590" y="955">├── tools</text><text x="590" y="977">│   └── real ones</text><text x="590" y="999">└── tabs: tamed</text></g>
+  </g>
   <svg x="0" y="694" width="920" height="330" viewBox="0 0 920 330" aria-hidden="true">
   <defs><filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="3"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .5 0"/></filter><pattern id="hl" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#1f2a24"/></pattern></defs>
   <style>
@@ -1120,6 +1123,9 @@
   </g>
 
   </svg>
+  <g class="paper-backdrop" aria-hidden="true" fill="none" stroke="#8d949d" stroke-opacity=".55" stroke-width="1">
+    <defs><pattern id="dots-jev" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".9" fill="#8d949d"/></pattern></defs><rect x="0" y="1040" width="920" height="930" fill="url(#dots-jev)" opacity=".45"/><path d="M4 1930H224M4 1822H224" stroke-dasharray="4 5"/><path d="M24 1810V1940" stroke-dasharray="2 6"/><path d="M114 1810V1940" stroke-dasharray="2 6"/><path d="M204 1810V1940" stroke-dasharray="2 6"/><text x="24" y="1930" font-family="'Courier New', Courier, monospace" font-size="150" font-weight="700" stroke-width="1.2">cc</text><path d="M45 1876H93"/><circle cx="45" cy="1876" r="2.6"/><circle cx="93" cy="1876" r="2.6"/><rect x="66" y="1873" width="6" height="6" fill="#8d949d" stroke="none"/><path d="M135 1876H183"/><circle cx="135" cy="1876" r="2.6"/><circle cx="183" cy="1876" r="2.6"/><rect x="156" y="1873" width="6" height="6" fill="#8d949d" stroke="none"/><g font-family="'Courier New', Courier, monospace" font-size="15" fill="#e3a77a" fill-opacity=".55" stroke="none"><text x="790" y="1080">├── jev</text><text x="790" y="1102">│  └── prune</text><text x="790" y="1124">└── v0.1</text></g><g font-family="'Courier New', Courier, monospace" font-size="15" fill="#e3a77a" fill-opacity=".55" stroke="none"><text x="20" y="1700">└── next?</text></g>
+  </g>
   <defs>
     <pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#000"/></pattern>
     <pattern id="dither" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#f0b98a"/><rect width="2" height="2" fill="#d8742b"/><rect x="2" y="2" width="2" height="2" fill="#d8742b"/></pattern>
