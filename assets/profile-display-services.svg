@@ -1,6 +1,9 @@
-<svg width="920" height="674" viewBox="0 0 920 674" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Startup messages fade into a desktop. Open a few windows. I’ll show you what I’ve been doing.">
+<svg width="920" height="674" viewBox="0 0 920 674" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Startup messages fade into a desktop. Open a few windows. I’ll show you what I’ve been doing. October 2026 calendar: October 12 is my birthdayy, October 24 is pumpkin carving, and October 31 is Halloween.">
 <style>
 .static-report { display: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .october-calendar { animation: fade-in 280ms ease-out 2850ms both; }
+}
 .report-word { opacity: 0; }
 @media (prefers-reduced-motion: reduce) {
   .static-report { display: inline; }
@@ -937,6 +940,43 @@
 <g class="static-report" transform="translate(310.5 523.1)" aria-hidden="true">
   <use href="#report-frame"/>
   <use href="#report-settled"/>
+</g>
+<!-- October 2026 starts on Thursday in a Sunday-first week. -->
+<g class="october-calendar" aria-hidden="true">
+  <g transform="translate(40 480)" font-family="'Courier New', monospace" fill="#312721">
+    <rect x="4" y="4" width="164" height="180" fill="#312721"/>
+    <rect width="164" height="180" fill="#fff9ef" stroke="#312721"/>
+    <path d="M1 5h162M1 9h162M1 13h162M1 17h162" stroke="#c99f81"/>
+    <path d="M0 22h164" stroke="#312721"/>
+    <rect x="6" y="3" width="96" height="16" fill="#fff9ef"/>
+    <rect x="137" y="3" width="21" height="16" fill="#fff9ef"/>
+    <text x="9" y="15" font-size="12" font-weight="bold">October 2026</text>
+    <path d="M141 8h5v5h-5zm8 0 5 5m0-5-5 5" fill="none" stroke="#312721"/>
+    <path d="M7 43h150m-150 83h150" stroke="#dfc6ae"/>
+    <rect x="28.5" y="76" width="19" height="15" fill="#e0edf9"/>
+    <rect x="138.5" y="92" width="19" height="15" fill="#e1eddc"/>
+    <rect x="138.5" y="108" width="19" height="15" fill="#fbe4cf"/>
+    <g text-anchor="middle" font-size="12">
+      <text y="37" fill="#764833" font-weight="bold"><tspan x="16">S</tspan><tspan x="38">M</tspan><tspan x="60">T</tspan><tspan x="82">W</tspan><tspan x="104">T</tspan><tspan x="126">F</tspan><tspan x="148">S</tspan></text>
+      <text y="56"><tspan x="104">1</tspan><tspan x="126">2</tspan><tspan x="148">3</tspan></text>
+      <text y="72"><tspan x="16">4</tspan><tspan x="38">5</tspan><tspan x="60">6</tspan><tspan x="82">7</tspan><tspan x="104">8</tspan><tspan x="126">9</tspan><tspan x="148">10</tspan></text>
+      <text y="88"><tspan x="16">11</tspan><tspan x="38" fill="#345778" font-weight="bold">12</tspan><tspan x="60">13</tspan><tspan x="82">14</tspan><tspan x="104">15</tspan><tspan x="126">16</tspan><tspan x="148">17</tspan></text>
+      <text y="104"><tspan x="16">18</tspan><tspan x="38">19</tspan><tspan x="60">20</tspan><tspan x="82">21</tspan><tspan x="104">22</tspan><tspan x="126">23</tspan><tspan x="148" fill="#365b39" font-weight="bold">24</tspan></text>
+      <text y="120"><tspan x="16">25</tspan><tspan x="38">26</tspan><tspan x="60">27</tspan><tspan x="82">28</tspan><tspan x="104">29</tspan><tspan x="126">30</tspan><tspan x="148" fill="#884621" font-weight="bold">31</tspan></text>
+    </g>
+    <g font-size="12">
+      <text x="9" y="141"><tspan fill="#345778" font-weight="bold">12</tspan><tspan dx="8">birthdayy</tspan></text>
+      <text x="9" y="156"><tspan fill="#365b39" font-weight="bold">24</tspan><tspan dx="8">Pumpkin carving</tspan></text>
+      <text x="9" y="171"><tspan fill="#884621" font-weight="bold">31</tspan><tspan dx="8">Halloween</tspan></text>
+    </g>
+    <g transform="translate(118 -26) scale(2)" shape-rendering="crispEdges">
+      <path d="M7 0h3v3h4v1h2v2h1v4h-1v2h-2v1H3v-1H1v-2H0V6h1V4h2V3h4Z" fill="#563525"/>
+      <path d="M8 1h1v3H8z" fill="#648044"/>
+      <path d="M3 4h4v1h3V4h4v1h2v5h-1v1h-2v1H4v-1H2v-1H1V6h1V5h1Z" fill="#df722e"/>
+      <path d="M5 5h2v1H6v4H5v1H4V7h1zm5 0h2v2h1v4h-2V8h-1z" fill="#f5a347"/>
+      <path d="M5 7h2v2H5zm5 0h2v2h-2zm-3 3h3v1H7z" fill="#563525"/>
+    </g>
+  </g>
 </g>
 <g class="report-cursor" aria-hidden="true">
 <path id="pointer" d="M0 0L37 31L20 33L28 49L19 53L11 37L0 46Z" fill="#242522" stroke="#fbf4e3" stroke-width="2.5" stroke-linejoin="round"/></g>

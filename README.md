@@ -1,4 +1,4 @@
-![Startup messages fade into a desktop. Open a few windows. I’ll show you what I’ve been doing.](assets/profile-display-services.svg)
+![Startup messages fade into a desktop. Open a few windows. I’ll show you what I’ve been doing. October 2026 calendar: October 12 is my birthdayy, October 24 is pumpkin carving, and October 31 is Halloween.](assets/profile-display-services.svg)
 
 ![About me form. Name: Justin. Builds: small tools for real devs. Used by: me, every day. Latest: Jev Prune. Now: binary tangerine tree. A sticky note crosses out “I’m really messy, can never stay organized, so many tabs” and says “that’s why I made Tab Tamer.” Upcoming, no dates set: try a local model with Jev Prune and grow the binary tangerine tree.](assets/profile-about.svg)
 
