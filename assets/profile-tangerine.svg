@@ -1,36 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="788" viewBox="0 -40 640 788" role="img" aria-labelledby="title description">
   <title id="title">What I’m exploring now</title>
-  <desc id="description">changelog.md: Day 0, seed 0 planted. Day 13, small sprout. Day 16, first green leaf. Day 30, the sapling takes shape. Day 60, a full canopy. Day 90, first tangerine ripens. A binary tangerine tree grows digit by digit beside it, with five miniature binary tangerines in the canopy. Kirby hops on the changelog window, and Don Quixote bobs on the Canopy window.</desc>
-  <defs>
-    <!-- Inline artwork from binary-tangerine.svg for standalone image rendering. -->
-    <g id="canopy-tangerine" font-family="ui-monospace, monospace" font-size="15" font-weight="700" text-anchor="middle">
-      <path d="M82 57h60l24 19 11 17v55l-7 24-28 30H82l-28-30-7-24V93l11-17Z" fill="#2d2521"/>
-      <g fill="#527948">
-        <text x="145" y="23">101</text>
-        <text x="140" y="39">01101</text>
-        <text x="130" y="55">110</text>
-      </g>
-      <text x="112" y="55" fill="#855638">1</text>
-      <text x="112" y="71" fill="#ad4e19">011010</text>
-      <g fill="#db681e">
-        <text x="112" y="87">1011010010</text>
-        <text x="112" y="103">011010110010</text>
-        <text x="112" y="119">10<tspan fill="#f69436">011001</tspan>01001</text>
-        <text x="112" y="135">01<tspan fill="#f69436">100101</tspan>10110</text>
-        <text x="112" y="151">101<tspan fill="#ee8129">1001</tspan>001010</text>
-        <text x="112" y="167">011010011010</text>
-      </g>
-      <g fill="#ad4e19">
-        <text x="112" y="183">1001101001</text>
-        <text x="112" y="199">011010</text>
-      </g>
-    </g>
-  </defs>
+  <desc id="description">changelog.md: Day 0, seed 0 planted. Day 13, small sprout. Day 16, first green leaf. Day 30, the sapling takes shape. Day 60, a full canopy. Day 90, first tangerine ripens. A binary tangerine tree grows digit by digit beside it, with tiny binary tangerines and blossoms in a multicolor canopy. Kirby hops on the changelog window, and Don Quixote bobs on the Canopy window.</desc>
   <style>
     .copy { font: 22px Georgia, serif; }
     .heading { font: bold 38px Georgia, serif; }
     .mono { font: 17px monospace; }
-    .tree { font: 8px monospace; text-anchor: middle; }
+    
     .leaf { fill: #88ad80; }
     .leaf-light { fill: #a8c795; }
     .wood { fill: #efd8ad; }
@@ -121,107 +96,591 @@
   <path d="M148 248q0-7 7-7h458q7 0 7 7v26H148z" fill="#473a31"/>
   <text class="mono" x="167" y="264" fill="#fff7e6">Canopy</text>
   <path d="M184 709H586" stroke="#806a5d"/>
-  <g class="tree" transform="translate(-157 -109) scale(1.7 1.85)" aria-hidden="true">
-      <text class="seed wood" x="316" y="439">0</text>
-      <!-- The sprout's first leaves remain beside the trunk as the tree grows. -->
-      <text y="411"><tspan x="306.4" class="leaf-light digit" style="--grow-at: 1410ms">0</tspan><tspan x="325.6" class="leaf digit" style="--grow-at: 1490ms">1</tspan></text>
-      <text y="403"><tspan x="302" class="leaf digit" style="--grow-at: 1570ms">1</tspan><tspan x="329.5" class="leaf-light digit" style="--grow-at: 1650ms">0</tspan></text>
-      <g style="--bend: 0.0px">
-        <text class="wood" y="439"><tspan x="313.6" class="digit" style="--grow-at: 625ms">0</tspan><tspan x="318.4" class="digit" style="--grow-at: 793ms">1</tspan></text>
-        <text class="wood" y="429"><tspan x="313.6" class="digit" style="--grow-at: 900ms">1</tspan><tspan x="318.4" class="digit" style="--grow-at: 973ms">0</tspan></text>
-        <text class="wood" y="439"><tspan x="304" class="digit" style="--grow-at: 2032ms">1</tspan><tspan x="308.8" class="digit" style="--grow-at: 2105ms">0</tspan></text>
-        <text class="wood" y="439"><tspan x="323.2" class="digit" style="--grow-at: 2033ms">0</tspan><tspan x="328" class="digit" style="--grow-at: 2106ms">1</tspan></text>
-      </g>
-      <g style="--bend: 0.0px">
-        <text class="wood" y="418"><tspan x="313.6" class="digit" style="--grow-at: 1098ms">1</tspan><tspan x="318.4" class="digit" style="--grow-at: 1171ms">0</tspan></text>
-        <text class="wood" y="408"><tspan x="313.6" class="digit" style="--grow-at: 1278ms">0</tspan><tspan x="318.4" class="digit" style="--grow-at: 1351ms">1</tspan></text>
-        <text class="wood" y="418"><tspan x="304" class="digit" style="--grow-at: 2284ms">0</tspan><tspan x="308.8" class="digit" style="--grow-at: 2357ms">1</tspan></text>
-        <text class="wood" y="418"><tspan x="323.2" class="digit" style="--grow-at: 2285ms">1</tspan><tspan x="328" class="digit" style="--grow-at: 2358ms">0</tspan></text>
-      </g>
-      <g class="sway" style="--bend: 1.3px">
-        <text class="wood" y="397"><tspan x="313.6" class="digit" style="--grow-at: 2536ms">0</tspan><tspan x="318.4" class="digit" style="--grow-at: 2609ms">1</tspan></text>
-        <text class="wood" y="397"><tspan x="304" class="digit" style="--grow-at: 2537ms">1</tspan><tspan x="308.8" class="digit" style="--grow-at: 2610ms">0</tspan></text>
-        <text class="wood" y="397"><tspan x="323.2" class="digit" style="--grow-at: 2538ms">0</tspan><tspan x="328" class="digit" style="--grow-at: 2611ms">1</tspan></text>
-      </g>
-      <g class="sway" style="--bend: 2.6px">
-        <text y="376"><tspan x="268" class="leaf digit" style="--grow-at: 5896ms;">0</tspan><tspan x="272.8" class="leaf digit" style="--grow-at: 5914ms;">1</tspan><tspan x="277.6" class="leaf digit" style="--grow-at: 5933ms;">0</tspan><tspan x="282.4" class="leaf digit" style="--grow-at: 3334ms;">1</tspan><tspan x="287.2" class="leaf digit" style="--grow-at: 3321ms;">0</tspan><tspan x="292" class="leaf digit" style="--grow-at: 3308ms;">1</tspan><tspan x="296.8" class="leaf-light digit" style="--grow-at: 3294ms;">0</tspan><tspan x="335.2" class="leaf digit" style="--grow-at: 5889ms;">0</tspan><tspan x="340" class="leaf digit" style="--grow-at: 3318ms;">0</tspan><tspan x="344.8" class="leaf-light digit" style="--grow-at: 3333ms;">1</tspan><tspan x="349.6" class="leaf digit" style="--grow-at: 3348ms;">1</tspan><tspan x="354.4" class="leaf digit" style="--grow-at: 3364ms;">0</tspan><tspan x="359.2" class="leaf digit" style="--grow-at: 5797ms;">0</tspan><tspan x="364" class="leaf digit" style="--grow-at: 5904ms;">1</tspan></text>
-        <text y="366"><tspan x="272.8" class="leaf digit" style="--grow-at: 6164ms;">0</tspan><tspan x="282.4" class="leaf digit" style="--grow-at: 3464ms;">0</tspan><tspan x="292" class="leaf digit" style="--grow-at: 3438ms;">0</tspan><tspan x="340" class="leaf digit" style="--grow-at: 3448ms;">1</tspan><tspan x="349.6" class="leaf digit" style="--grow-at: 3478ms;">0</tspan><tspan x="359.2" class="leaf digit" style="--grow-at: 6047ms;">1</tspan></text>
-        <text class="wood" y="376"><tspan x="313.6" class="digit" style="--grow-at: 2750ms">1</tspan><tspan x="318.4" class="digit" style="--grow-at: 2823ms">0</tspan></text>
-        <text class="wood" y="376"><tspan x="304" class="digit" style="--grow-at: 2788ms">0</tspan><tspan x="308.8" class="digit" style="--grow-at: 2861ms">1</tspan></text>
-        <text class="wood" y="376"><tspan x="323.2" class="digit" style="--grow-at: 2789ms">1</tspan><tspan x="328" class="digit" style="--grow-at: 2862ms">0</tspan></text>
-      </g>
-      <g class="sway" style="--bend: 3.9px">
-        <text y="355"><tspan x="239.2" class="orange digit" style="--grow-at: 6243ms; --ripe: 9015ms;">0</tspan><tspan x="244" class="orange digit" style="--grow-at: 6263ms; --ripe: 8823ms;">1</tspan><tspan x="248.8" class="orange digit" style="--grow-at: 6281ms; --ripe: 9000ms;">0</tspan><tspan x="253.6" class="leaf digit" style="--grow-at: 6300ms;">0</tspan><tspan x="258.4" class="leaf-light digit" style="--grow-at: 5700ms;">1</tspan><tspan x="263.2" class="leaf digit" style="--grow-at: 5719ms;">0</tspan><tspan x="268" class="leaf digit" style="--grow-at: 5739ms;">1</tspan><tspan x="272.8" class="leaf digit" style="--grow-at: 5757ms;">1</tspan><tspan x="277.6" class="orange digit" style="--grow-at: 5776ms; --ripe: 8686ms;">0</tspan><tspan x="282.4" class="leaf digit" style="--grow-at: 3607ms;">0</tspan><tspan x="287.2" class="leaf digit" style="--grow-at: 3594ms;">1</tspan><tspan x="306.4" class="leaf-light digit" style="--grow-at: 3540ms;">1</tspan><tspan x="325.6" class="leaf digit" style="--grow-at: 3544ms;">1</tspan><tspan x="344.8" class="leaf digit" style="--grow-at: 3606ms;">0</tspan><tspan x="349.6" class="leaf digit" style="--grow-at: 3621ms;">1</tspan><tspan x="354.4" class="leaf-light digit" style="--grow-at: 3637ms;">0</tspan><tspan x="359.2" class="leaf digit" style="--grow-at: 5640ms;">1</tspan><tspan x="364" class="orange digit" style="--grow-at: 5747ms; --ripe: 8653ms;">0</tspan><tspan x="368.8" class="leaf digit" style="--grow-at: 5852ms;">1</tspan><tspan x="373.6" class="leaf digit" style="--grow-at: 5957ms;">0</tspan><tspan x="378.4" class="leaf digit" style="--grow-at: 6063ms;">1</tspan><tspan x="383.2" class="leaf digit" style="--grow-at: 6168ms;">0</tspan><tspan x="388" class="leaf digit" style="--grow-at: 6275ms;">1</tspan><tspan x="392.8" class="orange digit" style="--grow-at: 6380ms; --ripe: 8778ms;">0</tspan></text>
-        <text y="345"><tspan x="244" class="leaf digit" style="--grow-at: 5893ms;">0</tspan><tspan x="253.6" class="leaf digit" style="--grow-at: 5930ms;">1</tspan><tspan x="263.2" class="leaf digit" style="--grow-at: 5969ms;">1</tspan><tspan x="272.8" class="leaf digit" style="--grow-at: 6007ms;">0</tspan><tspan x="282.4" class="leaf digit" style="--grow-at: 3737ms;">1</tspan><tspan x="349.6" class="leaf digit" style="--grow-at: 3751ms;">0</tspan><tspan x="359.2" class="leaf digit" style="--grow-at: 5890ms;">0</tspan><tspan x="368.8" class="leaf digit" style="--grow-at: 6102ms;">0</tspan><tspan x="378.4" class="leaf digit" style="--grow-at: 5693ms;">0</tspan><tspan x="388" class="leaf digit" style="--grow-at: 5905ms;">0</tspan></text>
-        <text class="wood" y="355"><tspan x="313.6" class="digit" style="--grow-at: 3002ms">0</tspan><tspan x="318.4" class="digit" style="--grow-at: 3075ms">1</tspan></text>
-        <text class="wood" y="355"><tspan x="294.4" class="digit" style="--grow-at: 3078ms">1</tspan><tspan x="299.2" class="digit" style="--grow-at: 3151ms">0</tspan></text>
-        <text class="wood" y="355"><tspan x="332.8" class="digit" style="--grow-at: 3079ms">0</tspan><tspan x="337.6" class="digit" style="--grow-at: 3152ms">1</tspan></text>
-      </g>
-      <g class="sway" style="--bend: 5.2px">
-        <text y="334"><tspan x="210.4" class="leaf digit" style="--grow-at: 5971ms;">0</tspan><tspan x="215.2" class="leaf digit" style="--grow-at: 5990ms;">0</tspan><tspan x="220" class="leaf-light digit" style="--grow-at: 6010ms;">1</tspan><tspan x="224.8" class="leaf digit" style="--grow-at: 6028ms;">0</tspan><tspan x="229.6" class="leaf digit" style="--grow-at: 6048ms;">1</tspan><tspan x="234.4" class="leaf digit" style="--grow-at: 6067ms;">1</tspan><tspan x="239.2" class="leaf digit" style="--grow-at: 6086ms;">0</tspan><tspan x="244" class="leaf digit" style="--grow-at: 6106ms;">0</tspan><tspan x="248.8" class="orange digit" style="--grow-at: 6124ms; --ripe: 8630ms;">1</tspan><tspan x="253.6" class="leaf digit" style="--grow-at: 6143ms;">0</tspan><tspan x="258.4" class="leaf digit" style="--grow-at: 5543ms;">1</tspan><tspan x="263.2" class="leaf digit" style="--grow-at: 5562ms;">1</tspan><tspan x="268" class="leaf-light digit" style="--grow-at: 5582ms;">0</tspan><tspan x="272.8" class="leaf digit" style="--grow-at: 5600ms;">0</tspan><tspan x="277.6" class="leaf digit" style="--grow-at: 5619ms;">1</tspan><tspan x="296.8" class="orange digit" style="--grow-at: 3840ms; --ripe: 8813ms;">0</tspan><tspan x="301.6" class="orange digit" style="--grow-at: 3827ms; --ripe: 8991ms;">0</tspan><tspan x="306.4" class="orange digit" style="--grow-at: 3813ms; --ripe: 8798ms;">1</tspan><tspan x="325.6" class="leaf digit" style="--grow-at: 3817ms;">0</tspan><tspan x="330.4" class="leaf digit" style="--grow-at: 3833ms;">0</tspan><tspan x="335.2" class="leaf digit" style="--grow-at: 5575ms;">1</tspan><tspan x="340" class="leaf digit" style="--grow-at: 3864ms;">0</tspan><tspan x="344.8" class="leaf digit" style="--grow-at: 3879ms;">1</tspan><tspan x="364" class="leaf-light digit" style="--grow-at: 5590ms;">1</tspan><tspan x="368.8" class="leaf digit" style="--grow-at: 5695ms;">0</tspan><tspan x="373.6" class="leaf digit" style="--grow-at: 5800ms;">1</tspan><tspan x="378.4" class="leaf digit" style="--grow-at: 5906ms;">1</tspan><tspan x="383.2" class="orange digit" style="--grow-at: 6011ms; --ripe: 8812ms;">0</tspan><tspan x="388" class="leaf digit" style="--grow-at: 6118ms;">0</tspan><tspan x="392.8" class="leaf digit" style="--grow-at: 6223ms;">1</tspan><tspan x="397.6" class="leaf digit" style="--grow-at: 6328ms;">0</tspan><tspan x="402.4" class="leaf digit" style="--grow-at: 5814ms;">1</tspan><tspan x="407.2" class="leaf digit" style="--grow-at: 5919ms;">1</tspan><tspan x="412" class="orange digit" style="--grow-at: 6026ms; --ripe: 9006ms;">0</tspan><tspan x="416.8" class="orange digit" style="--grow-at: 6131ms; --ripe: 8813ms;">0</tspan><tspan x="421.6" class="orange digit" style="--grow-at: 6236ms; --ripe: 8991ms;">1</tspan></text>
-        <text y="324"><tspan x="215.2" class="leaf digit" style="--grow-at: 6240ms;">1</tspan><tspan x="224.8" class="leaf digit" style="--grow-at: 6278ms;">1</tspan><tspan x="234.4" class="leaf digit" style="--grow-at: 5697ms;">0</tspan><tspan x="244" class="leaf digit" style="--grow-at: 5736ms;">1</tspan><tspan x="253.6" class="leaf digit" style="--grow-at: 5773ms;">1</tspan><tspan x="263.2" class="leaf digit" style="--grow-at: 5812ms;">0</tspan><tspan x="272.8" class="leaf digit" style="--grow-at: 5850ms;">1</tspan><tspan x="301.6" class="leaf digit" style="--grow-at: 3957ms;">1</tspan><tspan x="330.4" class="leaf digit" style="--grow-at: 3963ms;">1</tspan><tspan x="340" class="leaf digit" style="--grow-at: 3994ms;">1</tspan><tspan x="368.8" class="leaf digit" style="--grow-at: 5945ms;">1</tspan><tspan x="378.4" class="leaf digit" style="--grow-at: 5536ms;">0</tspan><tspan x="388" class="leaf digit" style="--grow-at: 5748ms;">1</tspan><tspan x="397.6" class="leaf digit" style="--grow-at: 5958ms;">1</tspan><tspan x="407.2" class="leaf digit" style="--grow-at: 6169ms;">0</tspan><tspan x="416.8" class="leaf digit" style="--grow-at: 6381ms;">1</tspan></text>
-        <text class="wood" y="334"><tspan x="313.6" class="digit" style="--grow-at: 3254ms">1</tspan><tspan x="318.4" class="digit" style="--grow-at: 3327ms">0</tspan></text>
-        <text class="wood" y="334"><tspan x="284.8" class="digit" style="--grow-at: 3369ms">0</tspan><tspan x="289.6" class="digit" style="--grow-at: 3442ms">1</tspan></text>
-        <text class="wood" y="334"><tspan x="352" class="digit" style="--grow-at: 3407ms">1</tspan><tspan x="356.8" class="digit" style="--grow-at: 3480ms">0</tspan></text>
-      </g>
-      <g class="sway" style="--bend: 6.5px">
-        <text y="313"><tspan x="200.8" class="leaf digit" style="--grow-at: 6395ms;">1</tspan><tspan x="205.6" class="leaf digit" style="--grow-at: 6414ms;">0</tspan><tspan x="210.4" class="leaf digit" style="--grow-at: 5815ms;">1</tspan><tspan x="215.2" class="leaf digit" style="--grow-at: 5833ms;">1</tspan><tspan x="220" class="leaf digit" style="--grow-at: 5853ms;">0</tspan><tspan x="224.8" class="leaf digit" style="--grow-at: 5871ms;">0</tspan><tspan x="229.6" class="leaf-light digit" style="--grow-at: 5891ms;">1</tspan><tspan x="234.4" class="leaf digit" style="--grow-at: 5910ms;">0</tspan><tspan x="239.2" class="orange digit" style="--grow-at: 5929ms; --ripe: 8660ms;">1</tspan><tspan x="244" class="leaf digit" style="--grow-at: 5949ms;">0</tspan><tspan x="248.8" class="leaf digit" style="--grow-at: 5967ms;">1</tspan><tspan x="253.6" class="leaf digit" style="--grow-at: 5986ms;">1</tspan><tspan x="258.4" class="leaf digit" style="--grow-at: 5386ms;">0</tspan><tspan x="277.6" class="orange digit" style="--grow-at: 5462ms; --ripe: 8730ms;">1</tspan><tspan x="282.4" class="orange digit" style="--grow-at: 4153ms; --ripe: 8907ms;">1</tspan><tspan x="287.2" class="leaf digit" style="--grow-at: 4140ms;">0</tspan><tspan x="292" class="leaf digit" style="--grow-at: 4127ms;">1</tspan><tspan x="296.8" class="leaf digit" style="--grow-at: 4113ms;">0</tspan><tspan x="301.6" class="leaf digit" style="--grow-at: 4100ms;">1</tspan><tspan x="306.4" class="leaf digit" style="--grow-at: 4086ms;">0</tspan><tspan x="325.6" class="leaf-light digit" style="--grow-at: 4090ms;">0</tspan><tspan x="330.4" class="leaf digit" style="--grow-at: 4106ms;">1</tspan><tspan x="335.2" class="leaf digit" style="--grow-at: 5418ms;">0</tspan><tspan x="340" class="orange digit" style="--grow-at: 4137ms; --ripe: 8819ms;">0</tspan><tspan x="344.8" class="orange digit" style="--grow-at: 4152ms; --ripe: 8996ms;">1</tspan><tspan x="349.6" class="orange digit" style="--grow-at: 4167ms; --ripe: 8804ms;">0</tspan><tspan x="354.4" class="orange digit" style="--grow-at: 4183ms; --ripe: 8981ms;">1</tspan><tspan x="373.6" class="leaf-light digit" style="--grow-at: 5643ms;">1</tspan><tspan x="378.4" class="leaf digit" style="--grow-at: 5749ms;">0</tspan><tspan x="383.2" class="leaf digit" style="--grow-at: 5854ms;">1</tspan><tspan x="388" class="leaf digit" style="--grow-at: 5961ms;">0</tspan><tspan x="392.8" class="orange digit" style="--grow-at: 6066ms; --ripe: 8508ms;">1</tspan><tspan x="397.6" class="leaf digit" style="--grow-at: 6171ms;">1</tspan><tspan x="402.4" class="leaf digit" style="--grow-at: 5657ms;">0</tspan><tspan x="407.2" class="leaf digit" style="--grow-at: 5762ms;">0</tspan><tspan x="412" class="leaf digit" style="--grow-at: 5869ms;">1</tspan><tspan x="416.8" class="leaf digit" style="--grow-at: 5974ms;">0</tspan><tspan x="421.6" class="leaf-light digit" style="--grow-at: 6079ms;">1</tspan></text>
-        <text y="303"><tspan x="205.6" class="leaf digit" style="--grow-at: 6060ms;">1</tspan><tspan x="215.2" class="leaf digit" style="--grow-at: 6099ms;">0</tspan><tspan x="224.8" class="leaf digit" style="--grow-at: 6137ms;">1</tspan><tspan x="234.4" class="leaf digit" style="--grow-at: 5556ms;">1</tspan><tspan x="244" class="leaf digit" style="--grow-at: 5595ms;">1</tspan><tspan x="253.6" class="leaf digit" style="--grow-at: 5632ms;">0</tspan><tspan x="282.4" class="leaf digit" style="--grow-at: 5128ms;">0</tspan><tspan x="292" class="leaf digit" style="--grow-at: 5167ms;">0</tspan><tspan x="301.6" class="leaf digit" style="--grow-at: 5204ms;">0</tspan><tspan x="330.4" class="leaf digit" style="--grow-at: 4959ms;">0</tspan><tspan x="340" class="leaf digit" style="--grow-at: 5171ms;">1</tspan><tspan x="349.6" class="leaf digit" style="--grow-at: 5381ms;">1</tspan><tspan x="378.4" class="leaf digit" style="--grow-at: 5395ms;">1</tspan><tspan x="388" class="leaf digit" style="--grow-at: 5607ms;">1</tspan><tspan x="397.6" class="leaf digit" style="--grow-at: 5817ms;">0</tspan><tspan x="407.2" class="leaf digit" style="--grow-at: 6029ms;">1</tspan><tspan x="416.8" class="leaf digit" style="--grow-at: 6241ms;">1</tspan></text>
-        <text class="wood" y="313"><tspan x="313.6" class="digit" style="--grow-at: 3506ms">0</tspan><tspan x="318.4" class="digit" style="--grow-at: 3579ms">1</tspan></text>
-        <text class="wood" y="313"><tspan x="265.6" class="digit" style="--grow-at: 3698ms">1</tspan><tspan x="270.4" class="digit" style="--grow-at: 3771ms">0</tspan></text>
-        <text class="wood" y="313"><tspan x="361.6" class="digit" style="--grow-at: 3699ms">0</tspan><tspan x="366.4" class="digit" style="--grow-at: 3772ms">1</tspan></text>
-      </g>
-      <g class="sway" style="--bend: 7.8px">
-        <text y="292"><tspan x="210.4" class="leaf digit" style="--grow-at: 5849ms;">1</tspan><tspan x="215.2" class="leaf digit" style="--grow-at: 5868ms;">0</tspan><tspan x="220" class="leaf digit" style="--grow-at: 5888ms;">1</tspan><tspan x="224.8" class="leaf digit" style="--grow-at: 5907ms;">0</tspan><tspan x="229.6" class="leaf digit" style="--grow-at: 5925ms;">1</tspan><tspan x="234.4" class="leaf digit" style="--grow-at: 5946ms;">1</tspan><tspan x="239.2" class="leaf-light digit" style="--grow-at: 5964ms;">0</tspan><tspan x="244" class="orange digit" style="--grow-at: 5984ms; --ripe: 8854ms;">1</tspan><tspan x="248.8" class="orange digit" style="--grow-at: 6002ms; --ripe: 8661ms;">0</tspan><tspan x="268" class="leaf digit" style="--grow-at: 5460ms;">0</tspan><tspan x="272.8" class="leaf digit" style="--grow-at: 5478ms;">0</tspan><tspan x="277.6" class="leaf digit" style="--grow-at: 5497ms;">1</tspan><tspan x="282.4" class="leaf digit" style="--grow-at: 5517ms;">0</tspan><tspan x="287.2" class="orange digit" style="--grow-at: 5537ms; --ripe: 8528ms;">1</tspan><tspan x="292" class="leaf digit" style="--grow-at: 5557ms;">0</tspan><tspan x="296.8" class="leaf digit" style="--grow-at: 5574ms;">1</tspan><tspan x="316" class="leaf digit" style="--grow-at: 5032ms;">1</tspan><tspan x="320.8" class="leaf digit" style="--grow-at: 5137ms;">1</tspan><tspan x="325.6" class="leaf digit" style="--grow-at: 5242ms;">0</tspan><tspan x="330.4" class="leaf digit" style="--grow-at: 5348ms;">0</tspan><tspan x="335.2" class="leaf-light digit" style="--grow-at: 5453ms;">1</tspan><tspan x="340" class="leaf digit" style="--grow-at: 5560ms;">1</tspan><tspan x="344.8" class="orange digit" style="--grow-at: 5665ms; --ripe: 8786ms;">0</tspan><tspan x="349.6" class="leaf digit" style="--grow-at: 5770ms;">0</tspan><tspan x="354.4" class="leaf digit" style="--grow-at: 5256ms;">1</tspan><tspan x="359.2" class="leaf digit" style="--grow-at: 5361ms;">0</tspan><tspan x="364" class="leaf digit" style="--grow-at: 5468ms;">1</tspan><tspan x="368.8" class="leaf digit" style="--grow-at: 5573ms;">0</tspan><tspan x="373.6" class="leaf digit" style="--grow-at: 5678ms;">1</tspan><tspan x="392.8" class="leaf digit" style="--grow-at: 6101ms;">0</tspan><tspan x="397.6" class="orange digit" style="--grow-at: 6206ms; --ripe: 8987ms;">1</tspan><tspan x="402.4" class="orange digit" style="--grow-at: 5692ms; --ripe: 8794ms;">0</tspan><tspan x="407.2" class="orange digit" style="--grow-at: 5798ms; --ripe: 8972ms;">1</tspan><tspan x="412" class="orange digit" style="--grow-at: 5908ms; --ripe: 8780ms;">0</tspan></text>
-        <text y="282"><tspan x="215.2" class="leaf digit" style="--grow-at: 6279ms;">1</tspan><tspan x="224.8" class="leaf digit" style="--grow-at: 6316ms;">1</tspan><tspan x="234.4" class="leaf digit" style="--grow-at: 5735ms;">0</tspan><tspan x="244" class="leaf digit" style="--grow-at: 5774ms;">0</tspan><tspan x="272.8" class="leaf digit" style="--grow-at: 5892ms;">1</tspan><tspan x="282.4" class="leaf digit" style="--grow-at: 5307ms;">1</tspan><tspan x="292" class="leaf digit" style="--grow-at: 5346ms;">1</tspan><tspan x="320.8" class="leaf digit" style="--grow-at: 5547ms;">0</tspan><tspan x="330.4" class="leaf digit" style="--grow-at: 5138ms;">1</tspan><tspan x="340" class="leaf digit" style="--grow-at: 5350ms;">0</tspan><tspan x="349.6" class="leaf digit" style="--grow-at: 5561ms;">1</tspan><tspan x="359.2" class="leaf digit" style="--grow-at: 5771ms;">1</tspan><tspan x="368.8" class="leaf digit" style="--grow-at: 5983ms;">1</tspan><tspan x="397.6" class="leaf digit" style="--grow-at: 5996ms;">0</tspan><tspan x="407.2" class="leaf digit" style="--grow-at: 6207ms;">0</tspan></text>
-        <text class="wood" y="292"><tspan x="304" class="digit" style="--grow-at: 4651ms">1</tspan><tspan x="308.8" class="digit" style="--grow-at: 4724ms">0</tspan></text>
-        <text class="wood" y="292"><tspan x="256" class="digit" style="--grow-at: 4795ms">0</tspan><tspan x="260.8" class="digit" style="--grow-at: 4868ms">1</tspan></text>
-        <text class="wood" y="292"><tspan x="380.8" class="digit" style="--grow-at: 4824ms">1</tspan><tspan x="385.6" class="digit" style="--grow-at: 4897ms">0</tspan></text>
-      </g>
-      <g class="sway" style="--bend: 9.1px">
-        <text y="271"><tspan x="229.6" class="leaf digit" style="--grow-at: 6104ms;">1</tspan><tspan x="234.4" class="leaf digit" style="--grow-at: 6125ms;">1</tspan><tspan x="239.2" class="leaf digit" style="--grow-at: 6144ms;">0</tspan><tspan x="258.4" class="leaf digit" style="--grow-at: 5601ms;">0</tspan><tspan x="263.2" class="leaf digit" style="--grow-at: 5620ms;">0</tspan><tspan x="268" class="leaf digit" style="--grow-at: 5639ms;">1</tspan><tspan x="272.8" class="leaf digit" style="--grow-at: 5658ms;">0</tspan><tspan x="277.6" class="leaf digit" style="--grow-at: 5676ms;">1</tspan><tspan x="282.4" class="leaf digit" style="--grow-at: 5696ms;">0</tspan><tspan x="287.2" class="leaf digit" style="--grow-at: 5715ms;">1</tspan><tspan x="292" class="leaf digit" style="--grow-at: 5737ms;">0</tspan><tspan x="296.8" class="leaf-light digit" style="--grow-at: 5753ms;">1</tspan><tspan x="301.6" class="orange digit" style="--grow-at: 5772ms; --ripe: 8652ms;">1</tspan><tspan x="306.4" class="orange digit" style="--grow-at: 5172ms; --ripe: 8829ms;">0</tspan><tspan x="311.2" class="orange digit" style="--grow-at: 5191ms; --ripe: 9007ms;">1</tspan><tspan x="316" class="leaf digit" style="--grow-at: 5211ms;">0</tspan><tspan x="320.8" class="leaf digit" style="--grow-at: 5316ms;">1</tspan><tspan x="325.6" class="leaf digit" style="--grow-at: 5421ms;">0</tspan><tspan x="330.4" class="leaf digit" style="--grow-at: 5527ms;">0</tspan><tspan x="335.2" class="leaf digit" style="--grow-at: 5633ms;">1</tspan><tspan x="340" class="leaf digit" style="--grow-at: 5740ms;">1</tspan><tspan x="344.8" class="leaf-light digit" style="--grow-at: 5844ms;">0</tspan><tspan x="349.6" class="leaf digit" style="--grow-at: 5329ms;">0</tspan><tspan x="354.4" class="leaf digit" style="--grow-at: 5435ms;">1</tspan><tspan x="359.2" class="leaf digit" style="--grow-at: 5540ms;">1</tspan><tspan x="364" class="leaf digit" style="--grow-at: 5647ms;">0</tspan><tspan x="368.8" class="leaf digit" style="--grow-at: 5752ms;">0</tspan><tspan x="373.6" class="orange digit" style="--grow-at: 5857ms; --ripe: 8568ms;">1</tspan><tspan x="378.4" class="leaf digit" style="--grow-at: 5963ms;">1</tspan><tspan x="383.2" class="leaf digit" style="--grow-at: 6068ms;">0</tspan><tspan x="402.4" class="leaf digit" style="--grow-at: 5872ms;">0</tspan></text>
-        <text y="261"><tspan x="234.4" class="leaf digit" style="--grow-at: 5915ms;">0</tspan><tspan x="263.2" class="leaf digit" style="--grow-at: 6030ms;">1</tspan><tspan x="272.8" class="leaf digit" style="--grow-at: 6069ms;">1</tspan><tspan x="282.4" class="leaf digit" style="--grow-at: 5486ms;">1</tspan><tspan x="292" class="leaf digit" style="--grow-at: 5525ms;">1</tspan><tspan x="301.6" class="leaf digit" style="--grow-at: 5563ms;">0</tspan><tspan x="311.2" class="leaf digit" style="--grow-at: 5602ms;">0</tspan><tspan x="320.8" class="leaf digit" style="--grow-at: 5726ms;">0</tspan><tspan x="330.4" class="leaf digit" style="--grow-at: 5317ms;">1</tspan><tspan x="340" class="leaf digit" style="--grow-at: 5529ms;">0</tspan><tspan x="349.6" class="leaf digit" style="--grow-at: 5741ms;">1</tspan><tspan x="359.2" class="leaf digit" style="--grow-at: 5950ms;">0</tspan><tspan x="368.8" class="leaf digit" style="--grow-at: 6162ms;">1</tspan><tspan x="378.4" class="leaf digit" style="--grow-at: 5754ms;">0</tspan></text>
-        <text class="wood" y="271"><tspan x="246.4" class="digit" style="--grow-at: 5097ms">0</tspan><tspan x="251.2" class="digit" style="--grow-at: 5170ms">1</tspan></text>
-        <text class="wood" y="271"><tspan x="390.4" class="digit" style="--grow-at: 5126ms">1</tspan><tspan x="395.2" class="digit" style="--grow-at: 5199ms">0</tspan></text>
-      </g>
-      <g class="sway" style="--bend: 10.4px">
-        <text y="250"><tspan x="248.8" class="leaf digit" style="--grow-at: 6360ms;">1</tspan><tspan x="253.6" class="leaf digit" style="--grow-at: 5759ms;">1</tspan><tspan x="258.4" class="leaf-light digit" style="--grow-at: 5779ms;">0</tspan><tspan x="263.2" class="leaf digit" style="--grow-at: 5799ms;">1</tspan><tspan x="268" class="orange digit" style="--grow-at: 5818ms; --ripe: 8776ms;">0</tspan><tspan x="272.8" class="orange digit" style="--grow-at: 5836ms; --ripe: 8953ms;">0</tspan><tspan x="277.6" class="orange digit" style="--grow-at: 5855ms; --ripe: 8761ms;">1</tspan><tspan x="282.4" class="leaf digit" style="--grow-at: 5875ms;">1</tspan><tspan x="287.2" class="leaf digit" style="--grow-at: 5894ms;">0</tspan><tspan x="292" class="leaf digit" style="--grow-at: 5916ms;">1</tspan><tspan x="296.8" class="leaf digit" style="--grow-at: 5932ms;">0</tspan><tspan x="301.6" class="leaf digit" style="--grow-at: 5331ms;">1</tspan><tspan x="306.4" class="leaf-light digit" style="--grow-at: 5351ms;">0</tspan><tspan x="311.2" class="leaf digit" style="--grow-at: 5370ms;">0</tspan><tspan x="316" class="leaf digit" style="--grow-at: 5390ms;">1</tspan><tspan x="320.8" class="leaf digit" style="--grow-at: 5495ms;">1</tspan><tspan x="325.6" class="leaf digit" style="--grow-at: 5603ms;">0</tspan><tspan x="330.4" class="leaf digit" style="--grow-at: 5706ms;">1</tspan><tspan x="335.2" class="leaf digit" style="--grow-at: 5811ms;">0</tspan><tspan x="340" class="orange digit" style="--grow-at: 5918ms; --ripe: 8850ms;">0</tspan><tspan x="344.8" class="orange digit" style="--grow-at: 6023ms; --ripe: 8657ms;">1</tspan><tspan x="349.6" class="orange digit" style="--grow-at: 5508ms; --ripe: 8835ms;">0</tspan><tspan x="354.4" class="leaf-light digit" style="--grow-at: 5614ms;">1</tspan><tspan x="359.2" class="leaf digit" style="--grow-at: 5720ms;">0</tspan><tspan x="364" class="leaf digit" style="--grow-at: 5826ms;">1</tspan><tspan x="368.8" class="leaf digit" style="--grow-at: 5931ms;">0</tspan><tspan x="373.6" class="leaf digit" style="--grow-at: 6036ms;">1</tspan><tspan x="378.4" class="leaf digit" style="--grow-at: 6142ms;">0</tspan><tspan x="383.2" class="leaf digit" style="--grow-at: 6247ms;">1</tspan></text>
-        <text y="240"><tspan x="253.6" class="leaf digit" style="--grow-at: 6170ms;">0</tspan><tspan x="263.2" class="leaf digit" style="--grow-at: 6208ms;">0</tspan><tspan x="272.8" class="leaf digit" style="--grow-at: 6246ms;">1</tspan><tspan x="282.4" class="leaf digit" style="--grow-at: 5666ms;">0</tspan><tspan x="292" class="leaf digit" style="--grow-at: 5704ms;">0</tspan><tspan x="301.6" class="leaf digit" style="--grow-at: 5742ms;">0</tspan><tspan x="311.2" class="leaf digit" style="--grow-at: 5780ms;">1</tspan><tspan x="320.8" class="leaf digit" style="--grow-at: 5909ms;">0</tspan><tspan x="330.4" class="leaf digit" style="--grow-at: 5496ms;">0</tspan><tspan x="340" class="leaf digit" style="--grow-at: 5708ms;">1</tspan><tspan x="349.6" class="leaf digit" style="--grow-at: 5920ms;">1</tspan><tspan x="359.2" class="leaf digit" style="--grow-at: 6129ms;">1</tspan><tspan x="368.8" class="leaf digit" style="--grow-at: 6341ms;">1</tspan><tspan x="378.4" class="leaf digit" style="--grow-at: 5934ms;">1</tspan></text>
-      </g>
-      <g class="sway" style="--bend: 11.7px">
-        <text y="229"><tspan x="277.6" class="leaf digit" style="--grow-at: 6034ms;">0</tspan><tspan x="282.4" class="leaf digit" style="--grow-at: 6054ms;">1</tspan><tspan x="287.2" class="leaf digit" style="--grow-at: 6073ms;">0</tspan><tspan x="292" class="leaf digit" style="--grow-at: 6093ms;">0</tspan><tspan x="296.8" class="leaf digit" style="--grow-at: 6111ms;">1</tspan><tspan x="301.6" class="leaf digit" style="--grow-at: 5510ms;">1</tspan><tspan x="306.4" class="leaf digit" style="--grow-at: 5530ms;">0</tspan><tspan x="311.2" class="leaf digit" style="--grow-at: 5549ms;">1</tspan><tspan x="316" class="leaf-light digit" style="--grow-at: 5569ms;">0</tspan><tspan x="320.8" class="leaf digit" style="--grow-at: 5674ms;">0</tspan><tspan x="325.6" class="leaf digit" style="--grow-at: 5781ms;">1</tspan><tspan x="330.4" class="leaf digit" style="--grow-at: 5885ms;">1</tspan><tspan x="335.2" class="leaf digit" style="--grow-at: 5991ms;">0</tspan><tspan x="340" class="leaf digit" style="--grow-at: 6097ms;">1</tspan><tspan x="344.8" class="leaf digit" style="--grow-at: 6202ms;">0</tspan><tspan x="349.6" class="leaf digit" style="--grow-at: 5687ms;">0</tspan><tspan x="354.4" class="leaf digit" style="--grow-at: 5793ms;">1</tspan></text>
-      </g>
-    <g class="sway" style="--bend: 6.5px">
-      <g class="canopy-fruit" style="--fruit-at: 8900ms">
-        <use href="#canopy-tangerine" transform="translate(208 307) scale(.2)"/>
-      </g>
-      <g class="canopy-fruit" style="--fruit-at: 9250ms">
-        <use href="#canopy-tangerine" transform="translate(307 284) scale(.2)"/>
-      </g>
-      <g class="canopy-fruit" style="--fruit-at: 9640ms">
-        <use href="#canopy-tangerine" transform="translate(380 317) scale(.2)"/>
-      </g>
+  <g class="tree" font-family="ui-monospace, monospace" font-size="6.5" text-anchor="middle" aria-hidden="true">
+    <text class="seed" x="384" y="706" fill="#d8ad7a" font-size="9">0</text>
+    <g class="" style="--bend: 0.0px">
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 720ms"><tspan x="370" y="708">1</tspan><tspan x="375" y="708">1</tspan><tspan x="370" y="702">1</tspan><tspan x="375" y="702">0</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 720ms"><tspan x="380" y="708">1</tspan><tspan x="385" y="708">0</tspan><tspan x="380" y="702">1</tspan><tspan x="385" y="702">1</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 720ms"><tspan x="390" y="708">1</tspan><tspan x="390" y="702">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 720ms"><tspan x="395" y="708">0</tspan><tspan x="400" y="708">0</tspan><tspan x="395" y="702">0</tspan><tspan x="400" y="702">0</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 840ms"><tspan x="370" y="696">1</tspan><tspan x="375" y="696">1</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 840ms"><tspan x="380" y="696">1</tspan><tspan x="385" y="696">1</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 840ms"><tspan x="390" y="696">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 840ms"><tspan x="395" y="696">1</tspan><tspan x="400" y="696">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 960ms"><tspan x="370" y="690">1</tspan><tspan x="375" y="690">1</tspan><tspan x="365" y="708">0</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 960ms"><tspan x="380" y="690">1</tspan><tspan x="385" y="690">1</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 960ms"><tspan x="390" y="690">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 960ms"><tspan x="395" y="690">0</tspan><tspan x="400" y="690">0</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 1080ms"><tspan x="370" y="684">0</tspan><tspan x="375" y="684">0</tspan><tspan x="365" y="684">0</tspan><tspan x="360" y="708">1</tspan><tspan x="355" y="708">0</tspan><tspan x="405" y="708">0</tspan><tspan x="410" y="708">1</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 1080ms"><tspan x="380" y="684">0</tspan><tspan x="385" y="684">0</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 1080ms"><tspan x="390" y="684">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 1080ms"><tspan x="395" y="684">1</tspan><tspan x="400" y="684">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 1200ms"><tspan x="370" y="678">0</tspan><tspan x="375" y="678">1</tspan><tspan x="350" y="708">1</tspan><tspan x="415" y="708">0</tspan><tspan x="420" y="708">1</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 1200ms"><tspan x="380" y="678">0</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 1200ms"><tspan x="385" y="678">1</tspan><tspan x="390" y="678">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 1200ms"><tspan x="395" y="678">0</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 1320ms"><tspan x="370" y="672">1</tspan><tspan x="375" y="672">0</tspan><tspan x="365" y="672">1</tspan><tspan x="365" y="666">0</tspan><tspan x="370" y="666">1</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 1320ms"><tspan x="380" y="672">1</tspan><tspan x="375" y="666">0</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 1320ms"><tspan x="385" y="672">1</tspan><tspan x="390" y="672">1</tspan><tspan x="380" y="666">1</tspan><tspan x="385" y="666">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 1320ms"><tspan x="395" y="672">0</tspan><tspan x="390" y="666">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 1440ms"><tspan x="365" y="660">1</tspan><tspan x="370" y="660">0</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 1440ms"><tspan x="375" y="660">0</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 1440ms"><tspan x="380" y="660">0</tspan><tspan x="385" y="660">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 1440ms"><tspan x="390" y="660">0</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 1560ms"><tspan x="330" y="708">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 1560ms"><tspan x="365" y="654">0</tspan><tspan x="370" y="654">0</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 1560ms"><tspan x="375" y="654">0</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 1560ms"><tspan x="380" y="654">0</tspan><tspan x="385" y="654">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 1560ms"><tspan x="390" y="654">1</tspan></text>
+      <text class="digit" fill="#6e9a5c" style="--grow-at: 1680ms"><tspan x="320" y="708">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 1680ms"><tspan x="365" y="648">1</tspan><tspan x="370" y="648">0</tspan><tspan x="370" y="642">0</tspan><tspan x="375" y="642">0</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 1680ms"><tspan x="375" y="648">0</tspan><tspan x="380" y="642">0</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 1680ms"><tspan x="380" y="648">0</tspan><tspan x="385" y="642">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 1680ms"><tspan x="385" y="648">1</tspan><tspan x="390" y="648">0</tspan><tspan x="390" y="642">1</tspan><tspan x="395" y="642">1</tspan></text>
+      <text class="digit" fill="#6e9a5c" style="--grow-at: 1800ms"><tspan x="310" y="708">1</tspan><tspan x="315" y="708">1</tspan><tspan x="455" y="708">0</tspan><tspan x="460" y="708">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 1800ms"><tspan x="370" y="636">0</tspan><tspan x="375" y="636">1</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 1800ms"><tspan x="380" y="636">1</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 1800ms"><tspan x="385" y="636">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 1800ms"><tspan x="390" y="636">1</tspan><tspan x="395" y="636">1</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 1920ms"><tspan x="465" y="708">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 1920ms"><tspan x="370" y="630">1</tspan><tspan x="375" y="630">0</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 1920ms"><tspan x="380" y="630">1</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 1920ms"><tspan x="385" y="630">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 1920ms"><tspan x="390" y="630">1</tspan><tspan x="395" y="630">0</tspan></text>
+      <text class="digit" fill="#6e9a5c" style="--grow-at: 2040ms"><tspan x="295" y="708">1</tspan><tspan x="475" y="708">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 2040ms"><tspan x="370" y="624">0</tspan><tspan x="375" y="624">1</tspan><tspan x="370" y="618">1</tspan><tspan x="375" y="618">0</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 2040ms"><tspan x="380" y="624">1</tspan><tspan x="380" y="618">0</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 2040ms"><tspan x="385" y="624">1</tspan><tspan x="385" y="618">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 2040ms"><tspan x="390" y="624">0</tspan><tspan x="390" y="618">0</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 2160ms"><tspan x="370" y="612">0</tspan><tspan x="375" y="612">0</tspan></text>
+      <text class="digit" fill="#88ad80" style="--grow-at: 2160ms"><tspan x="285" y="708">0</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 2160ms"><tspan x="380" y="612">0</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 2160ms"><tspan x="385" y="612">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 2160ms"><tspan x="390" y="612">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 2280ms"><tspan x="375" y="606">0</tspan><tspan x="380" y="606">1</tspan></text>
+      <text class="digit" fill="#88ad80" style="--grow-at: 2280ms"><tspan x="275" y="708">0</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 2280ms"><tspan x="385" y="606">0</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 2280ms"><tspan x="390" y="606">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 2280ms"><tspan x="395" y="612">0</tspan><tspan x="395" y="606">0</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 2400ms"><tspan x="375" y="600">1</tspan><tspan x="380" y="600">1</tspan><tspan x="375" y="594">1</tspan><tspan x="380" y="594">1</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 2400ms"><tspan x="385" y="600">0</tspan><tspan x="385" y="594">1</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 2400ms"><tspan x="390" y="600">1</tspan><tspan x="390" y="594">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 2400ms"><tspan x="395" y="600">1</tspan><tspan x="395" y="594">1</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 2520ms"><tspan x="520" y="708">0</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 2520ms"><tspan x="375" y="588">1</tspan><tspan x="380" y="588">0</tspan></text>
+      <text class="digit" fill="#88ad80" style="--grow-at: 2520ms"><tspan x="250" y="708">1</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 2520ms"><tspan x="385" y="588">0</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 2520ms"><tspan x="390" y="588">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 2520ms"><tspan x="395" y="588">1</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 2640ms"><tspan x="245" y="708">0</tspan></text>
+      <text class="digit" fill="#6e9a5c" style="--grow-at: 2640ms"><tspan x="240" y="708">0</tspan><tspan x="530" y="708">0</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 2640ms"><tspan x="375" y="582">0</tspan><tspan x="380" y="582">1</tspan></text>
+      <text class="digit" fill="#88ad80" style="--grow-at: 2640ms"><tspan x="525" y="708">0</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 2640ms"><tspan x="385" y="582">0</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 2640ms"><tspan x="390" y="582">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 2640ms"><tspan x="395" y="582">1</tspan></text>
+      <text class="digit" fill="#6e9a5c" style="--grow-at: 2760ms"><tspan x="535" y="708">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 2760ms"><tspan x="375" y="576">1</tspan><tspan x="375" y="570">1</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 2760ms"><tspan x="380" y="576">0</tspan><tspan x="385" y="576">0</tspan><tspan x="380" y="570">0</tspan><tspan x="385" y="570">1</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 2760ms"><tspan x="390" y="576">1</tspan><tspan x="390" y="570">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 2760ms"><tspan x="395" y="576">0</tspan><tspan x="395" y="570">0</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 2880ms"><tspan x="225" y="708">0</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 2880ms"><tspan x="375" y="564">0</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 2880ms"><tspan x="380" y="564">1</tspan><tspan x="385" y="564">0</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 2880ms"><tspan x="390" y="564">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 2880ms"><tspan x="395" y="564">0</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 3000ms"><tspan x="210" y="708">1</tspan></text>
+      <text class="digit" fill="#6e9a5c" style="--grow-at: 3000ms"><tspan x="215" y="708">0</tspan><tspan x="555" y="708">0</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 3000ms"><tspan x="375" y="558">1</tspan><tspan x="375" y="552">1</tspan></text>
+      <text class="digit" fill="#88ad80" style="--grow-at: 3000ms"><tspan x="560" y="708">1</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 3000ms"><tspan x="380" y="558">1</tspan><tspan x="385" y="558">0</tspan><tspan x="380" y="552">0</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 3000ms"><tspan x="390" y="558">0</tspan><tspan x="385" y="552">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 3000ms"><tspan x="395" y="558">0</tspan><tspan x="390" y="552">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 3120ms"><tspan x="375" y="546">1</tspan></text>
+      <text class="digit" fill="#88ad80" style="--grow-at: 3120ms"><tspan x="200" y="708">0</tspan><tspan x="205" y="708">1</tspan><tspan x="570" y="708">1</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 3120ms"><tspan x="380" y="546">1</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 3120ms"><tspan x="385" y="546">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 3120ms"><tspan x="390" y="546">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 3240ms"><tspan x="370" y="552">1</tspan><tspan x="365" y="552">0</tspan></text>
+      <text class="digit" fill="#88ad80" style="--grow-at: 3240ms"><tspan x="195" y="708">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 3360ms"><tspan x="365" y="546">1</tspan><tspan x="360" y="546">1</tspan><tspan x="355" y="546">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 3360ms"><tspan x="370" y="546">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 3720ms"><tspan x="395" y="552">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 3840ms"><tspan x="400" y="546">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 3840ms"><tspan x="400" y="552">0</tspan><tspan x="405" y="546">0</tspan><tspan x="410" y="546">1</tspan></text>
     </g>
-    <g class="sway" style="--bend: 10px">
-      <g class="canopy-fruit" style="--fruit-at: 9430ms">
-        <use href="#canopy-tangerine" transform="translate(251 246) scale(.2)"/>
-      </g>
-      <g class="canopy-fruit" style="--fruit-at: 9850ms">
-        <use href="#canopy-tangerine" transform="translate(359 244) scale(.2)"/>
-      </g>
+    <g class="sway" style="--bend: 1.2px">
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 3240ms"><tspan x="375" y="540">1</tspan></text>
+      <text class="digit" fill="#9a6640" style="--grow-at: 3240ms"><tspan x="380" y="540">0</tspan></text>
+      <text class="digit" fill="#b98654" style="--grow-at: 3240ms"><tspan x="385" y="540">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 3240ms"><tspan x="390" y="540">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 3360ms"><tspan x="355" y="540">0</tspan><tspan x="350" y="540">1</tspan><tspan x="375" y="534">0</tspan><tspan x="370" y="534">1</tspan><tspan x="370" y="528">0</tspan><tspan x="365" y="528">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 3360ms"><tspan x="360" y="540">1</tspan><tspan x="380" y="534">0</tspan><tspan x="375" y="528">0</tspan><tspan x="385" y="534">0</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 3480ms"><tspan x="345" y="534">1</tspan><tspan x="340" y="534">0</tspan><tspan x="365" y="522">0</tspan><tspan x="360" y="522">0</tspan><tspan x="360" y="516">0</tspan><tspan x="355" y="516">1</tspan><tspan x="375" y="522">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 3480ms"><tspan x="350" y="534">0</tspan><tspan x="370" y="522">0</tspan><tspan x="380" y="528">1</tspan><tspan x="375" y="516">0</tspan><tspan x="385" y="528">0</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 3600ms"><tspan x="340" y="528">1</tspan><tspan x="335" y="528">1</tspan><tspan x="330" y="528">1</tspan><tspan x="330" y="522">0</tspan><tspan x="325" y="522">1</tspan><tspan x="390" y="522">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 3600ms"><tspan x="385" y="516">0</tspan><tspan x="390" y="534">0</tspan><tspan x="390" y="528">1</tspan><tspan x="395" y="522">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 3720ms"><tspan x="395" y="534">1</tspan><tspan x="395" y="528">0</tspan><tspan x="400" y="528">1</tspan><tspan x="400" y="522">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 3840ms"><tspan x="405" y="522">0</tspan><tspan x="405" y="516">0</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 3960ms"><tspan x="405" y="540">0</tspan><tspan x="415" y="534">1</tspan><tspan x="370" y="540">0</tspan><tspan x="365" y="540">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 3960ms"><tspan x="410" y="540">1</tspan><tspan x="415" y="540">1</tspan><tspan x="420" y="540">0</tspan><tspan x="420" y="534">1</tspan><tspan x="395" y="540">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 4080ms"><tspan x="425" y="528">1</tspan><tspan x="430" y="528">1</tspan><tspan x="365" y="534">1</tspan><tspan x="360" y="534">1</tspan><tspan x="355" y="534">0</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 4080ms"><tspan x="425" y="534">0</tspan><tspan x="400" y="540">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 4200ms"><tspan x="435" y="528">1</tspan><tspan x="435" y="522">1</tspan><tspan x="440" y="522">1</tspan><tspan x="350" y="528">1</tspan><tspan x="405" y="534">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 4200ms"><tspan x="410" y="534">0</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 4320ms"><tspan x="345" y="528">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 4440ms"><tspan x="335" y="522">0</tspan><tspan x="420" y="528">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 4800ms"><tspan x="380" y="522">1</tspan><tspan x="385" y="522">1</tspan><tspan x="380" y="516">0</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 4800ms"><tspan x="450" y="522">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 5040ms"><tspan x="400" y="516">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 5040ms"><tspan x="365" y="516">1</tspan><tspan x="370" y="516">1</tspan><tspan x="390" y="516">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 5160ms"><tspan x="395" y="516">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 5280ms"><tspan x="410" y="516">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 5520ms"><tspan x="350" y="516">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 5640ms"><tspan x="340" y="516">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 5640ms"><tspan x="325" y="516">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 5760ms"><tspan x="445" y="516">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 5880ms"><tspan x="320" y="516">1</tspan><tspan x="445" y="522">0</tspan><tspan x="440" y="516">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 5880ms"><tspan x="320" y="522">0</tspan><tspan x="315" y="516">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6000ms"><tspan x="330" y="516">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6120ms"><tspan x="450" y="516">0</tspan><tspan x="460" y="516">0</tspan><tspan x="310" y="516">0</tspan><tspan x="315" y="522">1</tspan><tspan x="455" y="522">1</tspan><tspan x="305" y="528">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6240ms"><tspan x="455" y="516">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6240ms"><tspan x="305" y="516">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6360ms"><tspan x="465" y="516">1</tspan><tspan x="460" y="522">0</tspan><tspan x="465" y="522">1</tspan><tspan x="470" y="522">0</tspan><tspan x="465" y="528">0</tspan><tspan x="475" y="528">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6360ms"><tspan x="295" y="522">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6480ms"><tspan x="475" y="516">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6600ms"><tspan x="470" y="516">1</tspan></text>
+      <text class="digit" fill="#f4c6d0" style="--grow-at: 6600ms"><tspan x="480" y="516">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6720ms"><tspan x="490" y="516">1</tspan><tspan x="480" y="522">1</tspan><tspan x="485" y="522">1</tspan><tspan x="470" y="528">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6720ms"><tspan x="300" y="516">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6720ms"><tspan x="295" y="516">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6840ms"><tspan x="495" y="516">1</tspan><tspan x="475" y="522">0</tspan><tspan x="495" y="528">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6840ms"><tspan x="280" y="516">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6840ms"><tspan x="290" y="516">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6960ms"><tspan x="490" y="522">1</tspan><tspan x="500" y="522">1</tspan><tspan x="485" y="528">1</tspan><tspan x="490" y="528">1</tspan><tspan x="495" y="534">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6960ms"><tspan x="275" y="516">1</tspan></text>
+      <text class="digit" fill="#f4c6d0" style="--grow-at: 6960ms"><tspan x="495" y="522">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7080ms"><tspan x="485" y="516">1</tspan><tspan x="500" y="528">1</tspan><tspan x="500" y="534">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7080ms"><tspan x="285" y="516">0</tspan><tspan x="275" y="522">0</tspan><tspan x="285" y="522">0</tspan><tspan x="270" y="528">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7200ms"><tspan x="500" y="516">1</tspan><tspan x="510" y="522">0</tspan><tspan x="275" y="528">0</tspan><tspan x="510" y="528">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7200ms"><tspan x="270" y="516">0</tspan><tspan x="280" y="522">0</tspan><tspan x="260" y="534">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7200ms"><tspan x="260" y="522">1</tspan><tspan x="265" y="528">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7320ms"><tspan x="505" y="516">1</tspan><tspan x="515" y="522">1</tspan><tspan x="505" y="534">1</tspan><tspan x="510" y="534">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7320ms"><tspan x="270" y="522">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7440ms"><tspan x="510" y="516">0</tspan><tspan x="520" y="516">1</tspan><tspan x="505" y="522">0</tspan><tspan x="520" y="528">1</tspan><tspan x="515" y="534">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7440ms"><tspan x="265" y="516">1</tspan><tspan x="265" y="522">1</tspan><tspan x="255" y="528">1</tspan><tspan x="260" y="528">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7560ms"><tspan x="245" y="522">1</tspan><tspan x="520" y="522">1</tspan><tspan x="505" y="528">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7560ms"><tspan x="255" y="522">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7680ms"><tspan x="520" y="534">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7680ms"><tspan x="250" y="522">0</tspan><tspan x="250" y="528">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7800ms"><tspan x="515" y="516">1</tspan><tspan x="535" y="516">1</tspan><tspan x="515" y="528">1</tspan><tspan x="530" y="528">0</tspan><tspan x="535" y="528">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7800ms"><tspan x="250" y="516">1</tspan><tspan x="245" y="528">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7800ms"><tspan x="235" y="516">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7920ms"><tspan x="530" y="522">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7920ms"><tspan x="240" y="516">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7920ms"><tspan x="245" y="516">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8040ms"><tspan x="525" y="516">1</tspan><tspan x="525" y="522">1</tspan><tspan x="525" y="528">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8040ms"><tspan x="240" y="522">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8160ms"><tspan x="530" y="516">1</tspan><tspan x="535" y="522">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8400ms"><tspan x="540" y="516">0</tspan></text>
+      <text class="canopy-fruit" fill="#ff8f3a" font-weight="700" style="--fruit-at: 9720ms"><tspan x="255" y="516">0</tspan><tspan x="260" y="516">1</tspan></text>
     </g>
-    <g class="details">
-      <path d="M309 423q-12-14 3-27t-1-23q-10-9 0-19" fill="none" stroke="#71916d" stroke-width="1.4"/>
-      <g fill="#a8c795">
-        <path d="M308 398q-8 1-10-5 8-2 10 5zm5-10q8 0 9-6-8 0-9 6zm-3-15q-7 1-9-5 7-1 9 5z"/>
-      </g>
-      <g class="sway" style="--bend: 9px">
-        <g class="swing">
-          <path d="M382 287v74" stroke="#cdb69b" stroke-width="1.2"/>
-          <circle cx="382" cy="368" r="7" fill="none" stroke="#9f8a78" stroke-width="4"/>
-          <path d="M378 372q4 2 8-1" stroke="#d0b899" fill="none" stroke-width=".8"/>
-        </g>
-      </g>
+    <g class="sway" style="--bend: 2.4px">
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 3600ms"><tspan x="355" y="510">0</tspan><tspan x="370" y="510">1</tspan></text>
+      <text class="digit" fill="#d8ad7a" style="--grow-at: 3600ms"><tspan x="385" y="510">1</tspan></text>
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 3840ms"><tspan x="405" y="510">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 5040ms"><tspan x="375" y="510">1</tspan><tspan x="400" y="510">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 5040ms"><tspan x="395" y="504">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 5160ms"><tspan x="380" y="510">1</tspan><tspan x="385" y="504">1</tspan><tspan x="390" y="510">1</tspan><tspan x="395" y="510">1</tspan><tspan x="410" y="510">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 5160ms"><tspan x="375" y="504">0</tspan><tspan x="370" y="498">1</tspan><tspan x="400" y="504">0</tspan><tspan x="390" y="504">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 5280ms"><tspan x="380" y="504">0</tspan><tspan x="395" y="498">1</tspan><tspan x="415" y="510">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 5280ms"><tspan x="375" y="498">0</tspan><tspan x="390" y="498">0</tspan><tspan x="405" y="504">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 5400ms"><tspan x="400" y="498">1</tspan><tspan x="370" y="492">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 5400ms"><tspan x="365" y="492">1</tspan><tspan x="380" y="498">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 5520ms"><tspan x="385" y="498">0</tspan><tspan x="405" y="498">0</tspan><tspan x="340" y="504">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 5520ms"><tspan x="400" y="492">0</tspan><tspan x="415" y="504">1</tspan><tspan x="405" y="492">1</tspan><tspan x="420" y="504">0</tspan><tspan x="420" y="510">1</tspan></text>
+      <text class="digit" fill="#fff1e6" style="--grow-at: 5520ms"><tspan x="350" y="510">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 5640ms"><tspan x="345" y="498">1</tspan><tspan x="385" y="492">1</tspan><tspan x="410" y="504">0</tspan><tspan x="375" y="486">1</tspan><tspan x="395" y="486">1</tspan><tspan x="405" y="486">1</tspan><tspan x="410" y="486">0</tspan><tspan x="375" y="492">0</tspan><tspan x="410" y="498">1</tspan><tspan x="430" y="504">1</tspan><tspan x="330" y="510">0</tspan><tspan x="430" y="510">0</tspan><tspan x="435" y="510">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 5640ms"><tspan x="350" y="504">1</tspan><tspan x="395" y="492">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 5640ms"><tspan x="360" y="486">0</tspan><tspan x="335" y="510">0</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 5640ms"><tspan x="355" y="492">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 5760ms"><tspan x="380" y="492">1</tspan><tspan x="420" y="498">1</tspan><tspan x="420" y="492">0</tspan><tspan x="425" y="486">0</tspan><tspan x="390" y="492">0</tspan><tspan x="415" y="492">0</tspan><tspan x="355" y="498">1</tspan><tspan x="430" y="498">1</tspan><tspan x="440" y="504">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 5760ms"><tspan x="380" y="486">1</tspan><tspan x="410" y="492">1</tspan><tspan x="345" y="504">0</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 5760ms"><tspan x="330" y="498">0</tspan></text>
+      <text class="digit" fill="#fff1e6" style="--grow-at: 5760ms"><tspan x="365" y="486">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 5880ms"><tspan x="345" y="492">1</tspan><tspan x="385" y="486">0</tspan><tspan x="440" y="498">1</tspan><tspan x="320" y="504">0</tspan><tspan x="325" y="504">1</tspan><tspan x="435" y="504">0</tspan><tspan x="320" y="510">1</tspan><tspan x="325" y="510">1</tspan><tspan x="425" y="510">1</tspan><tspan x="440" y="510">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 5880ms"><tspan x="350" y="498">1</tspan><tspan x="415" y="498">1</tspan><tspan x="370" y="486">0</tspan><tspan x="390" y="486">0</tspan><tspan x="420" y="486">1</tspan><tspan x="350" y="492">1</tspan><tspan x="435" y="492">0</tspan><tspan x="335" y="504">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 5880ms"><tspan x="340" y="510">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6000ms"><tspan x="340" y="492">1</tspan><tspan x="400" y="486">0</tspan><tspan x="425" y="492">0</tspan><tspan x="335" y="492">0</tspan><tspan x="435" y="498">0</tspan><tspan x="445" y="498">0</tspan><tspan x="445" y="504">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6000ms"><tspan x="330" y="486">1</tspan><tspan x="350" y="486">1</tspan><tspan x="355" y="486">1</tspan><tspan x="415" y="486">1</tspan><tspan x="325" y="498">1</tspan><tspan x="335" y="498">0</tspan><tspan x="340" y="498">1</tspan><tspan x="315" y="504">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6000ms"><tspan x="325" y="492">0</tspan><tspan x="330" y="492">0</tspan><tspan x="330" y="504">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6120ms"><tspan x="460" y="510">1</tspan><tspan x="440" y="486">0</tspan><tspan x="450" y="498">1</tspan><tspan x="310" y="504">0</tspan><tspan x="445" y="510">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6120ms"><tspan x="435" y="486">0</tspan><tspan x="320" y="498">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6120ms"><tspan x="340" y="486">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6240ms"><tspan x="335" y="486">1</tspan><tspan x="430" y="486">1</tspan><tspan x="345" y="486">1</tspan><tspan x="320" y="492">1</tspan><tspan x="430" y="492">1</tspan><tspan x="450" y="492">0</tspan><tspan x="310" y="498">1</tspan><tspan x="455" y="498">1</tspan><tspan x="455" y="504">0</tspan><tspan x="450" y="510">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6240ms"><tspan x="310" y="510">1</tspan><tspan x="445" y="486">0</tspan><tspan x="315" y="492">1</tspan><tspan x="445" y="492">1</tspan><tspan x="315" y="510">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6240ms"><tspan x="310" y="492">1</tspan></text>
+      <text class="digit" fill="#f4c6d0" style="--grow-at: 6240ms"><tspan x="455" y="510">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6360ms"><tspan x="300" y="504">0</tspan><tspan x="465" y="504">0</tspan><tspan x="440" y="492">0</tspan><tspan x="455" y="492">0</tspan><tspan x="305" y="498">1</tspan><tspan x="460" y="498">0</tspan><tspan x="465" y="510">0</tspan><tspan x="470" y="510">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6360ms"><tspan x="315" y="498">1</tspan><tspan x="305" y="504">1</tspan><tspan x="450" y="504">1</tspan><tspan x="300" y="510">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6360ms"><tspan x="315" y="486">0</tspan><tspan x="320" y="486">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6480ms"><tspan x="470" y="498">0</tspan><tspan x="450" y="486">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6480ms"><tspan x="305" y="510">1</tspan><tspan x="325" y="486">0</tspan><tspan x="455" y="486">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6480ms"><tspan x="300" y="486">0</tspan><tspan x="310" y="486">0</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 6480ms"><tspan x="460" y="492">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6600ms"><tspan x="465" y="492">0</tspan><tspan x="460" y="504">1</tspan><tspan x="480" y="504">1</tspan><tspan x="295" y="510">0</tspan><tspan x="475" y="510">0</tspan><tspan x="480" y="510">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6600ms"><tspan x="295" y="498">1</tspan><tspan x="295" y="492">0</tspan><tspan x="300" y="492">1</tspan><tspan x="305" y="492">0</tspan><tspan x="300" y="498">0</tspan><tspan x="290" y="510">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6720ms"><tspan x="470" y="504">1</tspan><tspan x="480" y="498">0</tspan><tspan x="460" y="486">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6720ms"><tspan x="465" y="498">0</tspan></text>
+      <text class="digit" fill="#e9a3b8" style="--grow-at: 6720ms"><tspan x="285" y="510">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6840ms"><tspan x="485" y="492">1</tspan><tspan x="465" y="486">0</tspan><tspan x="470" y="492">0</tspan><tspan x="475" y="504">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6840ms"><tspan x="290" y="498">0</tspan><tspan x="280" y="510">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6840ms"><tspan x="280" y="498">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6960ms"><tspan x="475" y="498">1</tspan><tspan x="480" y="492">0</tspan><tspan x="490" y="486">0</tspan><tspan x="475" y="486">0</tspan><tspan x="480" y="486">1</tspan><tspan x="485" y="486">0</tspan><tspan x="490" y="510">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6960ms"><tspan x="295" y="504">0</tspan><tspan x="285" y="498">1</tspan><tspan x="285" y="504">1</tspan><tspan x="290" y="504">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6960ms"><tspan x="305" y="486">0</tspan><tspan x="275" y="504">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7080ms"><tspan x="285" y="492">0</tspan><tspan x="490" y="492">0</tspan><tspan x="290" y="486">0</tspan><tspan x="295" y="486">1</tspan><tspan x="470" y="486">0</tspan><tspan x="485" y="504">0</tspan><tspan x="485" y="510">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7080ms"><tspan x="290" y="492">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7080ms"><tspan x="280" y="492">0</tspan><tspan x="275" y="486">1</tspan><tspan x="280" y="504">0</tspan></text>
+      <text class="digit" fill="#e9a3b8" style="--grow-at: 7080ms"><tspan x="475" y="492">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7200ms"><tspan x="495" y="486">1</tspan><tspan x="500" y="492">0</tspan><tspan x="485" y="498">1</tspan><tspan x="490" y="498">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7200ms"><tspan x="275" y="492">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7320ms"><tspan x="265" y="486">1</tspan><tspan x="505" y="510">1</tspan><tspan x="510" y="510">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7320ms"><tspan x="270" y="492">0</tspan><tspan x="270" y="504">0</tspan><tspan x="275" y="510">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7320ms"><tspan x="270" y="498">0</tspan><tspan x="270" y="510">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7440ms"><tspan x="500" y="486">0</tspan><tspan x="275" y="498">0</tspan><tspan x="505" y="498">1</tspan><tspan x="515" y="498">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7440ms"><tspan x="265" y="498">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7440ms"><tspan x="260" y="492">1</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 7440ms"><tspan x="510" y="504">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7560ms"><tspan x="505" y="486">0</tspan><tspan x="505" y="492">0</tspan><tspan x="520" y="504">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7560ms"><tspan x="250" y="492">0</tspan><tspan x="255" y="492">0</tspan><tspan x="265" y="492">1</tspan><tspan x="250" y="504">1</tspan><tspan x="265" y="504">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7560ms"><tspan x="270" y="486">1</tspan><tspan x="260" y="498">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7680ms"><tspan x="515" y="504">0</tspan><tspan x="525" y="504">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7680ms"><tspan x="245" y="498">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7800ms"><tspan x="520" y="486">0</tspan><tspan x="520" y="492">1</tspan><tspan x="525" y="492">1</tspan><tspan x="510" y="498">1</tspan><tspan x="515" y="510">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7800ms"><tspan x="245" y="492">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 7800ms"><tspan x="260" y="486">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7920ms"><tspan x="510" y="486">1</tspan><tspan x="515" y="486">0</tspan><tspan x="525" y="486">0</tspan><tspan x="510" y="492">1</tspan><tspan x="515" y="492">1</tspan><tspan x="520" y="498">0</tspan><tspan x="530" y="504">1</tspan><tspan x="520" y="510">1</tspan><tspan x="530" y="510">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7920ms"><tspan x="240" y="486">0</tspan><tspan x="255" y="486">0</tspan><tspan x="240" y="492">0</tspan><tspan x="240" y="498">1</tspan><tspan x="250" y="498">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7920ms"><tspan x="240" y="504">1</tspan><tspan x="245" y="504">1</tspan><tspan x="230" y="510">0</tspan><tspan x="240" y="510">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8040ms"><tspan x="535" y="492">0</tspan><tspan x="245" y="510">1</tspan><tspan x="525" y="510">0</tspan><tspan x="535" y="510">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8040ms"><tspan x="245" y="486">1</tspan><tspan x="250" y="486">1</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 8040ms"><tspan x="530" y="486">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8160ms"><tspan x="525" y="498">1</tspan><tspan x="530" y="498">0</tspan><tspan x="540" y="498">1</tspan><tspan x="535" y="504">1</tspan><tspan x="540" y="504">0</tspan><tspan x="540" y="510">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8160ms"><tspan x="235" y="498">0</tspan><tspan x="230" y="504">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8280ms"><tspan x="530" y="492">1</tspan><tspan x="535" y="498">1</tspan><tspan x="235" y="504">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8280ms"><tspan x="230" y="498">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8280ms"><tspan x="235" y="510">1</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 8880ms"><tspan x="360" y="492">0</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 9240ms"><tspan x="495" y="492">0</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 9720ms"><tspan x="255" y="498">0</tspan></text>
+      <text class="canopy-fruit" fill="#ff8f3a" font-weight="700" style="--fruit-at: 8600ms"><tspan x="280" y="486">1</tspan><tspan x="285" y="486">1</tspan></text>
+      <text class="canopy-fruit" fill="#ff8f3a" font-weight="700" style="--fruit-at: 8880ms"><tspan x="370" y="504">0</tspan><tspan x="360" y="510">1</tspan><tspan x="365" y="510">0</tspan></text>
+      <text class="canopy-fruit" fill="#ffb066" font-weight="700" style="--fruit-at: 8880ms"><tspan x="365" y="498">0</tspan><tspan x="355" y="504">0</tspan><tspan x="360" y="504">0</tspan><tspan x="365" y="504">1</tspan></text>
+      <text class="canopy-fruit" fill="#ffd9a8" font-weight="700" style="--fruit-at: 8880ms"><tspan x="360" y="498">1</tspan></text>
+      <text class="canopy-fruit" fill="#ff8f3a" font-weight="700" style="--fruit-at: 9300ms"><tspan x="505" y="504">0</tspan><tspan x="495" y="510">1</tspan><tspan x="500" y="510">1</tspan></text>
+      <text class="canopy-fruit" fill="#ffb066" font-weight="700" style="--fruit-at: 9300ms"><tspan x="500" y="498">0</tspan><tspan x="490" y="504">0</tspan><tspan x="495" y="504">0</tspan><tspan x="500" y="504">0</tspan></text>
+      <text class="canopy-fruit" fill="#ffd9a8" font-weight="700" style="--fruit-at: 9300ms"><tspan x="495" y="498">0</tspan></text>
+      <text class="canopy-fruit" fill="#ff8f3a" font-weight="700" style="--fruit-at: 9720ms"><tspan x="265" y="510">1</tspan></text>
+      <text class="canopy-fruit" fill="#ffb066" font-weight="700" style="--fruit-at: 9720ms"><tspan x="260" y="504">0</tspan><tspan x="250" y="510">0</tspan><tspan x="255" y="510">1</tspan><tspan x="260" y="510">0</tspan></text>
+      <text class="canopy-fruit" fill="#ffd9a8" font-weight="700" style="--fruit-at: 9720ms"><tspan x="255" y="504">1</tspan></text>
+    </g>
+    <g class="sway" style="--bend: 3.6px">
+      <text class="digit" fill="#4f8a45" style="--grow-at: 5640ms"><tspan x="370" y="480">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 5640ms"><tspan x="360" y="480">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 5760ms"><tspan x="370" y="474">0</tspan><tspan x="395" y="480">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 5760ms"><tspan x="380" y="480">1</tspan><tspan x="395" y="474">0</tspan><tspan x="365" y="480">1</tspan><tspan x="375" y="480">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 5880ms"><tspan x="400" y="480">0</tspan><tspan x="405" y="474">0</tspan><tspan x="365" y="474">0</tspan><tspan x="385" y="474">1</tspan><tspan x="390" y="474">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 5880ms"><tspan x="405" y="480">1</tspan><tspan x="400" y="474">0</tspan><tspan x="410" y="474">0</tspan><tspan x="415" y="480">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 5880ms"><tspan x="360" y="474">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6000ms"><tspan x="415" y="474">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6000ms"><tspan x="380" y="468">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6000ms"><tspan x="375" y="468">1</tspan><tspan x="385" y="480">1</tspan></text>
+      <text class="digit" fill="#f4c6d0" style="--grow-at: 6000ms"><tspan x="350" y="480">0</tspan></text>
+      <text class="digit" fill="#fff1e6" style="--grow-at: 6000ms"><tspan x="420" y="480">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6120ms"><tspan x="330" y="480">0</tspan><tspan x="360" y="468">1</tspan><tspan x="355" y="468">1</tspan><tspan x="400" y="462">1</tspan><tspan x="365" y="468">0</tspan><tspan x="370" y="468">0</tspan><tspan x="390" y="480">0</tspan><tspan x="410" y="480">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6120ms"><tspan x="380" y="474">0</tspan><tspan x="395" y="468">1</tspan><tspan x="375" y="474">0</tspan><tspan x="355" y="480">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6120ms"><tspan x="355" y="474">0</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 6120ms"><tspan x="435" y="480">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6240ms"><tspan x="410" y="468">0</tspan><tspan x="430" y="480">1</tspan><tspan x="430" y="474">0</tspan><tspan x="345" y="480">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6240ms"><tspan x="355" y="462">1</tspan><tspan x="350" y="468">0</tspan><tspan x="420" y="468">1</tspan><tspan x="425" y="480">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6240ms"><tspan x="325" y="474">0</tspan></text>
+      <text class="digit" fill="#e9a3b8" style="--grow-at: 6240ms"><tspan x="340" y="468">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6360ms"><tspan x="405" y="462">0</tspan><tspan x="425" y="462">0</tspan><tspan x="415" y="468">1</tspan><tspan x="435" y="468">1</tspan><tspan x="340" y="474">1</tspan><tspan x="340" y="480">0</tspan><tspan x="440" y="480">1</tspan><tspan x="445" y="480">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6360ms"><tspan x="330" y="474">0</tspan><tspan x="360" y="462">1</tspan><tspan x="400" y="468">1</tspan><tspan x="335" y="474">0</tspan><tspan x="345" y="474">1</tspan><tspan x="350" y="474">0</tspan><tspan x="420" y="474">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6360ms"><tspan x="335" y="480">0</tspan><tspan x="410" y="462">1</tspan><tspan x="345" y="462">1</tspan><tspan x="345" y="468">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6480ms"><tspan x="440" y="468">0</tspan><tspan x="445" y="468">1</tspan><tspan x="365" y="462">1</tspan><tspan x="370" y="462">0</tspan><tspan x="440" y="462">0</tspan><tspan x="425" y="474">0</tspan><tspan x="310" y="480">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6480ms"><tspan x="405" y="468">0</tspan><tspan x="340" y="462">0</tspan><tspan x="350" y="462">1</tspan><tspan x="375" y="462">0</tspan><tspan x="335" y="468">1</tspan><tspan x="320" y="474">1</tspan><tspan x="450" y="480">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6480ms"><tspan x="315" y="480">1</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 6480ms"><tspan x="445" y="474">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6600ms"><tspan x="430" y="468">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6600ms"><tspan x="320" y="462">1</tspan><tspan x="435" y="474">0</tspan><tspan x="440" y="474">1</tspan><tspan x="415" y="462">0</tspan><tspan x="320" y="468">1</tspan><tspan x="425" y="468">0</tspan><tspan x="300" y="480">0</tspan><tspan x="325" y="480">0</tspan><tspan x="465" y="480">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6720ms"><tspan x="450" y="462">1</tspan><tspan x="330" y="468">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6720ms"><tspan x="420" y="462">0</tspan><tspan x="435" y="462">1</tspan><tspan x="315" y="468">1</tspan><tspan x="320" y="480">0</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 6720ms"><tspan x="295" y="480">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6840ms"><tspan x="325" y="468">0</tspan><tspan x="295" y="474">1</tspan><tspan x="310" y="474">1</tspan><tspan x="470" y="474">0</tspan><tspan x="475" y="480">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6840ms"><tspan x="335" y="462">1</tspan><tspan x="430" y="462">0</tspan><tspan x="315" y="474">1</tspan><tspan x="470" y="480">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6840ms"><tspan x="300" y="468">1</tspan><tspan x="300" y="474">0</tspan></text>
+      <text class="digit" fill="#f4c6d0" style="--grow-at: 6840ms"><tspan x="325" y="462">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6960ms"><tspan x="445" y="462">1</tspan><tspan x="460" y="462">1</tspan><tspan x="465" y="462">0</tspan><tspan x="450" y="468">0</tspan><tspan x="305" y="480">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6960ms"><tspan x="465" y="468">0</tspan><tspan x="305" y="474">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6960ms"><tspan x="310" y="462">1</tspan><tspan x="315" y="462">0</tspan><tspan x="330" y="462">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7080ms"><tspan x="475" y="468">0</tspan><tspan x="485" y="474">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7080ms"><tspan x="310" y="468">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7080ms"><tspan x="305" y="462">0</tspan><tspan x="285" y="468">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7200ms"><tspan x="470" y="462">0</tspan><tspan x="485" y="462">0</tspan><tspan x="475" y="474">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7200ms"><tspan x="295" y="462">0</tspan><tspan x="305" y="468">0</tspan><tspan x="470" y="468">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7200ms"><tspan x="290" y="468">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7320ms"><tspan x="475" y="462">0</tspan><tspan x="480" y="462">1</tspan><tspan x="480" y="468">1</tspan><tspan x="480" y="474">1</tspan><tspan x="485" y="480">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7320ms"><tspan x="285" y="462">1</tspan><tspan x="290" y="462">1</tspan><tspan x="300" y="462">0</tspan><tspan x="290" y="474">0</tspan><tspan x="480" y="480">1</tspan><tspan x="495" y="480">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7320ms"><tspan x="280" y="462">0</tspan><tspan x="295" y="468">1</tspan><tspan x="270" y="480">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7440ms"><tspan x="505" y="480">1</tspan><tspan x="490" y="480">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7440ms"><tspan x="265" y="480">0</tspan><tspan x="275" y="468">1</tspan><tspan x="275" y="474">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7560ms"><tspan x="490" y="462">1</tspan><tspan x="495" y="462">0</tspan><tspan x="485" y="468">1</tspan><tspan x="490" y="468">1</tspan><tspan x="500" y="468">1</tspan><tspan x="490" y="474">0</tspan><tspan x="505" y="474">1</tspan><tspan x="510" y="480">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7560ms"><tspan x="265" y="468">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7560ms"><tspan x="265" y="474">0</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 7560ms"><tspan x="500" y="462">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7680ms"><tspan x="500" y="474">1</tspan><tspan x="515" y="474">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7680ms"><tspan x="275" y="462">0</tspan><tspan x="255" y="474">0</tspan><tspan x="270" y="474">1</tspan><tspan x="495" y="474">1</tspan><tspan x="260" y="480">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7680ms"><tspan x="270" y="462">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7800ms"><tspan x="500" y="480">0</tspan><tspan x="510" y="462">0</tspan><tspan x="495" y="468">0</tspan><tspan x="510" y="468">1</tspan><tspan x="510" y="474">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7800ms"><tspan x="250" y="474">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7800ms"><tspan x="270" y="468">0</tspan><tspan x="255" y="480">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 7800ms"><tspan x="250" y="480">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7920ms"><tspan x="505" y="468">0</tspan><tspan x="515" y="480">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7920ms"><tspan x="260" y="468">0</tspan><tspan x="260" y="474">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7920ms"><tspan x="265" y="462">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 7920ms"><tspan x="250" y="468">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8040ms"><tspan x="505" y="462">0</tspan><tspan x="520" y="474">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8160ms"><tspan x="520" y="462">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8160ms"><tspan x="255" y="462">1</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 8520ms"><tspan x="280" y="468">0</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 9120ms"><tspan x="455" y="462">0</tspan></text>
+      <text class="canopy-fruit" fill="#ff8f3a" font-weight="700" style="--fruit-at: 8600ms"><tspan x="290" y="480">0</tspan></text>
+      <text class="canopy-fruit" fill="#ffb066" font-weight="700" style="--fruit-at: 8600ms"><tspan x="285" y="474">0</tspan><tspan x="275" y="480">0</tspan><tspan x="280" y="480">0</tspan><tspan x="285" y="480">1</tspan></text>
+      <text class="canopy-fruit" fill="#ffd9a8" font-weight="700" style="--fruit-at: 8600ms"><tspan x="280" y="474">0</tspan></text>
+      <text class="canopy-fruit" fill="#ff8f3a" font-weight="700" style="--fruit-at: 9160ms"><tspan x="465" y="474">1</tspan><tspan x="455" y="480">1</tspan><tspan x="460" y="480">1</tspan></text>
+      <text class="canopy-fruit" fill="#ffb066" font-weight="700" style="--fruit-at: 9160ms"><tspan x="460" y="468">0</tspan><tspan x="450" y="474">1</tspan><tspan x="455" y="474">1</tspan><tspan x="460" y="474">1</tspan></text>
+      <text class="canopy-fruit" fill="#ffd9a8" font-weight="700" style="--fruit-at: 9160ms"><tspan x="455" y="468">0</tspan></text>
+      <text class="canopy-fruit" fill="#ff8f3a" font-weight="700" style="--fruit-at: 10000ms"><tspan x="395" y="462">0</tspan><tspan x="385" y="468">1</tspan><tspan x="390" y="468">0</tspan></text>
+      <text class="canopy-fruit" fill="#ffb066" font-weight="700" style="--fruit-at: 10000ms"><tspan x="380" y="462">0</tspan><tspan x="385" y="462">0</tspan><tspan x="390" y="462">0</tspan></text>
+    </g>
+    <g class="sway" style="--bend: 4.8px">
+      <text class="digit" fill="#7a4b2e" style="--grow-at: 4320ms"><tspan x="295" y="432">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6120ms"><tspan x="380" y="456">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6240ms"><tspan x="405" y="456">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6360ms"><tspan x="395" y="456">0</tspan><tspan x="425" y="456">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6360ms"><tspan x="365" y="450">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6480ms"><tspan x="400" y="450">0</tspan><tspan x="365" y="456">0</tspan><tspan x="375" y="456">1</tspan><tspan x="420" y="456">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6480ms"><tspan x="355" y="456">1</tspan><tspan x="380" y="444">1</tspan><tspan x="410" y="450">1</tspan><tspan x="425" y="450">1</tspan><tspan x="345" y="456">0</tspan><tspan x="370" y="456">0</tspan><tspan x="415" y="456">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6480ms"><tspan x="375" y="444">1</tspan><tspan x="385" y="444">0</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 6480ms"><tspan x="395" y="450">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6600ms"><tspan x="405" y="450">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6600ms"><tspan x="410" y="456">0</tspan><tspan x="395" y="438">0</tspan><tspan x="405" y="438">1</tspan><tspan x="355" y="450">0</tspan><tspan x="360" y="450">1</tspan><tspan x="370" y="450">0</tspan><tspan x="390" y="450">0</tspan><tspan x="350" y="456">0</tspan><tspan x="360" y="456">0</tspan><tspan x="430" y="456">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6600ms"><tspan x="415" y="444">1</tspan><tspan x="390" y="438">1</tspan><tspan x="400" y="456">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6720ms"><tspan x="380" y="450">0</tspan><tspan x="375" y="450">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6720ms"><tspan x="335" y="450">1</tspan><tspan x="345" y="450">0</tspan><tspan x="420" y="450">0</tspan><tspan x="435" y="450">1</tspan><tspan x="320" y="456">0</tspan><tspan x="325" y="456">0</tspan><tspan x="335" y="456">0</tspan><tspan x="440" y="456">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6720ms"><tspan x="350" y="444">0</tspan><tspan x="370" y="438">1</tspan><tspan x="410" y="444">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6840ms"><tspan x="350" y="450">0</tspan><tspan x="415" y="450">1</tspan><tspan x="365" y="444">1</tspan><tspan x="400" y="444">1</tspan><tspan x="420" y="444">1</tspan><tspan x="430" y="450">0</tspan><tspan x="445" y="456">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6840ms"><tspan x="405" y="444">0</tspan><tspan x="340" y="450">0</tspan><tspan x="330" y="456">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6840ms"><tspan x="415" y="438">0</tspan><tspan x="390" y="432">1</tspan><tspan x="400" y="432">1</tspan><tspan x="335" y="438">1</tspan><tspan x="360" y="438">1</tspan><tspan x="385" y="438">1</tspan><tspan x="345" y="444">1</tspan><tspan x="430" y="444">0</tspan><tspan x="340" y="456">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 6840ms"><tspan x="325" y="450">1</tspan></text>
+      <text class="digit" fill="#fff1e6" style="--grow-at: 6840ms"><tspan x="370" y="432">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 6960ms"><tspan x="445" y="438">1</tspan><tspan x="360" y="444">0</tspan><tspan x="395" y="444">0</tspan><tspan x="445" y="444">0</tspan><tspan x="435" y="456">1</tspan><tspan x="465" y="456">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 6960ms"><tspan x="380" y="438">1</tspan><tspan x="385" y="432">1</tspan><tspan x="420" y="432">0</tspan><tspan x="455" y="456">0</tspan><tspan x="365" y="432">0</tspan><tspan x="365" y="438">1</tspan><tspan x="355" y="444">1</tspan><tspan x="370" y="444">0</tspan><tspan x="390" y="444">0</tspan><tspan x="425" y="444">1</tspan><tspan x="445" y="450">1</tspan><tspan x="310" y="456">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6960ms"><tspan x="375" y="432">0</tspan><tspan x="395" y="432">1</tspan><tspan x="375" y="438">1</tspan><tspan x="315" y="450">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 6960ms"><tspan x="310" y="450">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7080ms"><tspan x="425" y="432">1</tspan><tspan x="400" y="438">0</tspan><tspan x="440" y="444">1</tspan><tspan x="440" y="450">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7080ms"><tspan x="350" y="438">1</tspan><tspan x="345" y="432">0</tspan><tspan x="420" y="438">0</tspan><tspan x="340" y="432">0</tspan><tspan x="405" y="432">0</tspan><tspan x="410" y="438">0</tspan><tspan x="335" y="444">0</tspan><tspan x="340" y="444">0</tspan><tspan x="455" y="444">0</tspan><tspan x="320" y="450">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7080ms"><tspan x="315" y="456">0</tspan><tspan x="350" y="432">1</tspan><tspan x="355" y="432">0</tspan><tspan x="355" y="438">0</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 7080ms"><tspan x="300" y="456">0</tspan></text>
+      <text class="digit" fill="#fff1e6" style="--grow-at: 7080ms"><tspan x="450" y="456">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7200ms"><tspan x="460" y="450">1</tspan><tspan x="465" y="450">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7200ms"><tspan x="380" y="432">1</tspan><tspan x="460" y="444">1</tspan><tspan x="460" y="438">0</tspan><tspan x="435" y="444">0</tspan><tspan x="305" y="456">1</tspan><tspan x="460" y="456">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7200ms"><tspan x="330" y="432">0</tspan><tspan x="345" y="438">0</tspan><tspan x="425" y="438">1</tspan><tspan x="430" y="438">1</tspan><tspan x="435" y="438">0</tspan><tspan x="330" y="444">0</tspan><tspan x="330" y="450">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 7200ms"><tspan x="360" y="432">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7320ms"><tspan x="440" y="438">1</tspan><tspan x="450" y="438">0</tspan><tspan x="465" y="444">0</tspan><tspan x="450" y="450">1</tspan><tspan x="470" y="456">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7320ms"><tspan x="455" y="450">0</tspan><tspan x="460" y="432">0</tspan><tspan x="310" y="438">0</tspan><tspan x="475" y="450">1</tspan><tspan x="295" y="456">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7320ms"><tspan x="305" y="444">0</tspan><tspan x="340" y="438">1</tspan><tspan x="315" y="444">1</tspan><tspan x="305" y="450">1</tspan><tspan x="285" y="456">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 7320ms"><tspan x="300" y="438">0</tspan><tspan x="290" y="450">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7440ms"><tspan x="430" y="432">0</tspan><tspan x="440" y="432">0</tspan><tspan x="455" y="438">1</tspan><tspan x="450" y="444">1</tspan><tspan x="470" y="450">1</tspan><tspan x="480" y="456">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7440ms"><tspan x="470" y="432">0</tspan><tspan x="450" y="432">0</tspan><tspan x="455" y="432">0</tspan><tspan x="295" y="438">0</tspan><tspan x="485" y="456">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7440ms"><tspan x="300" y="432">1</tspan><tspan x="335" y="432">1</tspan><tspan x="435" y="432">1</tspan><tspan x="295" y="444">0</tspan><tspan x="300" y="444">1</tspan><tspan x="310" y="444">1</tspan><tspan x="290" y="456">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 7440ms"><tspan x="300" y="450">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7560ms"><tspan x="445" y="432">0</tspan><tspan x="475" y="438">0</tspan><tspan x="475" y="456">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7560ms"><tspan x="465" y="438">0</tspan><tspan x="315" y="432">0</tspan><tspan x="470" y="438">1</tspan><tspan x="295" y="450">1</tspan><tspan x="490" y="450">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7560ms"><tspan x="275" y="450">1</tspan><tspan x="285" y="450">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 7560ms"><tspan x="275" y="456">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7680ms"><tspan x="470" y="444">0</tspan><tspan x="495" y="450">0</tspan><tspan x="490" y="456">0</tspan><tspan x="500" y="456">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7680ms"><tspan x="465" y="432">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7680ms"><tspan x="310" y="432">1</tspan><tspan x="305" y="438">0</tspan><tspan x="290" y="444">0</tspan><tspan x="280" y="450">1</tspan><tspan x="270" y="456">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 7680ms"><tspan x="275" y="438">0</tspan><tspan x="285" y="438">1</tspan><tspan x="280" y="444">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7800ms"><tspan x="500" y="444">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7800ms"><tspan x="475" y="432">1</tspan><tspan x="495" y="438">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7800ms"><tspan x="305" y="432">1</tspan><tspan x="280" y="456">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7920ms"><tspan x="500" y="438">1</tspan><tspan x="495" y="456">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7920ms"><tspan x="270" y="444">0</tspan><tspan x="495" y="444">0</tspan><tspan x="260" y="456">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7920ms"><tspan x="285" y="444">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8040ms"><tspan x="500" y="450">1</tspan><tspan x="505" y="456">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8160ms"><tspan x="505" y="450">1</tspan><tspan x="510" y="450">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8160ms"><tspan x="515" y="450">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8160ms"><tspan x="265" y="450">1</tspan><tspan x="270" y="450">0</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 9840ms"><tspan x="480" y="432">1</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 9960ms"><tspan x="385" y="450">1</tspan></text>
+      <text class="canopy-fruit" fill="#ff8f3a" font-weight="700" style="--fruit-at: 8740ms"><tspan x="330" y="438">0</tspan><tspan x="320" y="444">0</tspan><tspan x="325" y="444">1</tspan></text>
+      <text class="canopy-fruit" fill="#ffb066" font-weight="700" style="--fruit-at: 8740ms"><tspan x="325" y="432">1</tspan><tspan x="315" y="438">1</tspan><tspan x="320" y="438">1</tspan><tspan x="325" y="438">1</tspan></text>
+      <text class="canopy-fruit" fill="#ffd9a8" font-weight="700" style="--fruit-at: 8740ms"><tspan x="320" y="432">0</tspan></text>
+      <text class="canopy-fruit" fill="#ff8f3a" font-weight="700" style="--fruit-at: 9020ms"><tspan x="410" y="432">0</tspan><tspan x="415" y="432">1</tspan></text>
+      <text class="canopy-fruit" fill="#ff8f3a" font-weight="700" style="--fruit-at: 9860ms"><tspan x="490" y="444">1</tspan><tspan x="480" y="450">1</tspan><tspan x="485" y="450">0</tspan></text>
+      <text class="canopy-fruit" fill="#ffb066" font-weight="700" style="--fruit-at: 9860ms"><tspan x="485" y="438">1</tspan><tspan x="475" y="444">1</tspan><tspan x="480" y="444">1</tspan><tspan x="485" y="444">0</tspan></text>
+      <text class="canopy-fruit" fill="#ffd9a8" font-weight="700" style="--fruit-at: 9860ms"><tspan x="480" y="438">0</tspan></text>
+      <text class="canopy-fruit" fill="#ffb066" font-weight="700" style="--fruit-at: 10000ms"><tspan x="390" y="456">0</tspan></text>
+      <text class="canopy-fruit" fill="#ffd9a8" font-weight="700" style="--fruit-at: 10000ms"><tspan x="385" y="456">0</tspan></text>
+    </g>
+    <g class="sway" style="--bend: 6.0px">
+      <text class="digit" fill="#8cc47a" style="--grow-at: 6960ms"><tspan x="390" y="426">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7080ms"><tspan x="370" y="420">1</tspan><tspan x="395" y="426">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 7080ms"><tspan x="365" y="420">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7200ms"><tspan x="375" y="426">1</tspan><tspan x="435" y="426">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7200ms"><tspan x="390" y="414">1</tspan><tspan x="395" y="420">0</tspan><tspan x="350" y="426">1</tspan><tspan x="370" y="426">0</tspan><tspan x="380" y="426">0</tspan><tspan x="425" y="426">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7200ms"><tspan x="385" y="426">0</tspan><tspan x="395" y="414">0</tspan><tspan x="405" y="414">1</tspan><tspan x="430" y="426">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 7200ms"><tspan x="330" y="426">1</tspan></text>
+      <text class="digit" fill="#e9a3b8" style="--grow-at: 7200ms"><tspan x="355" y="426">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7320ms"><tspan x="385" y="414">0</tspan><tspan x="375" y="414">1</tspan><tspan x="415" y="414">0</tspan><tspan x="355" y="420">1</tspan><tspan x="390" y="420">1</tspan><tspan x="365" y="426">0</tspan><tspan x="400" y="426">0</tspan><tspan x="440" y="426">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7320ms"><tspan x="345" y="426">1</tspan><tspan x="385" y="420">0</tspan><tspan x="365" y="408">0</tspan><tspan x="375" y="408">1</tspan><tspan x="405" y="408">1</tspan><tspan x="350" y="414">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7440ms"><tspan x="430" y="414">0</tspan><tspan x="455" y="426">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7440ms"><tspan x="410" y="408">0</tspan><tspan x="365" y="414">0</tspan><tspan x="335" y="420">0</tspan><tspan x="350" y="420">0</tspan><tspan x="360" y="420">0</tspan><tspan x="430" y="420">0</tspan><tspan x="310" y="426">0</tspan><tspan x="360" y="426">0</tspan><tspan x="450" y="426">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7440ms"><tspan x="340" y="414">0</tspan><tspan x="385" y="408">0</tspan><tspan x="420" y="420">1</tspan><tspan x="370" y="408">0</tspan><tspan x="395" y="408">0</tspan><tspan x="370" y="414">1</tspan><tspan x="375" y="420">1</tspan><tspan x="380" y="420">1</tspan><tspan x="400" y="420">1</tspan><tspan x="405" y="420">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 7440ms"><tspan x="345" y="420">0</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 7440ms"><tspan x="390" y="408">1</tspan></text>
+      <text class="digit" fill="#e9a3b8" style="--grow-at: 7440ms"><tspan x="425" y="420">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7560ms"><tspan x="435" y="420">1</tspan><tspan x="445" y="420">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7560ms"><tspan x="430" y="408">1</tspan><tspan x="345" y="414">0</tspan><tspan x="325" y="426">0</tspan><tspan x="340" y="426">1</tspan><tspan x="460" y="426">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7560ms"><tspan x="375" y="402">1</tspan><tspan x="380" y="402">1</tspan><tspan x="400" y="402">0</tspan><tspan x="355" y="414">1</tspan><tspan x="400" y="414">1</tspan><tspan x="420" y="414">1</tspan><tspan x="440" y="420">1</tspan><tspan x="300" y="426">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 7560ms"><tspan x="325" y="414">1</tspan><tspan x="335" y="426">0</tspan></text>
+      <text class="digit" fill="#f4c6d0" style="--grow-at: 7560ms"><tspan x="365" y="402">0</tspan><tspan x="380" y="414">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7680ms"><tspan x="430" y="402">0</tspan><tspan x="465" y="420">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7680ms"><tspan x="340" y="420">1</tspan><tspan x="425" y="408">1</tspan><tspan x="475" y="426">0</tspan><tspan x="390" y="402">0</tspan><tspan x="420" y="402">0</tspan><tspan x="355" y="408">0</tspan><tspan x="440" y="408">1</tspan><tspan x="450" y="408">1</tspan><tspan x="300" y="420">1</tspan><tspan x="445" y="426">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7680ms"><tspan x="340" y="408">1</tspan><tspan x="385" y="402">0</tspan><tspan x="425" y="414">1</tspan><tspan x="315" y="408">0</tspan><tspan x="345" y="408">0</tspan><tspan x="380" y="408">1</tspan><tspan x="415" y="408">1</tspan><tspan x="420" y="408">1</tspan><tspan x="440" y="414">1</tspan><tspan x="325" y="420">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 7680ms"><tspan x="335" y="402">0</tspan><tspan x="325" y="408">0</tspan><tspan x="335" y="414">1</tspan><tspan x="360" y="414">1</tspan></text>
+      <text class="digit" fill="#f4c6d0" style="--grow-at: 7680ms"><tspan x="435" y="408">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7800ms"><tspan x="360" y="402">0</tspan><tspan x="405" y="402">1</tspan><tspan x="350" y="408">0</tspan><tspan x="400" y="408">0</tspan><tspan x="305" y="414">0</tspan><tspan x="320" y="420">0</tspan><tspan x="330" y="420">0</tspan><tspan x="315" y="426">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7800ms"><tspan x="450" y="402">1</tspan><tspan x="320" y="408">1</tspan><tspan x="360" y="408">1</tspan><tspan x="445" y="414">0</tspan><tspan x="315" y="420">1</tspan><tspan x="455" y="420">1</tspan><tspan x="305" y="426">0</tspan></text>
+      <text class="digit" fill="#fff1e6" style="--grow-at: 7800ms"><tspan x="480" y="420">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 7920ms"><tspan x="450" y="420">1</tspan><tspan x="465" y="426">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7920ms"><tspan x="305" y="420">0</tspan><tspan x="290" y="426">0</tspan><tspan x="295" y="426">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7920ms"><tspan x="325" y="402">1</tspan><tspan x="355" y="402">1</tspan><tspan x="370" y="402">0</tspan><tspan x="410" y="402">1</tspan><tspan x="415" y="402">0</tspan><tspan x="300" y="408">1</tspan><tspan x="435" y="414">1</tspan><tspan x="450" y="414">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 7920ms"><tspan x="320" y="402">0</tspan><tspan x="330" y="414">1</tspan></text>
+      <text class="digit" fill="#e9a3b8" style="--grow-at: 7920ms"><tspan x="460" y="408">1</tspan></text>
+      <text class="digit" fill="#fff1e6" style="--grow-at: 7920ms"><tspan x="395" y="402">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8040ms"><tspan x="470" y="426">0</tspan><tspan x="480" y="426">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8040ms"><tspan x="460" y="402">0</tspan><tspan x="315" y="414">0</tspan><tspan x="455" y="414">0</tspan><tspan x="460" y="414">1</tspan><tspan x="475" y="414">1</tspan><tspan x="460" y="420">1</tspan><tspan x="485" y="420">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8040ms"><tspan x="340" y="402">1</tspan><tspan x="425" y="402">1</tspan><tspan x="455" y="402">1</tspan><tspan x="295" y="408">1</tspan><tspan x="330" y="408">1</tspan><tspan x="445" y="408">1</tspan><tspan x="465" y="408">0</tspan><tspan x="470" y="408">1</tspan><tspan x="310" y="414">1</tspan><tspan x="320" y="414">1</tspan><tspan x="310" y="420">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8040ms"><tspan x="305" y="402">0</tspan><tspan x="335" y="408">1</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 8040ms"><tspan x="470" y="414">0</tspan></text>
+      <text class="digit" fill="#f4c6d0" style="--grow-at: 8040ms"><tspan x="470" y="420">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8160ms"><tspan x="465" y="402">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8160ms"><tspan x="315" y="402">0</tspan><tspan x="445" y="402">1</tspan><tspan x="455" y="408">1</tspan><tspan x="465" y="414">0</tspan><tspan x="485" y="414">0</tspan><tspan x="475" y="420">1</tspan><tspan x="285" y="426">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8160ms"><tspan x="330" y="402">0</tspan><tspan x="295" y="414">1</tspan><tspan x="300" y="414">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8160ms"><tspan x="290" y="420">1</tspan><tspan x="295" y="420">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8280ms"><tspan x="475" y="408">1</tspan><tspan x="480" y="408">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8280ms"><tspan x="310" y="402">1</tspan><tspan x="305" y="408">1</tspan><tspan x="310" y="408">0</tspan><tspan x="285" y="420">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8400ms"><tspan x="290" y="402">1</tspan><tspan x="300" y="402">0</tspan><tspan x="475" y="402">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8520ms"><tspan x="470" y="402">0</tspan><tspan x="480" y="402">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8520ms"><tspan x="295" y="402">1</tspan><tspan x="290" y="408">0</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 8640ms"><tspan x="320" y="426">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8640ms"><tspan x="285" y="402">0</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 9000ms"><tspan x="410" y="414">0</tspan></text>
+      <text class="canopy-fruit" fill="#ff8f3a" font-weight="700" style="--fruit-at: 9020ms"><tspan x="420" y="426">1</tspan></text>
+      <text class="canopy-fruit" fill="#ffb066" font-weight="700" style="--fruit-at: 9020ms"><tspan x="415" y="420">1</tspan><tspan x="405" y="426">0</tspan><tspan x="410" y="426">1</tspan><tspan x="415" y="426">0</tspan></text>
+      <text class="canopy-fruit" fill="#ffd9a8" font-weight="700" style="--fruit-at: 9020ms"><tspan x="410" y="420">1</tspan></text>
+      <text class="canopy-fruit" fill="#ff8f3a" font-weight="700" style="--fruit-at: 9440ms"><tspan x="345" y="402">0</tspan><tspan x="350" y="402">0</tspan></text>
+      <text class="canopy-fruit" fill="#ff8f3a" font-weight="700" style="--fruit-at: 9580ms"><tspan x="435" y="402">1</tspan><tspan x="440" y="402">1</tspan></text>
+    </g>
+    <g class="sway" style="--bend: 7.2px">
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7680ms"><tspan x="415" y="396">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7680ms"><tspan x="385" y="396">1</tspan><tspan x="395" y="396">0</tspan><tspan x="400" y="396">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 7680ms"><tspan x="390" y="396">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7800ms"><tspan x="375" y="390">1</tspan><tspan x="390" y="390">1</tspan><tspan x="400" y="390">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 7920ms"><tspan x="405" y="390">0</tspan><tspan x="360" y="396">0</tspan><tspan x="365" y="396">0</tspan><tspan x="380" y="396">0</tspan><tspan x="410" y="396">1</tspan><tspan x="420" y="396">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 7920ms"><tspan x="390" y="384">1</tspan><tspan x="335" y="390">1</tspan><tspan x="380" y="390">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 7920ms"><tspan x="325" y="396">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8040ms"><tspan x="415" y="384">0</tspan><tspan x="370" y="390">1</tspan><tspan x="410" y="390">0</tspan><tspan x="425" y="390">0</tspan><tspan x="370" y="396">0</tspan><tspan x="375" y="396">0</tspan><tspan x="425" y="396">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8040ms"><tspan x="425" y="384">0</tspan><tspan x="310" y="396">1</tspan><tspan x="330" y="396">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8040ms"><tspan x="335" y="396">0</tspan><tspan x="370" y="384">1</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 8040ms"><tspan x="405" y="396">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8160ms"><tspan x="430" y="384">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8160ms"><tspan x="395" y="378">1</tspan><tspan x="405" y="378">0</tspan><tspan x="415" y="378">0</tspan><tspan x="335" y="384">0</tspan><tspan x="375" y="384">1</tspan><tspan x="380" y="384">0</tspan><tspan x="415" y="390">1</tspan><tspan x="420" y="390">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8160ms"><tspan x="385" y="378">0</tspan><tspan x="355" y="378">1</tspan><tspan x="390" y="378">1</tspan><tspan x="355" y="384">1</tspan><tspan x="355" y="390">0</tspan><tspan x="365" y="390">1</tspan><tspan x="395" y="390">1</tspan><tspan x="450" y="390">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8160ms"><tspan x="400" y="384">0</tspan><tspan x="320" y="390">1</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 8160ms"><tspan x="385" y="390">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8280ms"><tspan x="465" y="396">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8280ms"><tspan x="360" y="384">1</tspan><tspan x="395" y="384">0</tspan><tspan x="410" y="384">0</tspan><tspan x="325" y="390">0</tspan><tspan x="430" y="390">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8280ms"><tspan x="420" y="378">0</tspan><tspan x="445" y="378">0</tspan><tspan x="405" y="384">0</tspan><tspan x="315" y="390">0</tspan><tspan x="340" y="390">1</tspan><tspan x="360" y="390">0</tspan><tspan x="300" y="396">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8280ms"><tspan x="335" y="378">0</tspan><tspan x="370" y="378">0</tspan><tspan x="320" y="384">0</tspan><tspan x="330" y="384">1</tspan><tspan x="330" y="390">0</tspan><tspan x="315" y="396">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8400ms"><tspan x="460" y="390">1</tspan><tspan x="455" y="396">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8400ms"><tspan x="350" y="378">1</tspan><tspan x="420" y="384">0</tspan><tspan x="440" y="384">1</tspan><tspan x="450" y="384">0</tspan><tspan x="310" y="390">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8400ms"><tspan x="385" y="384">1</tspan><tspan x="375" y="378">1</tspan><tspan x="310" y="384">1</tspan><tspan x="340" y="384">0</tspan><tspan x="465" y="384">1</tspan><tspan x="445" y="390">1</tspan><tspan x="305" y="396">0</tspan><tspan x="450" y="396">1</tspan><tspan x="460" y="396">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8400ms"><tspan x="320" y="378">0</tspan><tspan x="345" y="378">1</tspan><tspan x="350" y="384">1</tspan><tspan x="295" y="390">0</tspan><tspan x="290" y="396">1</tspan><tspan x="320" y="396">0</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 8400ms"><tspan x="365" y="384">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8520ms"><tspan x="455" y="384">1</tspan><tspan x="455" y="390">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8520ms"><tspan x="380" y="378">0</tspan><tspan x="425" y="378">1</tspan><tspan x="450" y="378">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8520ms"><tspan x="360" y="378">0</tspan><tspan x="365" y="378">0</tspan><tspan x="400" y="378">0</tspan><tspan x="410" y="378">1</tspan><tspan x="300" y="384">0</tspan><tspan x="445" y="384">0</tspan><tspan x="460" y="384">1</tspan><tspan x="305" y="390">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8520ms"><tspan x="325" y="378">0</tspan><tspan x="340" y="378">1</tspan><tspan x="315" y="384">0</tspan><tspan x="300" y="390">0</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 8520ms"><tspan x="325" y="384">1</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8640ms"><tspan x="470" y="396">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8640ms"><tspan x="435" y="378">0</tspan><tspan x="465" y="378">1</tspan><tspan x="465" y="390">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8640ms"><tspan x="430" y="378">0</tspan><tspan x="440" y="378">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8640ms"><tspan x="315" y="378">0</tspan><tspan x="330" y="378">0</tspan><tspan x="295" y="396">0</tspan></text>
+      <text class="digit" fill="#4f8a45" style="--grow-at: 8760ms"><tspan x="475" y="396">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8760ms"><tspan x="470" y="390">0</tspan><tspan x="475" y="390">0</tspan><tspan x="485" y="396">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8760ms"><tspan x="310" y="378">1</tspan><tspan x="305" y="384">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8880ms"><tspan x="470" y="384">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 9000ms"><tspan x="470" y="378">0</tspan><tspan x="475" y="384">1</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 9360ms"><tspan x="345" y="384">0</tspan></text>
+      <text class="digit" fill="#527948" style="--grow-at: 9480ms"><tspan x="435" y="384">1</tspan></text>
+      <text class="canopy-fruit" fill="#ff8f3a" font-weight="700" style="--fruit-at: 9440ms"><tspan x="355" y="396">1</tspan></text>
+      <text class="canopy-fruit" fill="#ffb066" font-weight="700" style="--fruit-at: 9440ms"><tspan x="350" y="390">1</tspan><tspan x="340" y="396">1</tspan><tspan x="345" y="396">0</tspan><tspan x="350" y="396">0</tspan></text>
+      <text class="canopy-fruit" fill="#ffd9a8" font-weight="700" style="--fruit-at: 9440ms"><tspan x="345" y="390">1</tspan></text>
+      <text class="canopy-fruit" fill="#ff8f3a" font-weight="700" style="--fruit-at: 9580ms"><tspan x="445" y="396">1</tspan></text>
+      <text class="canopy-fruit" fill="#ffb066" font-weight="700" style="--fruit-at: 9580ms"><tspan x="440" y="390">1</tspan><tspan x="430" y="396">0</tspan><tspan x="435" y="396">1</tspan><tspan x="440" y="396">0</tspan></text>
+      <text class="canopy-fruit" fill="#ffd9a8" font-weight="700" style="--fruit-at: 9580ms"><tspan x="435" y="390">1</tspan></text>
+    </g>
+    <g class="sway" style="--bend: 8.4px">
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8160ms"><tspan x="375" y="372">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8280ms"><tspan x="385" y="366">0</tspan><tspan x="395" y="372">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8280ms"><tspan x="375" y="366">1</tspan><tspan x="365" y="372">0</tspan><tspan x="420" y="372">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8280ms"><tspan x="390" y="372">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8400ms"><tspan x="425" y="372">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8400ms"><tspan x="380" y="372">1</tspan><tspan x="410" y="372">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8400ms"><tspan x="345" y="366">1</tspan><tspan x="350" y="366">1</tspan><tspan x="355" y="366">1</tspan><tspan x="325" y="372">1</tspan><tspan x="330" y="372">1</tspan><tspan x="340" y="372">0</tspan><tspan x="400" y="372">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8520ms"><tspan x="365" y="366">1</tspan><tspan x="405" y="372">1</tspan><tspan x="435" y="372">0</tspan><tspan x="455" y="372">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8520ms"><tspan x="385" y="372">1</tspan><tspan x="370" y="360">0</tspan><tspan x="385" y="360">0</tspan><tspan x="370" y="366">0</tspan><tspan x="415" y="372">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8520ms"><tspan x="405" y="366">1</tspan><tspan x="360" y="372">1</tspan><tspan x="440" y="372">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8640ms"><tspan x="390" y="360">0</tspan><tspan x="370" y="372">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8640ms"><tspan x="355" y="354">1</tspan><tspan x="355" y="360">0</tspan><tspan x="395" y="360">1</tspan><tspan x="395" y="366">0</tspan><tspan x="430" y="366">0</tspan><tspan x="315" y="372">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8640ms"><tspan x="375" y="360">0</tspan><tspan x="360" y="366">0</tspan><tspan x="380" y="366">1</tspan><tspan x="410" y="366">0</tspan><tspan x="345" y="372">0</tspan><tspan x="350" y="372">1</tspan></text>
+      <text class="digit" fill="#fff1e6" style="--grow-at: 8640ms"><tspan x="390" y="366">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8760ms"><tspan x="400" y="354">1</tspan><tspan x="400" y="360">0</tspan><tspan x="420" y="366">0</tspan><tspan x="455" y="366">1</tspan><tspan x="430" y="372">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8760ms"><tspan x="375" y="354">1</tspan><tspan x="345" y="360">0</tspan><tspan x="350" y="360">0</tspan><tspan x="425" y="366">1</tspan><tspan x="310" y="372">0</tspan><tspan x="355" y="372">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8760ms"><tspan x="385" y="348">0</tspan><tspan x="405" y="354">0</tspan><tspan x="360" y="360">0</tspan><tspan x="410" y="360">0</tspan><tspan x="400" y="366">0</tspan><tspan x="440" y="366">1</tspan></text>
+      <text class="digit" fill="#f4c6d0" style="--grow-at: 8760ms"><tspan x="415" y="360">1</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 8880ms"><tspan x="395" y="354">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 8880ms"><tspan x="360" y="348">1</tspan><tspan x="385" y="354">1</tspan><tspan x="365" y="360">1</tspan><tspan x="415" y="366">1</tspan><tspan x="435" y="366">0</tspan><tspan x="465" y="372">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 8880ms"><tspan x="365" y="354">1</tspan><tspan x="370" y="354">1</tspan><tspan x="380" y="360">0</tspan><tspan x="335" y="372">0</tspan></text>
+      <text class="digit" fill="#c8eaa8" style="--grow-at: 8880ms"><tspan x="320" y="372">0</tspan></text>
+      <text class="digit" fill="#6aa85a" style="--grow-at: 9000ms"><tspan x="390" y="354">1</tspan><tspan x="450" y="372">0</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 9000ms"><tspan x="370" y="348">0</tspan><tspan x="405" y="360">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 9000ms"><tspan x="380" y="348">1</tspan><tspan x="360" y="354">0</tspan><tspan x="410" y="354">1</tspan></text>
+      <text class="digit" fill="#c9d65a" style="--grow-at: 9000ms"><tspan x="380" y="354">1</tspan></text>
+      <text class="digit" fill="#8cc47a" style="--grow-at: 9120ms"><tspan x="390" y="348">1</tspan><tspan x="395" y="348">1</tspan><tspan x="415" y="354">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 9120ms"><tspan x="365" y="348">1</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 9240ms"><tspan x="410" y="348">1</tspan></text>
+    </g>
+    <g class="sway" style="--bend: 9.6px">
+      <text class="digit" fill="#a9d98f" style="--grow-at: 9240ms"><tspan x="390" y="342">0</tspan></text>
+      <text class="digit" fill="#a9d98f" style="--grow-at: 9360ms"><tspan x="380" y="342">1</tspan></text>
+      <text class="digit" fill="#fff1e6" style="--grow-at: 9360ms"><tspan x="370" y="342">1</tspan></text>
     </g>
   </g>
   <g class="kirby">
