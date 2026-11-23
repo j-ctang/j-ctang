@@ -1,6 +1,6 @@
 ![Startup messages fade into a desktop. Open a few windows. I’ll show you what I’ve been doing.](assets/profile-display-services.svg)
 
-![I’m Justin. I build small tools that take friction out of everyday work, and I like experimenting with how work feels on screen.](assets/profile-about.svg)
+![About me form. Name: Justin. Builds: small tools for real devs. Used by: me, every day. Latest: Jev Prune. Now: binary tangerine tree. A sticky note crosses out “I’m really messy, can never stay organized, so many tabs” and says “that’s why I made Tab Tamer.”](assets/profile-about.svg)
 
 [▶ Listen to hello mono | visualizer on YouTube](https://www.youtube.com/watch?v=4deDga_hTig)
 
