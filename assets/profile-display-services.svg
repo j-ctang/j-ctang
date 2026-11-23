@@ -6,9 +6,9 @@
   .static-report { display: inline; }
 }
 .fault-strip { font: bold 13px monospace; }
-.fault-strip, .damaged-artwork, .error-stack, .report-cursor, .utility-window, .comp-window { visibility: hidden; }
+.fault-strip, .damaged-artwork, .error-stack, .report-cursor, .utility-window, .comp-window, .exit-cursor, .roam-cursor { visibility: hidden; }
 @media (prefers-reduced-motion: no-preference) {
-  .fault-strip, .damaged-artwork, .error-stack, .report-cursor, .utility-window, .comp-window { visibility: visible; }
+  .fault-strip, .damaged-artwork, .error-stack, .report-cursor, .utility-window, .comp-window, .exit-cursor, .roam-cursor { visibility: visible; }
 
   .comp-window { animation: show-comp 350ms ease-out 8050ms both; }
   @keyframes show-comp { from { opacity: 0; } to { opacity: 1; } }
@@ -122,8 +122,33 @@
     animation: show-word var(--word-length) step-end var(--word-at),
                report-type var(--word-length) step-end var(--word-at);
   }
-  .report-invitation { animation: show-invitation 1ms step-end
-                       calc(var(--print-at) + 11 * var(--word-length)) both; }
+  .report-word.report-last {
+    animation: show-invitation 1ms step-end var(--word-at) both,
+               report-type var(--word-length) step-end var(--word-at);
+  }
+  /* Second cursor: wanders over the damaged panes, never resting. */
+  .roam-cursor { animation: roam-in 400ms ease-out 9200ms both, roam 11s ease-in-out 9200ms infinite; }
+  @keyframes roam-in { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes roam {
+    0% { transform: translate(-30px, 260px) scale(.38); }
+    9% { transform: translate(90px, 210px) scale(.38); }
+    18% { transform: translate(160px, 120px) scale(.38); }
+    27% { transform: translate(300px, 190px) scale(.38); }
+    36% { transform: translate(250px, 300px) scale(.38); }
+    45% { transform: translate(110px, 360px) scale(.38); }
+    54% { transform: translate(200px, 420px) scale(.38); }
+    63% { transform: translate(380px, 330px) scale(.38); }
+    72% { transform: translate(430px, 170px) scale(.38); }
+    81% { transform: translate(560px, 90px) scale(.38); }
+    90% { transform: translate(280px, 80px) scale(.38); }
+    100% { transform: translate(-30px, 260px) scale(.38); }
+  }
+  .exit-cursor { animation: exit-pointer 1300ms ease-in-out 24300ms both; }
+  @keyframes exit-pointer {
+    0% { transform: translate(600px, 590px) scale(.38); opacity: 0; }
+    15% { transform: translate(600px, 590px) scale(.38); opacity: 1; }
+    100% { transform: translate(730px, 690px) scale(.38); opacity: 1; }
+  }
   @keyframes show-crash-log {
     0% { opacity: 0; animation-timing-function: ease-out; }
     22% { opacity: 1; animation-timing-function: step-end; }
@@ -877,14 +902,11 @@
   <text class="report-word" x="139" y="67" style="--start: 3360ms">what</text>
   <text class="report-word" x="139" y="67" style="--start: 3840ms">I’ve</text>
   <text class="report-word" x="139" y="67" style="--start: 4320ms">been</text>
-  <text class="report-word" x="139" y="67" style="--start: 4800ms">doing.</text>
+  <text class="report-word report-last" x="139" y="67" style="--start: 4800ms">doing.</text>
 </g>
-<g class="report-invitation">
-  <g id="report-invitation" text-anchor="middle" font-family="Georgia, serif" fill="#352620">
-    <text x="139" y="55" font-size="19">Open a few windows.</text>
-    <text x="139" y="78" font-size="16">I’ll show you what I’ve been doing.</text>
-  </g>
-</g>
+<defs>
+  <text id="report-settled" x="139" y="67" text-anchor="middle" dominant-baseline="central" font-size="39" font-family="Georgia, serif" font-weight="bold" fill="#352620">doing.</text>
+</defs>
 </g></g>
 <g class="error-dialog dismiss-second" transform="translate(315.75 532.55)">
 <g data-motion="alert-24">
@@ -914,7 +936,9 @@
 <text x="241" y="87" text-anchor="middle" fill="#594036" font-size="11">OK</text></g></g></g>
 <g class="static-report" transform="translate(310.5 523.1)" aria-hidden="true">
   <use href="#report-frame"/>
-  <use href="#report-invitation"/>
+  <use href="#report-settled"/>
 </g>
 <g class="report-cursor" aria-hidden="true">
-<path d="M0 0L37 31L20 33L28 49L19 53L11 37L0 46Z" fill="#242522" stroke="#fbf4e3" stroke-width="2.5" stroke-linejoin="round"/></g></svg>
+<path id="pointer" d="M0 0L37 31L20 33L28 49L19 53L11 37L0 46Z" fill="#242522" stroke="#fbf4e3" stroke-width="2.5" stroke-linejoin="round"/></g>
+<g class="roam-cursor" aria-hidden="true"><path d="M0 0L37 31L20 33L28 49L19 53L11 37L0 46Z" fill="#9fd3f2" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/></g>
+<g class="exit-cursor" aria-hidden="true"><use href="#pointer"/></g></svg>
