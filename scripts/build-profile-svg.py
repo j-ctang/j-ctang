@@ -25,9 +25,9 @@ def prefix_exploring_styles(source):
     return re.sub(r"<style>(.*?)</style>", prefix_css, source, flags=re.S)
 
 
-# The scenes share one document clock. Start the exploration scene once the
-# opening scene's pipe has faded in (.cc-pipe: 500ms at 37000ms).
-EXPLORING_START_MS = 37500
+# The scenes share one document clock. Start the exploration scene when the
+# opening scene's pipe starts extending (.cc-pipe at 37000ms).
+EXPLORING_START_MS = 37000
 TIME = r"(\d+(?:\.\d+)?)(ms|s)"
 
 
