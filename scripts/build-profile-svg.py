@@ -25,6 +25,38 @@ def prefix_exploring_styles(source):
     return re.sub(r"<style>(.*?)</style>", prefix_css, source, flags=re.S)
 
 
+# The scenes share one document clock. Start the exploration scene once the
+# opening scene's pipe has faded in (.cc-pipe: 500ms at 37000ms).
+EXPLORING_START_MS = 37500
+TIME = r"(\d+(?:\.\d+)?)(ms|s)"
+
+
+def to_ms(value, unit):
+    return float(value) * (1000 if unit == "s" else 1)
+
+
+def delay_exploring_timeline(source, offset):
+    """Shift every animation delay in the exploration scene by offset ms."""
+    def shift_var(match):
+        return f"{match[1]}{to_ms(match[2], match[3]) + offset:g}ms"
+
+    source = re.sub(r"(--(?:at|open|grow-at|ripe):\s*)" + TIME, shift_var, source)
+
+    def shift_animation(match):
+        parts = []
+        for part in re.split(r",(?![^()]*\))", match[2]):
+            times = list(re.finditer(r"(?<![\w.-])" + TIME + r"(?![\w-])", part))
+            if len(times) >= 2:  # second time is the delay
+                t = times[1]
+                part = f"{part[:t.start()]}{to_ms(t[1], t[2]) + offset:g}ms{part[t.end():]}"
+            elif "var(" not in part:  # no delay: add one
+                part = f"{part.rstrip()} {offset}ms"
+            parts.append(part)
+        return f"{match[1]}{','.join(parts)}"
+
+    return re.sub(r"(animation:)([^;}]+)", shift_animation, source)
+
+
 scenes = []
 seen_ids = set()
 for name in ("profile-open-latest.svg", "profile-exploring.svg"):
@@ -37,6 +69,7 @@ for name in ("profile-open-latest.svg", "profile-exploring.svg"):
     width, height = (int(root.attrib[key]) for key in ("width", "height"))
     if name == "profile-exploring.svg":
         source = prefix_exploring_styles(source)
+        source = delay_exploring_timeline(source, EXPLORING_START_MS)
     scenes.append((width, height, source.strip()))
 
 width = scenes[0][0]
