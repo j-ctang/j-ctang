@@ -8,7 +8,7 @@
 
 ## Featured project
 
-[![Jev Prune for Claude Code. Long coding sessions pile up tool output you may never need again. Jev Prune clears stale tool output from the session while keeping the visible conversation intact, so you can still go back and read how you got there.](assets/profile-jev-prune.svg)](https://github.com/j-ctang/claude-code-jev-prune)
+[![Jev Prune for Claude Code. Long coding sessions pile up tool output you may never need again. Jev Prune clears stale tool output from the session while keeping the visible conversation intact, so you can still go back and read how you got there.](assets/profile-jev-prune-terminal.svg)](https://github.com/j-ctang/claude-code-jev-prune)
 
 [View Jev Prune on GitHub](https://github.com/j-ctang/claude-code-jev-prune)
 
