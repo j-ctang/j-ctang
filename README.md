@@ -1,6 +1,6 @@
 ![Startup messages fade into a desktop. Open a few windows. I’ll show you what I’ve been doing.](assets/profile-display-services.svg)
 
-![About me form. Name: Justin. Builds: small tools for real devs. Used by: me, every day. Latest: Jev Prune. Now: binary tangerine tree. A sticky note crosses out “I’m really messy, can never stay organized, so many tabs” and says “that’s why I made Tab Tamer.”](assets/profile-about.svg)
+![About me form. Name: Justin. Builds: small tools for real devs. Used by: me, every day. Latest: Jev Prune. Now: binary tangerine tree. A sticky note crosses out “I’m really messy, can never stay organized, so many tabs” and says “that’s why I made Tab Tamer.” Upcoming, no dates set: try a local model with Jev Prune and grow the binary tangerine tree.](assets/profile-about.svg)
 
 [Tab Tamer on GitHub](https://github.com/j-ctang/tab-tamer)
 
@@ -14,4 +14,4 @@
 
 ## What I’m exploring now
 
-![changelog.md: exploring. 0 to seed, seed to sapling, sapling to canopy, canopy to tangerines in progress. Keep it continuous. A binary tangerine tree grows digit by digit beside it.](assets/profile-tangerine.svg)
+![changelog.md: exploring. 0 to seed, seed to sapling, sapling to canopy, canopy to tangerines in progress. Keep it continuous. A binary tangerine tree grows digit by digit beside it. Kirby hops on the changelog window, and Don Quixote bobs on the Canopy window.](assets/profile-tangerine.svg)

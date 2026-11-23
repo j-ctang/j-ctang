@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="748" viewBox="0 0 640 748" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="788" viewBox="0 -40 640 788" role="img" aria-labelledby="title description">
   <title id="title">What I’m exploring now</title>
-  <desc id="description">changelog.md: exploring. 0 to seed, seed to sapling, sapling to canopy, canopy to tangerines in progress. Keep it continuous. A binary tangerine tree grows digit by digit beside it.</desc>
+  <desc id="description">changelog.md: exploring. 0 to seed, seed to sapling, sapling to canopy, canopy to tangerines in progress. Keep it continuous. A binary tangerine tree grows digit by digit beside it. Kirby hops on the changelog window, and Don Quixote bobs on the Canopy window.</desc>
   <style>
     .copy { font: 22px Georgia, serif; }
     .heading { font: bold 38px Georgia, serif; }
@@ -47,6 +47,24 @@
     @keyframes ripen {
       from { fill: #88ad80; }
       to { fill: #ffa65f; }
+    }
+    .kirby, .don { shape-rendering: crispEdges; }
+    @media (prefers-reduced-motion: no-preference) {
+      .kirby { animation: hop 3s steps(1, end) infinite; }
+      .don { animation: bob 3.8s steps(1, end) infinite; }
+      @keyframes hop {
+        0%, 28%, 100% { transform: translateY(0); }
+        32%, 48% { transform: translateY(-3px); }
+        36%, 44% { transform: translateY(-6px); }
+        40% { transform: translateY(-8px); }
+        52% { transform: translateY(0); }
+      }
+      @keyframes bob {
+        0%, 65%, 100% { transform: translateY(0); }
+        70%, 85% { transform: translateY(-3px); }
+        75%, 80% { transform: translateY(-6px); }
+        90% { transform: translateY(0); }
+      }
     }
   </style>
   <rect x="22" y="18" width="602" height="245" rx="9" fill="#252128" opacity=".35"/>
@@ -156,6 +174,29 @@
           <path d="M378 372q4 2 8-1" stroke="#d0b899" fill="none" stroke-width=".8"/>
         </g>
       </g>
+    </g>
+  </g>
+  <g class="kirby">
+    <g transform="translate(518 -24) scale(2)">
+      <path fill="#642b47" d="M6 3h7v1h2v1h2v2h1v3h1v3h-2v1h2v3h-1v1h-6v-1H7v1H2v-1H0v-3h1v-2H0V9h2V7h1V5h1V4h2Z"/>
+      <path fill="#f49cba" d="M6 4h7v1h2v1h2v4h1v2h-2v2h-2v2H6v-1H4v-2H3v-1H1v-2h2V8h1V6h2Z"/>
+      <path fill="#ffd1dd" d="M6 5h5v1H7v1H5V6h1Z"/>
+      <path fill="#db416d" d="M2 14h2v1h2v2H2v-1H1v-1h1Zm13 1h3v2h-6v-1h3Z"/>
+      <path fill="#30223b" d="M8 7h1v4H8zm4 0h1v4h-1zm-2 5h2v1h-2Z"/>
+      <path fill="#df618d" d="M5 11h2v1H5zm9 0h2v1h-2Z"/>
+    </g>
+  </g>
+  <g class="don">
+    <g transform="translate(538 201) scale(2)">
+      <path fill="#3b2b30" d="M4 1h7v1h2v2h1v6h-1v2h2v2h1v2h-3v2h1v2H8v-2H7v2H2v-3h2v-1H1v-3h2v-2H1V5h1V3h2Z"/>
+      <path fill="#e4af57" d="M4 2h7v1h2v7h-1v1h-2V8H5v3H2V5h1V3h1Z"/>
+      <path fill="#ffe19a" d="M4 3h7v1h1v2h-2V5H8v2H6v1H3V5h1Z"/>
+      <path fill="#f8cba2" d="M9 6h1v1h2v3h-1v2H5V9h2V8h2Z"/>
+      <path fill="#48313b" d="M7 9h1v1H7zm4-1h1v1h-1Z"/>
+      <path fill="#fcf0db" d="M6 12h5v4H6Z"/>
+      <path fill="#945052" d="M4 12h2v4H5v1H3v-2H2v-1h2Zm7 0h2v1h1v2h-2v2h-2v-3h1Z"/>
+      <path fill="#b32e45" d="M8 12h1v4H8Z"/>
+      <path fill="#efbd63" d="M3 18h3v1H3zm6 0h4v1H9Z"/>
     </g>
   </g>
 </svg>

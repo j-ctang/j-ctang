@@ -1,13 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="330" viewBox="0 0 920 330" role="img" aria-labelledby="title description">
   <title id="title">About me</title>
-  <desc id="description">About me form. Name: Justin. Builds: small tools for real devs. Used by: me, every day. Latest: Jev Prune. Now: binary tangerine tree. Actually useful. Beside it, focus.cfg shows tabs open: too many, and a sticky note reads: I’m really messy. I can never stay organized. I have so many tabs. Those lines are crossed out. That’s why I made Tab Tamer.</desc>
+  <desc id="description">About me form. Name: Justin. Builds: small tools for real devs. Used by: me, every day. Latest: Jev Prune. Now: binary tangerine tree. Actually useful. Beside it, focus.cfg shows tabs open: too many, and a sticky note reads: I’m really messy. I can never stay organized. I have so many tabs. Those lines are crossed out. That’s why I made Tab Tamer. Upcoming, no dates set: try a local model with Jev Prune and grow the binary tangerine tree.</desc>
   <defs><filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="3"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .5 0"/></filter><pattern id="hl" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#1f2a24"/></pattern></defs>
   <style>
     .win, .cursor, .bonus, .strike, .fix { visibility: hidden; }
+    .upcoming { visibility: visible; }
     @media (prefers-reduced-motion: no-preference) {
+      .upcoming { transform-origin: 214px 22px; animation: open 380ms ease-out 27300ms both; }
       .win, .cursor, .bonus, .strike, .fix { visibility: visible; }
       .win { transform-origin: 727px 40px; animation: open 380ms ease-out 26500ms both; }
-      .focus { transform-origin: 214px 40px; animation: open 380ms ease-out 27600ms both; }
+      .focus { transform-origin: 197px 156px; animation: open 380ms ease-out 27600ms both; }
       .note { transform-origin: 440px 150px; animation: open 380ms ease-out 28400ms both; }
       .strike { stroke-dasharray: 240; stroke-dashoffset: 240; animation: strike 320ms ease-in var(--at) forwards; }
       .fix { animation: fade 300ms ease-out 30300ms both; }
@@ -30,6 +32,26 @@
     }
     @media (prefers-reduced-motion: reduce) { .win, .bonus, .strike, .fix { visibility: visible; } }
   </style>
+  <defs>
+    <pattern id="upcoming-stripes" width="4" height="4" patternUnits="userSpaceOnUse">
+      <path d="M0 2.5h4" stroke="#bbc5d2"/>
+    </pattern>
+  </defs>
+  <g class="upcoming" font-family="ui-monospace, monospace" fill="#24252a">
+    <rect x="44" y="14" width="348" height="106"/>
+    <rect x="40.5" y="10.5" width="347" height="105" fill="white" stroke="#24252a"/>
+    <rect x="41" y="11" width="346" height="23" fill="url(#upcoming-stripes)"/>
+    <path d="M41 34.5h346" stroke="#24252a"/>
+    <rect x="48" y="14" width="80" height="17" fill="white"/>
+    <rect x="347" y="14" width="33" height="17" fill="white"/>
+    <path d="M352.5 19.5h7v7h-7zm14 0 7 7m0-7-7 7" fill="none" stroke="#24252a"/>
+    <text x="51" y="26" font-size="13" font-weight="700">Upcoming</text>
+    <rect x="49" y="42" width="330" height="19" fill="#e8edf4"/>
+    <text x="56" y="56" font-size="12" fill="#365687">No dates set</text>
+    <path d="M56 71l6 4-6 4zm0 21 6 4-6 4z" fill="#5475aa"/>
+    <text x="70" y="80" font-size="14">Try a local model with Jev Prune</text>
+    <text x="70" y="101" font-size="14">Grow the binary tangerine tree</text>
+  </g>
   <g class="win">
     <rect x="556" y="15" width="348" height="210" rx="9" fill="#24241f" opacity=".35"/>
     <rect x="553" y="10" width="348" height="210" rx="9" fill="#ecebe6" stroke="#9a9a92"/>
@@ -40,7 +62,7 @@
     <rect x="567" y="193" width="12" height="12" rx="2" fill="#fff" stroke="#9a9a92"/><path d="M569.5 199l3 3 5-6" fill="none" stroke="#171916" stroke-width="1.6"/>
     <text x="586" y="203" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#171916">actually useful</text>
   </g>
-  <g class="bonus focus"><g transform="translate(-513 0)">
+  <g class="bonus focus"><g transform="translate(-530 116)">
     <rect x="557" y="15" width="348" height="175" rx="2" fill="#1f2a24" opacity=".85"/>
     <rect x="553" y="10" width="348" height="175" rx="2" fill="#eef2ee" stroke="#1f2a24" stroke-width="1.2"/>
     <rect x="553.6" y="10.6" width="346.8" height="23.4" fill="#cfe0d6"/>
