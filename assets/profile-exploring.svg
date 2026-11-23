@@ -620,7 +620,8 @@
   </g>
   <g aria-hidden="true">
     <path d="M470 -40V58" stroke="#3a3f47" stroke-width="8" fill="none"/>
-    <path class="packets" d="M470 -40V58" stroke="#ffa65f" stroke-width="3" stroke-dasharray="6 14" fill="none"/>
+    <!-- Keep the packet phase continuous across the viewport edge. -->
+    <path class="packets" d="M470 -50V58" stroke="#ffa65f" stroke-width="3" stroke-dasharray="6 14" fill="none"/>
     <rect x="462" y="50" width="16" height="8" rx="1" fill="#3a3f47"/>
     <circle class="beat" cx="572" cy="68" r="3" fill="#ffa65f"/>
   </g>
