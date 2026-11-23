@@ -8,7 +8,7 @@
       .handoff-cursor { display: inline; animation: open-latest-pointer 8180ms linear 24300ms both; }
       .latest-field { animation: highlight-latest 560ms ease-out 31220ms both; }
       .bg-term { animation: slide-under 520ms cubic-bezier(.2,.66,.3,1) var(--at) both; }
-      .t1 { --at: 32200ms; --dx: 120px; } .t2 { --at: 32500ms; --dx: -120px; } .t3 { --at: 32800ms; --dx: 120px; }
+      .t1 { --at: 32200ms; --dx: 120px; } .t2 { --at: 32500ms; --dx: -120px; } .t3 { --at: 32800ms; --dx: 120px; } .t4 { --at: 33100ms; --dx: -120px; }
       .claude-term { animation: open-claude 420ms ease-out 33600ms both; transform-origin: 580px 1730px; }
       .cc-caret { animation: cc-blink 1s steps(1) 34000ms infinite; }
       .featured-terminal { animation: open-featured 420ms cubic-bezier(.2,.66,.3,1) 31600ms both; }
@@ -1119,28 +1119,65 @@
 
   </svg>
   <g class="bg-term t1">
-    <rect x="23" y="1116" width="300" height="190" rx="6" fill="#24241f" opacity=".45"/>
-    <rect x="18" y="1110" width="300" height="190" rx="6" fill="#1b1d22" stroke="#0e0f12" stroke-width="1.4"/>
-    <path d="M18 1134H318" stroke="#2c2f36"/>
-    <text x="30" y="1126" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="700" fill="#d6d3cc">zsh — tab-tamer</text>
-    <text x="288" y="1126" font-family="'Courier New', Courier, monospace" font-size="12" fill="#6b6f78">◂ ×</text>
-    <g font-family="'Courier New', Courier, monospace" font-size="12.5"><text x="32" y="1156" fill="#7fa7d9">$ npm run dev</text><text x="32" y="1174" fill="#6b6f78">watching tabs…</text><text x="32" y="1192" fill="#d6d3cc">47 tabs open</text><text x="32" y="1210" fill="#8fd19e">✓ 9 groups</text><text x="32" y="1228" fill="#e6b35a">~ 3 dupes</text><text x="32" y="1246" fill="#8fd19e">✓ 38 → 11</text></g>
+    <rect x="22" y="1115" width="300" height="190" rx="2" fill="#24241f"/>
+    <rect x="18" y="1110" width="300" height="190" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
+    <path d="M19 1116H317M19 1120H317M19 1124H317M19 1128H317" stroke="#abb1ba"/>
+    <path d="M18 1134H318" stroke="#171916"/>
+    <rect x="27" y="1113" width="117.2" height="18" fill="#fbfaf4"/>
+    <text x="31" y="1126" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" fill="#171916">zsh: tab-tamer</text>
+    <rect x="282" y="1113" width="30" height="18" fill="#fbfaf4"/>
+    <path d="M286 1118h7v7h-7zM300 1118l7 7m0-7l-7 7" fill="none" stroke="#171916"/>
+    <g font-family="'Courier New', Courier, monospace" font-size="12.5"><text x="32" y="1156" fill="#346b93">$ npm run dev</text><text x="32" y="1174" fill="#7d7d75">watching tabs…</text><text x="32" y="1192" fill="#171916">47 tabs open</text><text x="32" y="1210" fill="#3d7a5e">✓ 9 groups</text><text x="32" y="1228" fill="#d8742b">~ 3 dupes</text><text x="32" y="1246" fill="#3d7a5e">✓ 38 → 11</text></g>
   </g>
   <g class="bg-term t2">
-    <rect x="617" y="1246" width="300" height="200" rx="6" fill="#24241f" opacity=".45"/>
-    <rect x="612" y="1240" width="300" height="200" rx="6" fill="#1b1d22" stroke="#0e0f12" stroke-width="1.4"/>
-    <path d="M612 1264H912" stroke="#2c2f36"/>
-    <text x="624" y="1256" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="700" fill="#d6d3cc">git log</text>
-    <text x="882" y="1256" font-family="'Courier New', Courier, monospace" font-size="12" fill="#6b6f78">◂ ×</text>
-    <g font-family="'Courier New', Courier, monospace" font-size="12.5"><text x="626" y="1286" fill="#e6b35a">a41f c0de</text><text x="626" y="1304" fill="#d6d3cc">grow canopy</text><text x="626" y="1322" fill="#e6b35a">7c01 5eed</text><text x="626" y="1340" fill="#d6d3cc">hang tangerines</text><text x="626" y="1358" fill="#e6b35a">f57a 0rng</text><text x="626" y="1376" fill="#d6d3cc">merge #36</text><text x="626" y="1394" fill="#6b6f78">(END)</text></g>
+    <rect x="616" y="1235" width="300" height="190" rx="2" fill="#24241f"/>
+    <rect x="612" y="1230" width="300" height="190" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
+    <path d="M613 1236H911M613 1240H911M613 1244H911M613 1248H911" stroke="#abb1ba"/>
+    <path d="M612 1254H912" stroke="#171916"/>
+    <rect x="621" y="1233" width="62.6" height="18" fill="#fbfaf4"/>
+    <text x="625" y="1246" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" fill="#171916">git log</text>
+    <rect x="876" y="1233" width="30" height="18" fill="#fbfaf4"/>
+    <path d="M880 1238h7v7h-7zM894 1238l7 7m0-7l-7 7" fill="none" stroke="#171916"/>
+    <g font-family="'Courier New', Courier, monospace" font-size="12.5"><text x="626" y="1276" fill="#d8742b">a41f c0de</text><text x="626" y="1294" fill="#171916">grow canopy</text><text x="626" y="1312" fill="#d8742b">7c01 5eed</text><text x="626" y="1330" fill="#171916">hang tangerines</text><text x="626" y="1348" fill="#d8742b">f57a 0rng</text><text x="626" y="1366" fill="#171916">merge #36</text><text x="626" y="1384" fill="#7d7d75">(END)</text></g>
   </g>
   <g class="bg-term t3">
-    <rect x="15" y="1476" width="300" height="190" rx="6" fill="#24241f" opacity=".45"/>
-    <rect x="10" y="1470" width="300" height="190" rx="6" fill="#1b1d22" stroke="#0e0f12" stroke-width="1.4"/>
-    <path d="M10 1494H310" stroke="#2c2f36"/>
-    <text x="22" y="1486" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="700" fill="#d6d3cc">vim tree.js</text>
-    <text x="280" y="1486" font-family="'Courier New', Courier, monospace" font-size="12" fill="#6b6f78">◂ ×</text>
-    <g font-family="'Courier New', Courier, monospace" font-size="12.5"><text x="24" y="1516" fill="#6b6f78"> 1 <tspan fill="#c792ea">const</tspan> seed = 0;</text><text x="24" y="1534" fill="#6b6f78"> 2 <tspan fill="#d6d3cc">grow(seed)</tspan></text><text x="24" y="1552" fill="#6b6f78"> 3 <tspan fill="#d6d3cc">  .branch(01)</tspan></text><text x="24" y="1570" fill="#6b6f78"> 4 <tspan fill="#d6d3cc">  .leaf(10)</tspan></text><text x="24" y="1588" fill="#6b6f78"> 5 <tspan fill="#ffa65f">  .ripen()</tspan></text><text x="24" y="1606" fill="#6b6f78">-- INSERT --</text></g>
+    <rect x="14" y="1475" width="300" height="190" rx="2" fill="#24241f"/>
+    <rect x="10" y="1470" width="300" height="190" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
+    <path d="M11 1476H309M11 1480H309M11 1484H309M11 1488H309" stroke="#abb1ba"/>
+    <path d="M10 1494H310" stroke="#171916"/>
+    <rect x="19" y="1473" width="93.8" height="18" fill="#fbfaf4"/>
+    <text x="23" y="1486" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" fill="#171916">vim tree.js</text>
+    <rect x="274" y="1473" width="30" height="18" fill="#fbfaf4"/>
+    <path d="M278 1478h7v7h-7zM292 1478l7 7m0-7l-7 7" fill="none" stroke="#171916"/>
+    <g font-family="'Courier New', Courier, monospace" font-size="12.5"><text x="24" y="1516" fill="#7d7d75"> 1 <tspan fill="#346b93">const</tspan><tspan fill="#171916"> seed = 0;</tspan></text><text x="24" y="1534" fill="#7d7d75"> 2 <tspan fill="#171916">grow(seed)</tspan></text><text x="24" y="1552" fill="#7d7d75"> 3 <tspan fill="#171916">  .branch(01)</tspan></text><text x="24" y="1570" fill="#7d7d75"> 4 <tspan fill="#171916">  .leaf(10)</tspan></text><text x="24" y="1588" fill="#7d7d75"> 5 <tspan fill="#d8742b">  .ripen()</tspan></text><text x="24" y="1606" fill="#171916">-- INSERT --</text></g>
+  </g>
+  <g class="bg-term t4">
+    <rect x="644" y="1473" width="262" height="176" rx="2" fill="#24241f"/>
+    <rect x="640" y="1468" width="262" height="176" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
+    <path d="M641 1474H901M641 1478H901M641 1482H901M641 1486H901" stroke="#abb1ba"/>
+    <path d="M640 1492H902" stroke="#171916"/>
+    <rect x="649" y="1471" width="125.0" height="18" fill="#fbfaf4"/>
+    <text x="653" y="1484" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" fill="#171916">code: jev-prune</text>
+    <rect x="866" y="1471" width="30" height="18" fill="#fbfaf4"/>
+    <path d="M870 1476h7v7h-7zM884 1476l7 7m0-7l-7 7" fill="none" stroke="#171916"/>
+    <rect x="641" y="1493" width="26" height="150" fill="#efede3"/>
+    <path d="M667 1493V1644" stroke="#171916" stroke-width=".8"/>
+    <g fill="none" stroke="#171916" stroke-width="1.2"><rect x="648" y="1504" width="12" height="14"/><circle cx="653" cy="1537" r="5"/><path d="M657 1541l4 4"/><path d="M649 1558h10m-10 5h10m-10 5h6"/></g>
+    <rect x="668" y="1493" width="98" height="20" fill="#fbfaf4"/>
+    <path d="M668 1513H766M766 1493V1513M766 1513H902" stroke="#171916" stroke-width=".8"/>
+    <rect x="767" y="1493" width="134" height="20" fill="#efede3"/>
+    <text x="676" y="1507" font-family="'Courier New', Courier, monospace" font-size="11" fill="#171916">prune.ts</text>
+    <text x="774" y="1507" font-family="'Courier New', Courier, monospace" font-size="11" fill="#7d7d75">stats.ts</text>
+    <g font-family="'Courier New', Courier, monospace" font-size="11.5">
+      <text x="676" y="1532"><tspan fill="#346b93">export</tspan><tspan fill="#171916"> function prune(</tspan></text>
+      <text x="676" y="1548" fill="#171916">  results, keep = 5</text>
+      <text x="676" y="1564" fill="#171916">) {</text>
+      <text x="676" y="1580"><tspan fill="#346b93">  return</tspan><tspan fill="#171916"> results</tspan></text>
+      <text x="676" y="1596" fill="#171916">    .slice(-keep);</text>
+      <text x="676" y="1612" fill="#171916">}</text>
+    </g>
+    <rect x="641" y="1629" width="260" height="14" fill="#171916"/>
+    <text x="648" y="1640" font-family="'Courier New', Courier, monospace" font-size="10" fill="#fbfaf4">main ✓  Ln 5, Col 19</text>
   </g>
   <g class="featured-terminal">
     <svg x="140" y="1040" width="640" height="682" viewBox="0 0 640 682" aria-hidden="true">
@@ -1441,20 +1478,23 @@
     </svg>
   </g>
   <g class="claude-term">
-    <rect x="305" y="1736" width="560" height="220" rx="8" fill="#24241f" opacity=".45"/>
-    <rect x="300" y="1730" width="560" height="220" rx="8" fill="#1b1d22" stroke="#0e0f12" stroke-width="1.4"/>
-    <circle cx="316" cy="1743" r="5" fill="none" stroke="#555a63"/><circle cx="332" cy="1743" r="5" fill="none" stroke="#555a63"/><circle cx="348" cy="1743" r="5" fill="none" stroke="#555a63"/>
-    <path d="M300 1756H860" stroke="#2c2f36"/>
-    <text x="580.0" y="1747" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="700" fill="#d6d3cc">claude — ~/dev/next-tool</text>
+    <rect x="304" y="1735" width="560" height="220" rx="2" fill="#24241f"/>
+    <rect x="300" y="1730" width="560" height="220" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
+    <path d="M301 1736H859M301 1740H859M301 1744H859M301 1748H859" stroke="#abb1ba"/>
+    <path d="M300 1754H860" stroke="#171916"/>
+    <rect x="309" y="1733" width="187.4" height="18" fill="#fbfaf4"/>
+    <text x="313" y="1746" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" fill="#171916">claude: ~/dev/next-tool</text>
+    <rect x="824" y="1733" width="30" height="18" fill="#fbfaf4"/>
+    <path d="M828 1738h7v7h-7zM842 1738l7 7m0-7l-7 7" fill="none" stroke="#171916"/>
     <g font-family="'Courier New', Courier, monospace" font-size="13">
-      <rect x="316" y="1770" width="528" height="62" rx="5" fill="none" stroke="#d97757"/>
-      <text x="330" y="1794" fill="#d97757">✻ <tspan fill="#d6d3cc" font-weight="700">Claude Code</tspan></text>
-      <text x="330" y="1816" fill="#6b6f78">cwd: ~/dev/next-tool</text>
-      <text x="316" y="1858" fill="#6b6f78">jev-prune: on · context clean</text>
-      <rect x="316" y="1876" width="528" height="34" rx="5" fill="none" stroke="#555a63"/>
-      <text x="330" y="1898" fill="#d6d3cc">&gt; <tspan fill="#6b6f78">what should we build next?</tspan></text>
-      <rect class="cc-caret" x="348" y="1886" width="8" height="15" fill="#d6d3cc"/>
-      <text x="316" y="1934" fill="#555a63" font-size="11">? for shortcuts</text>
+      <rect x="316" y="1770" width="528" height="62" fill="none" stroke="#d8742b" stroke-width="1.2"/>
+      <text x="330" y="1794" fill="#d8742b">✻ <tspan fill="#171916" font-weight="700">Claude Code</tspan></text>
+      <text x="330" y="1816" fill="#7d7d75">cwd: ~/dev/next-tool</text>
+      <text x="316" y="1858" fill="#3d7a5e">jev-prune: on · context clean</text>
+      <rect x="316" y="1876" width="528" height="34" fill="none" stroke="#171916"/>
+      <text x="330" y="1898" fill="#171916">&gt; <tspan fill="#7d7d75">what should we build next?</tspan></text>
+      <rect class="cc-caret" x="348" y="1886" width="8" height="15" fill="#171916"/>
+      <text x="316" y="1934" fill="#7d7d75" font-size="11">? for shortcuts</text>
     </g>
   </g>
   <g class="handoff-cursor" aria-hidden="true">
