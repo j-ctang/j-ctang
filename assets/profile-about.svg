@@ -40,7 +40,7 @@
     <rect x="567" y="193" width="12" height="12" rx="2" fill="#fff" stroke="#9a9a92"/><path d="M569.5 199l3 3 5-6" fill="none" stroke="#171916" stroke-width="1.6"/>
     <text x="586" y="203" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#171916">actually useful</text>
   </g>
-  <g class="bonus focus" transform="translate(-513 0)">
+  <g class="bonus focus"><g transform="translate(-513 0)">
     <rect x="557" y="15" width="348" height="175" rx="2" fill="#1f2a24" opacity=".85"/>
     <rect x="553" y="10" width="348" height="175" rx="2" fill="#eef2ee" stroke="#1f2a24" stroke-width="1.2"/>
     <rect x="553.6" y="10.6" width="346.8" height="23.4" fill="#cfe0d6"/>
@@ -56,7 +56,7 @@
       <text x="660" y="140">small, sharp</text><text x="660" y="166">hello mono</text>
     </g>
     <rect x="554" y="35" width="346" height="149" fill="url(#hl)" opacity=".05"/>
-  </g>
+  </g></g>
   <g class="bonus note">
     <g transform="translate(0 20) rotate(-3 440 180)">
       <rect x="334" y="104" width="214" height="196" fill="#24241f" opacity=".25" transform="translate(4 5)"/>
