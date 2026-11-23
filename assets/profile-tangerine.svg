@@ -1,6 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="788" viewBox="0 -40 640 788" role="img" aria-labelledby="title description">
   <title id="title">What I’m exploring now</title>
-  <desc id="description">changelog.md: Day 0, seed 0 planted. Day 13, small sprout. Day 16, first green leaf. Day 30, the sapling takes shape. Day 60, a full canopy. Day 90, first tangerine ripens. A binary tangerine tree grows digit by digit beside it. Kirby hops on the changelog window, and Don Quixote bobs on the Canopy window.</desc>
+  <desc id="description">changelog.md: Day 0, seed 0 planted. Day 13, small sprout. Day 16, first green leaf. Day 30, the sapling takes shape. Day 60, a full canopy. Day 90, first tangerine ripens. A binary tangerine tree grows digit by digit beside it, with five miniature binary tangerines in the canopy. Kirby hops on the changelog window, and Don Quixote bobs on the Canopy window.</desc>
+  <defs>
+    <!-- Inline artwork from binary-tangerine.svg for standalone image rendering. -->
+    <g id="canopy-tangerine" font-family="ui-monospace, monospace" font-size="15" font-weight="700" text-anchor="middle">
+      <path d="M82 57h60l24 19 11 17v55l-7 24-28 30H82l-28-30-7-24V93l11-17Z" fill="#2d2521"/>
+      <g fill="#527948">
+        <text x="145" y="23">101</text>
+        <text x="140" y="39">01101</text>
+        <text x="130" y="55">110</text>
+      </g>
+      <text x="112" y="55" fill="#855638">1</text>
+      <text x="112" y="71" fill="#ad4e19">011010</text>
+      <g fill="#db681e">
+        <text x="112" y="87">1011010010</text>
+        <text x="112" y="103">011010110010</text>
+        <text x="112" y="119">10<tspan fill="#f69436">011001</tspan>01001</text>
+        <text x="112" y="135">01<tspan fill="#f69436">100101</tspan>10110</text>
+        <text x="112" y="151">101<tspan fill="#ee8129">1001</tspan>001010</text>
+        <text x="112" y="167">011010011010</text>
+      </g>
+      <g fill="#ad4e19">
+        <text x="112" y="183">1001101001</text>
+        <text x="112" y="199">011010</text>
+      </g>
+    </g>
+  </defs>
   <style>
     .copy { font: 22px Georgia, serif; }
     .heading { font: bold 38px Georgia, serif; }
@@ -18,6 +43,7 @@
     @media (prefers-reduced-motion: no-preference) {
       .seed { animation: seed-drop 720ms cubic-bezier(.43,.05,.81,.53) both; }
       .digit { animation: grow-digit 230ms ease-out var(--grow-at) both; }
+      .canopy-fruit { animation: detail-in 460ms ease-out var(--fruit-at) both; }
       .details { animation: detail-in 500ms ease-out 8900ms both; }
       .sway { animation: wind 5.4s ease-in-out 9500ms infinite; }
       .swing { transform-origin: 382px 286px; animation: rock 5.4s ease-in-out 9500ms infinite; }
@@ -162,6 +188,25 @@
       <g class="sway" style="--bend: 11.7px">
         <text y="229"><tspan x="277.6" class="leaf digit" style="--grow-at: 6034ms;">0</tspan><tspan x="282.4" class="leaf digit" style="--grow-at: 6054ms;">1</tspan><tspan x="287.2" class="leaf digit" style="--grow-at: 6073ms;">0</tspan><tspan x="292" class="leaf digit" style="--grow-at: 6093ms;">0</tspan><tspan x="296.8" class="leaf digit" style="--grow-at: 6111ms;">1</tspan><tspan x="301.6" class="leaf digit" style="--grow-at: 5510ms;">1</tspan><tspan x="306.4" class="leaf digit" style="--grow-at: 5530ms;">0</tspan><tspan x="311.2" class="leaf digit" style="--grow-at: 5549ms;">1</tspan><tspan x="316" class="leaf-light digit" style="--grow-at: 5569ms;">0</tspan><tspan x="320.8" class="leaf digit" style="--grow-at: 5674ms;">0</tspan><tspan x="325.6" class="leaf digit" style="--grow-at: 5781ms;">1</tspan><tspan x="330.4" class="leaf digit" style="--grow-at: 5885ms;">1</tspan><tspan x="335.2" class="leaf digit" style="--grow-at: 5991ms;">0</tspan><tspan x="340" class="leaf digit" style="--grow-at: 6097ms;">1</tspan><tspan x="344.8" class="leaf digit" style="--grow-at: 6202ms;">0</tspan><tspan x="349.6" class="leaf digit" style="--grow-at: 5687ms;">0</tspan><tspan x="354.4" class="leaf digit" style="--grow-at: 5793ms;">1</tspan></text>
       </g>
+    <g class="sway" style="--bend: 6.5px">
+      <g class="canopy-fruit" style="--fruit-at: 8900ms">
+        <use href="#canopy-tangerine" transform="translate(208 307) scale(.2)"/>
+      </g>
+      <g class="canopy-fruit" style="--fruit-at: 9250ms">
+        <use href="#canopy-tangerine" transform="translate(307 284) scale(.2)"/>
+      </g>
+      <g class="canopy-fruit" style="--fruit-at: 9640ms">
+        <use href="#canopy-tangerine" transform="translate(380 317) scale(.2)"/>
+      </g>
+    </g>
+    <g class="sway" style="--bend: 10px">
+      <g class="canopy-fruit" style="--fruit-at: 9430ms">
+        <use href="#canopy-tangerine" transform="translate(251 246) scale(.2)"/>
+      </g>
+      <g class="canopy-fruit" style="--fruit-at: 9850ms">
+        <use href="#canopy-tangerine" transform="translate(359 244) scale(.2)"/>
+      </g>
+    </g>
     <g class="details">
       <path d="M309 423q-12-14 3-27t-1-23q-10-9 0-19" fill="none" stroke="#71916d" stroke-width="1.4"/>
       <g fill="#a8c795">

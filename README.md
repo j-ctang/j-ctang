@@ -8,4 +8,4 @@
 
 ## What I’m exploring now
 
-![changelog.md: Day 0, seed 0 planted. Day 13, small sprout. Day 16, first green leaf. Day 30, the sapling takes shape. Day 60, a full canopy. Day 90, first tangerine ripens. A binary tangerine tree grows digit by digit beside it. Kirby hops on the changelog window, and Don Quixote bobs on the Canopy window.](assets/profile-tangerine.svg)
+![changelog.md: Day 0, seed 0 planted. Day 13, small sprout. Day 16, first green leaf. Day 30, the sapling takes shape. Day 60, a full canopy. Day 90, first tangerine ripens. A binary tangerine tree grows digit by digit beside it, with five miniature binary tangerines in the canopy. Kirby hops on the changelog window, and Don Quixote bobs on the Canopy window.](assets/profile-tangerine.svg)
