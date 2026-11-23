@@ -16,13 +16,13 @@
     .can { transform-origin: 517px 169px; }
     @media (prefers-reduced-motion: no-preference) {
       .day { opacity: 0; animation: day-on var(--dur) step-end var(--at); }
-      .day.last { animation: day-on 1ms step-end var(--at) forwards; }
+      .day.last { animation: day-on 120ms step-end var(--at) forwards; }
       .day-static { display: none; }
       .hl { animation: hl-on var(--dur) step-end var(--at); }
-      .hl.last { animation: hl-on 1ms step-end var(--at) forwards; }
+      .hl.last { animation: hl-on 120ms step-end var(--at) forwards; }
       @keyframes day-on { from, to { opacity: 1; } }
       @keyframes hl-on { from, to { opacity: .14; } }
-      .cl { animation: cl-in 1ms step-end var(--at) both; }
+      .cl { animation: cl-in 120ms step-start var(--at) both; }
       @keyframes cl-in { from { opacity: 0; } to { opacity: 1; } }
       .win { animation: win-open 380ms cubic-bezier(.2,.66,.3,1) var(--open) both; }
       .drop { animation: drop-in 400ms ease-out 0ms both; }

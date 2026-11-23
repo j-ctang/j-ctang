@@ -11,11 +11,11 @@
       .t1 { --at: 32200ms; --dx: 120px; } .t2 { --at: 32500ms; --dx: -120px; } .t3 { --at: 32800ms; --dx: 120px; } .t4 { --at: 33100ms; --dx: -120px; }
       .claude-term { animation: open-claude 420ms ease-out 33600ms both; transform-origin: 580px 1730px; }
       .cc-pet { transform-box: fill-box; transform-origin: bottom; animation: cc-hop 1.6s ease-in-out 34000ms infinite; }
-      .cc-caret { animation: cc-blink 1s steps(1) 34000ms infinite, cc-type 1680ms steps(21, end) 34900ms both; }
-      .cc-ph { animation: cc-hide 1ms step-end 34900ms both; }
-      .cc-typed { animation: cc-typing 1680ms steps(21, end) 34900ms both; }
-      .cc-hint { animation: cc-hide 1ms step-end 36900ms both; }
-      .cc-status { animation: cc-show 1ms step-end 36900ms both; }
+      .cc-caret { animation: cc-blink 1s steps(1) 34000ms infinite, cc-type 1680ms steps(21, jump-start) 34900ms both; }
+      .cc-ph { animation: cc-hide 150ms linear 34900ms both; }
+      .cc-typed { animation: cc-typing 1680ms steps(21, jump-start) 34900ms both; }
+      .cc-hint { animation: cc-hide 150ms linear 36900ms both; }
+      .cc-status { animation: cc-show 150ms linear 36900ms both; }
       .cc-pipe { animation: cc-fade 500ms ease-out 37000ms both; }
       .packets { animation: packets 2s linear infinite, beat 2s ease-in-out infinite; }
       .beat { animation: beat 2s ease-in-out infinite; }
@@ -192,7 +192,7 @@
                report-type var(--word-length) step-end var(--word-at);
   }
   .report-word.report-last {
-    animation: show-invitation 1ms step-end var(--word-at) both,
+    animation: show-invitation 120ms step-start var(--word-at) both,
                report-type var(--word-length) step-end var(--word-at);
   }
   /* Second cursor: wanders over the damaged panes, never resting. */
