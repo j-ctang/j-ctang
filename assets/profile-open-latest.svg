@@ -10,11 +10,13 @@
       .bg-term { animation: slide-under 520ms cubic-bezier(.2,.66,.3,1) var(--at) both; }
       .t1 { --at: 32200ms; --dx: 120px; } .t2 { --at: 32500ms; --dx: -120px; } .t3 { --at: 32800ms; --dx: 120px; } .t4 { --at: 33100ms; --dx: -120px; }
       .claude-term { animation: open-claude 420ms ease-out 33600ms both; transform-origin: 580px 1730px; }
+      .cc-pet { transform-box: fill-box; transform-origin: bottom; animation: cc-hop 1.6s ease-in-out 34000ms infinite; }
       .cc-caret { animation: cc-blink 1s steps(1) 34000ms infinite; }
       .featured-terminal { animation: open-featured 420ms cubic-bezier(.2,.66,.3,1) 31600ms both; }
     }
     @keyframes slide-under { from { transform: translateX(var(--dx)); opacity: 0; } to { transform: none; opacity: 1; } }
     @keyframes open-claude { from { opacity: 0; transform: scale(.85); } to { opacity: 1; transform: none; } }
+    @keyframes cc-hop { 0%, 60%, 100% { transform: none; } 75% { transform: translateY(-5px); } }
     @keyframes cc-blink { 50% { opacity: 0; } }
     @keyframes retire-roaming-pointer { to { opacity: 0; } }
     @keyframes open-latest-pointer {
@@ -1118,66 +1120,57 @@
   </g>
 
   </svg>
+  <defs>
+    <pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#000"/></pattern>
+    <pattern id="dither" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#f0b98a"/><rect width="2" height="2" fill="#d8742b"/><rect x="2" y="2" width="2" height="2" fill="#d8742b"/></pattern>
+  </defs>
   <g class="bg-term t1">
-    <rect x="22" y="1115" width="300" height="190" rx="2" fill="#24241f"/>
-    <rect x="18" y="1110" width="300" height="190" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
-    <path d="M19 1116H317M19 1120H317M19 1124H317M19 1128H317" stroke="#abb1ba"/>
-    <path d="M18 1134H318" stroke="#171916"/>
-    <rect x="27" y="1113" width="117.2" height="18" fill="#fbfaf4"/>
-    <text x="31" y="1126" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" fill="#171916">zsh: tab-tamer</text>
-    <rect x="282" y="1113" width="30" height="18" fill="#fbfaf4"/>
-    <path d="M286 1118h7v7h-7zM300 1118l7 7m0-7l-7 7" fill="none" stroke="#171916"/>
-    <g font-family="'Courier New', Courier, monospace" font-size="12.5"><text x="32" y="1156" fill="#346b93">$ npm run dev</text><text x="32" y="1174" fill="#7d7d75">watching tabs…</text><text x="32" y="1192" fill="#171916">47 tabs open</text><text x="32" y="1210" fill="#3d7a5e">✓ 9 groups</text><text x="32" y="1228" fill="#d8742b">~ 3 dupes</text><text x="32" y="1246" fill="#3d7a5e">✓ 38 → 11</text></g>
+    <rect x="10" y="1091" width="360" height="250" rx="10" fill="#0e1116"/>
+    <rect x="6" y="1086" width="360" height="250" rx="10" fill="#222832" stroke="#0e1116" stroke-width="1.4"/>
+    <path d="M6 1114H366" stroke="#3a4352"/>
+    <text x="20" y="1105" font-family="'Courier New', Courier, monospace" font-size="12" fill="#8792a6">◂</text>
+    <text x="36" y="1105" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="700" fill="#edf2fa">zsh — tab-tamer</text>
+    <text x="344" y="1105" font-family="'Courier New', Courier, monospace" font-size="12" fill="#8792a6">×</text>
+    <g font-family="'Courier New', Courier, monospace" font-size="13"><text x="22" y="1140" fill="#7fa7d9">$ npm run dev</text><text x="22" y="1159" fill="#8792a6">watching tabs…</text><text x="22" y="1178" fill="#edf2fa">47 tabs open</text><text x="22" y="1197" fill="#8fd19e">✓ 9 groups made</text><text x="22" y="1216" fill="#e6b35a">~ 3 dupes found</text><text x="22" y="1235" fill="#8fd19e">✓ 38 → 11 tabs</text><text x="22" y="1254" fill="#7fa7d9">$ ▮</text></g>
+    <rect x="7" y="1115" width="358" height="220" fill="url(#scan)" opacity=".18"/>
   </g>
   <g class="bg-term t2">
-    <rect x="616" y="1235" width="300" height="190" rx="2" fill="#24241f"/>
-    <rect x="612" y="1230" width="300" height="190" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
-    <path d="M613 1236H911M613 1240H911M613 1244H911M613 1248H911" stroke="#abb1ba"/>
-    <path d="M612 1254H912" stroke="#171916"/>
-    <rect x="621" y="1233" width="62.6" height="18" fill="#fbfaf4"/>
-    <text x="625" y="1246" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" fill="#171916">git log</text>
-    <rect x="876" y="1233" width="30" height="18" fill="#fbfaf4"/>
-    <path d="M880 1238h7v7h-7zM894 1238l7 7m0-7l-7 7" fill="none" stroke="#171916"/>
-    <g font-family="'Courier New', Courier, monospace" font-size="12.5"><text x="626" y="1276" fill="#d8742b">a41f c0de</text><text x="626" y="1294" fill="#171916">grow canopy</text><text x="626" y="1312" fill="#d8742b">7c01 5eed</text><text x="626" y="1330" fill="#171916">hang tangerines</text><text x="626" y="1348" fill="#d8742b">f57a 0rng</text><text x="626" y="1366" fill="#171916">merge #36</text><text x="626" y="1384" fill="#7d7d75">(END)</text></g>
+    <rect x="560" y="1201" width="354" height="250" rx="4" fill="#1f2a24"/>
+    <rect x="556" y="1196" width="354" height="250" rx="4" fill="#eef2ee" stroke="#1f2a24" stroke-width="1.4"/>
+    <rect x="557" y="1197" width="352" height="26" fill="#cfe0d6"/>
+    <path d="M556 1223H910" stroke="#1f2a24"/>
+    <rect x="772" y="1202" width="100" height="16" rx="8" fill="#eef2ee" stroke="#1f2a24"/>
+    <text x="822" y="1214" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="700" fill="#1f2a24">git log</text>
+    <text x="880" y="1214" font-family="'Courier New', Courier, monospace" font-size="12" fill="#1f2a24">− ×</text>
+    <g font-family="'Courier New', Courier, monospace" font-size="13"><text x="776" y="1248" fill="#d8742b">a41f c0de</text><text x="776" y="1267" fill="#1f2a24">  grow canopy</text><text x="776" y="1286" fill="#d8742b">7c01 5eed</text><text x="776" y="1305" fill="#1f2a24">  hang tangerines</text><text x="776" y="1324" fill="#d8742b">f57a 0rng</text><text x="776" y="1343" fill="#1f2a24">  merge #36</text><text x="776" y="1362" fill="#3d7a5e">(END)</text></g>
   </g>
   <g class="bg-term t3">
-    <rect x="14" y="1475" width="300" height="190" rx="2" fill="#24241f"/>
-    <rect x="10" y="1470" width="300" height="190" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
-    <path d="M11 1476H309M11 1480H309M11 1484H309M11 1488H309" stroke="#abb1ba"/>
-    <path d="M10 1494H310" stroke="#171916"/>
-    <rect x="19" y="1473" width="93.8" height="18" fill="#fbfaf4"/>
-    <text x="23" y="1486" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" fill="#171916">vim tree.js</text>
-    <rect x="274" y="1473" width="30" height="18" fill="#fbfaf4"/>
-    <path d="M278 1478h7v7h-7zM292 1478l7 7m0-7l-7 7" fill="none" stroke="#171916"/>
-    <g font-family="'Courier New', Courier, monospace" font-size="12.5"><text x="24" y="1516" fill="#7d7d75"> 1 <tspan fill="#346b93">const</tspan><tspan fill="#171916"> seed = 0;</tspan></text><text x="24" y="1534" fill="#7d7d75"> 2 <tspan fill="#171916">grow(seed)</tspan></text><text x="24" y="1552" fill="#7d7d75"> 3 <tspan fill="#171916">  .branch(01)</tspan></text><text x="24" y="1570" fill="#7d7d75"> 4 <tspan fill="#171916">  .leaf(10)</tspan></text><text x="24" y="1588" fill="#7d7d75"> 5 <tspan fill="#d8742b">  .ripen()</tspan></text><text x="24" y="1606" fill="#171916">-- INSERT --</text></g>
+    <rect x="10" y="1405" width="350" height="236" rx="2" fill="#5a3a22"/>
+    <rect x="6" y="1400" width="350" height="236" rx="2" fill="#fff3e6" stroke="#5a3a22" stroke-width="1.4"/>
+    <rect x="7" y="1401" width="348" height="24" fill="url(#dither)"/>
+    <rect x="14" y="1404" width="94" height="18" fill="#fff3e6"/>
+    <text x="19" y="1417" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" fill="#5a3a22">vim tree.js</text>
+    <path d="M6 1425H356" stroke="#5a3a22"/>
+    <g font-family="'Courier New', Courier, monospace" font-size="13"><text x="20" y="1450" fill="#b08a6a"> 1 <tspan fill="#b4561c">const</tspan><tspan fill="#5a3a22"> seed = 0;</tspan></text><text x="20" y="1469" fill="#b08a6a"> 2 <tspan fill="#5a3a22">grow(seed)</tspan></text><text x="20" y="1488" fill="#b08a6a"> 3 <tspan fill="#5a3a22">  .branch(01)</tspan></text><text x="20" y="1507" fill="#b08a6a"> 4 <tspan fill="#5a3a22">  .leaf(10)</tspan></text><text x="20" y="1526" fill="#b08a6a"> 5 <tspan fill="#d8742b">  .ripen()</tspan></text><text x="20" y="1545" fill="#b08a6a"> ~</text><text x="20" y="1564" fill="#b08a6a"> ~</text></g>
+    <rect x="7" y="1616" width="348" height="19" fill="#5a3a22"/>
+    <text x="16" y="1630" font-family="'Courier New', Courier, monospace" font-size="11" fill="#fff3e6">-- INSERT --   tree.js [+]</text>
   </g>
   <g class="bg-term t4">
-    <rect x="644" y="1473" width="262" height="176" rx="2" fill="#24241f"/>
-    <rect x="640" y="1468" width="262" height="176" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
-    <path d="M641 1474H901M641 1478H901M641 1482H901M641 1486H901" stroke="#abb1ba"/>
-    <path d="M640 1492H902" stroke="#171916"/>
-    <rect x="649" y="1471" width="125.0" height="18" fill="#fbfaf4"/>
-    <text x="653" y="1484" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="700" fill="#171916">code: jev-prune</text>
-    <rect x="866" y="1471" width="30" height="18" fill="#fbfaf4"/>
-    <path d="M870 1476h7v7h-7zM884 1476l7 7m0-7l-7 7" fill="none" stroke="#171916"/>
-    <rect x="641" y="1493" width="26" height="150" fill="#efede3"/>
-    <path d="M667 1493V1644" stroke="#171916" stroke-width=".8"/>
-    <g fill="none" stroke="#171916" stroke-width="1.2"><rect x="648" y="1504" width="12" height="14"/><circle cx="653" cy="1537" r="5"/><path d="M657 1541l4 4"/><path d="M649 1558h10m-10 5h10m-10 5h6"/></g>
-    <rect x="668" y="1493" width="98" height="20" fill="#fbfaf4"/>
-    <path d="M668 1513H766M766 1493V1513M766 1513H902" stroke="#171916" stroke-width=".8"/>
-    <rect x="767" y="1493" width="134" height="20" fill="#efede3"/>
-    <text x="676" y="1507" font-family="'Courier New', Courier, monospace" font-size="11" fill="#171916">prune.ts</text>
-    <text x="774" y="1507" font-family="'Courier New', Courier, monospace" font-size="11" fill="#7d7d75">stats.ts</text>
-    <g font-family="'Courier New', Courier, monospace" font-size="11.5">
-      <text x="676" y="1532"><tspan fill="#346b93">export</tspan><tspan fill="#171916"> function prune(</tspan></text>
-      <text x="676" y="1548" fill="#171916">  results, keep = 5</text>
-      <text x="676" y="1564" fill="#171916">) {</text>
-      <text x="676" y="1580"><tspan fill="#346b93">  return</tspan><tspan fill="#171916"> results</tspan></text>
-      <text x="676" y="1596" fill="#171916">    .slice(-keep);</text>
-      <text x="676" y="1612" fill="#171916">}</text>
-    </g>
-    <rect x="641" y="1629" width="260" height="14" fill="#171916"/>
-    <text x="648" y="1640" font-family="'Courier New', Courier, monospace" font-size="10" fill="#fbfaf4">main ✓  Ln 5, Col 19</text>
+    <rect x="600" y="1475" width="314" height="210" rx="8" fill="#9fd3f2"/>
+    <rect x="596" y="1470" width="314" height="210" rx="8" fill="#f5faff" stroke="#346b93" stroke-width="1.6"/>
+    <circle cx="612" cy="1483" r="4.5" fill="#d8742b"/><circle cx="626" cy="1483" r="4.5" fill="#e6b35a"/><circle cx="640" cy="1483" r="4.5" fill="#3d7a5e"/>
+    <text x="776" y="1487" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="700" fill="#17232e">prune.ts</text>
+    <path d="M596 1496H910" stroke="#346b93"/>
+    <rect x="597" y="1497" width="28" height="164" fill="#dcecf7"/>
+    <g fill="none" stroke="#346b93" stroke-width="1.3"><rect x="605" y="1508" width="12" height="14"/><circle cx="610" cy="1540" r="5"/><path d="M614 1544l4 4"/><path d="M605 1562h11m-11 5h11m-11 5h7"/></g>
+    <rect x="626" y="1497" width="92" height="20" fill="#f5faff"/>
+    <rect x="718" y="1497" width="191" height="20" fill="#dcecf7"/>
+    <path d="M626 1517H718V1497M718 1517H910" stroke="#346b93" stroke-width=".8"/>
+    <text x="634" y="1511" font-family="'Courier New', Courier, monospace" font-size="11" fill="#17232e">prune.ts</text>
+    <text x="726" y="1511" font-family="'Courier New', Courier, monospace" font-size="11" fill="#7f97ab">stats.ts</text>
+    <g font-family="'Courier New', Courier, monospace" font-size="11"><text x="774" y="1540" fill="#346b93">fn prune(r,</text><text x="774" y="1557" fill="#17232e">  keep=5) {</text><text x="774" y="1574" fill="#346b93">  return <tspan fill="#17232e">r</tspan></text><text x="774" y="1591" fill="#17232e">  .slice(-5)</text><text x="774" y="1608" fill="#17232e">}</text></g>
+    <path d="M597 1661H909V1672q0 7-7 7H604q-7 0-7-7Z" fill="#346b93"/>
+    <text x="606" y="1674" font-family="'Courier New', Courier, monospace" font-size="10" fill="#f5faff">main ✓ · · · · · · · · · · TS  Ln 5</text>
   </g>
   <g class="featured-terminal">
     <svg x="140" y="1040" width="640" height="682" viewBox="0 0 640 682" aria-hidden="true">
@@ -1493,6 +1486,7 @@
       <text x="316" y="1858" fill="#3d7a5e">jev-prune: on · context clean</text>
       <rect x="316" y="1876" width="528" height="34" fill="none" stroke="#171916"/>
       <text x="330" y="1898" fill="#171916">&gt; <tspan fill="#7d7d75">what should we build next?</tspan></text>
+      <g class="cc-pet" fill="#d97757"><rect x="758" y="1774" width="4" height="4"/><rect x="762" y="1774" width="4" height="4"/><rect x="766" y="1774" width="4" height="4"/><rect x="770" y="1774" width="4" height="4"/><rect x="774" y="1774" width="4" height="4"/><rect x="778" y="1774" width="4" height="4"/><rect x="782" y="1774" width="4" height="4"/><rect x="786" y="1774" width="4" height="4"/><rect x="758" y="1778" width="4" height="4"/><rect x="762" y="1778" width="4" height="4"/><rect x="766" y="1778" width="4" height="4"/><rect x="770" y="1778" width="4" height="4"/><rect x="774" y="1778" width="4" height="4"/><rect x="778" y="1778" width="4" height="4"/><rect x="782" y="1778" width="4" height="4"/><rect x="786" y="1778" width="4" height="4"/><rect x="750" y="1782" width="4" height="4"/><rect x="754" y="1782" width="4" height="4"/><rect x="758" y="1782" width="4" height="4"/><rect x="762" y="1782" width="4" height="4"/><rect x="766" y="1782" width="4" height="4"/><rect x="770" y="1782" width="4" height="4"/><rect x="774" y="1782" width="4" height="4"/><rect x="778" y="1782" width="4" height="4"/><rect x="782" y="1782" width="4" height="4"/><rect x="786" y="1782" width="4" height="4"/><rect x="790" y="1782" width="4" height="4"/><rect x="794" y="1782" width="4" height="4"/><rect x="750" y="1786" width="4" height="4"/><rect x="754" y="1786" width="4" height="4"/><rect x="758" y="1786" width="4" height="4"/><rect x="762" y="1786" width="4" height="4"/><rect x="766" y="1786" width="4" height="4"/><rect x="770" y="1786" width="4" height="4"/><rect x="774" y="1786" width="4" height="4"/><rect x="778" y="1786" width="4" height="4"/><rect x="782" y="1786" width="4" height="4"/><rect x="786" y="1786" width="4" height="4"/><rect x="790" y="1786" width="4" height="4"/><rect x="794" y="1786" width="4" height="4"/><rect x="758" y="1790" width="4" height="4"/><rect x="762" y="1790" width="4" height="4"/><rect x="766" y="1790" width="4" height="4"/><rect x="770" y="1790" width="4" height="4"/><rect x="774" y="1790" width="4" height="4"/><rect x="778" y="1790" width="4" height="4"/><rect x="782" y="1790" width="4" height="4"/><rect x="786" y="1790" width="4" height="4"/><rect x="758" y="1794" width="4" height="4"/><rect x="762" y="1794" width="4" height="4"/><rect x="766" y="1794" width="4" height="4"/><rect x="770" y="1794" width="4" height="4"/><rect x="774" y="1794" width="4" height="4"/><rect x="778" y="1794" width="4" height="4"/><rect x="782" y="1794" width="4" height="4"/><rect x="786" y="1794" width="4" height="4"/><rect x="758" y="1798" width="4" height="4"/><rect x="766" y="1798" width="4" height="4"/><rect x="778" y="1798" width="4" height="4"/><rect x="786" y="1798" width="4" height="4"/><rect x="758" y="1802" width="4" height="4"/><rect x="766" y="1802" width="4" height="4"/><rect x="778" y="1802" width="4" height="4"/><rect x="786" y="1802" width="4" height="4"/><rect x="766" y="1778" width="4" height="6.0" fill="#171916"/><rect x="778" y="1778" width="4" height="6.0" fill="#171916"/></g>
       <rect class="cc-caret" x="348" y="1886" width="8" height="15" fill="#171916"/>
       <text x="316" y="1934" fill="#7d7d75" font-size="11">? for shortcuts</text>
     </g>
