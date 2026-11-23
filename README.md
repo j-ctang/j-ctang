@@ -8,7 +8,7 @@
 
 ## Featured project
 
-[![Jev Prune for Claude Code. Trims stale tool results while keeping visible chat intact. Defaults: automatic pruning at about 120,000 context tokens and five recent tool results kept. Requires Node.js 20+, Claude Code, and a TypeSafe API key. Exploring a local model in place of TypeSafe. Install instructions follow.](assets/profile-jev-prune-tmux.svg)](https://github.com/j-ctang/claude-code-jev-prune)
+[![Jev Prune for Claude Code. Trims stale tool results while keeping visible chat intact. Defaults: automatic pruning at about 120,000 context tokens and five recent tool results kept. Requires Node.js 20+, Claude Code, and a TypeSafe API key. Exploring a local model in place of TypeSafe. Install instructions follow.](assets/profile-jev-prune-scrollback.svg)](https://github.com/j-ctang/claude-code-jev-prune)
 
 [View Jev Prune on GitHub](https://github.com/j-ctang/claude-code-jev-prune) · [Install Jev Prune](https://github.com/j-ctang/claude-code-jev-prune#install)
 
