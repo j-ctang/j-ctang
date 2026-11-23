@@ -2,6 +2,8 @@
 
 ![About me form. Name: Justin. Builds: small tools for real devs. Used by: me, every day. Latest: Jev Prune. Now: binary tangerine tree. A sticky note crosses out “I’m really messy, can never stay organized, so many tabs” and says “that’s why I made Tab Tamer.”](assets/profile-about.svg)
 
+[Tab Tamer on GitHub](https://github.com/j-ctang/tab-tamer)
+
 [▶ Listen to hello mono | visualizer on YouTube](https://www.youtube.com/watch?v=4deDga_hTig)
 
 ## Featured project
@@ -12,4 +14,4 @@
 
 ## What I’m exploring now
 
-![I’m prototyping a tangerine tree that grows from a seed into a canopy of zeros and ones. I want the growth to feel continuous, from the first branch to the moment the oranges appear.](assets/profile-tangerine.svg)
+![changelog.md: exploring. 0 to seed, seed to sapling, sapling to canopy, canopy to tangerines in progress. Keep it continuous. A binary tangerine tree grows digit by digit beside it.](assets/profile-tangerine.svg)
