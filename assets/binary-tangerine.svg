@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="224" height="214" viewBox="0 0 224 214" role="img" aria-labelledby="title description">
+  <title id="title">Binary tangerine</title>
+  <desc id="description">A tangerine with a green leaf, drawn entirely with orange, green, and brown zeros and ones.</desc>
+  <g font-family="ui-monospace, monospace" font-size="15" font-weight="700" text-anchor="middle">
+    <g fill="#527948">
+      <text x="145" y="23">101</text>
+      <text x="140" y="39">01101</text>
+      <text x="130" y="55">110</text>
+    </g>
+    <text x="112" y="55" fill="#855638">1</text>
+    <text x="112" y="71" fill="#ad4e19">011010</text>
+    <g fill="#db681e">
+      <text x="112" y="87">1011010010</text>
+      <text x="112" y="103">011010110010</text>
+      <text x="112" y="119">10<tspan fill="#f69436">011001</tspan>01001</text>
+      <text x="112" y="135">01<tspan fill="#f69436">100101</tspan>10110</text>
+      <text x="112" y="151">101<tspan fill="#ee8129">1001</tspan>001010</text>
+      <text x="112" y="167">011010011010</text>
+    </g>
+    <g fill="#ad4e19">
+      <text x="112" y="183">1001101001</text>
+      <text x="112" y="199">011010</text>
+    </g>
+  </g>
+</svg>
