@@ -1,10 +1,8 @@
 ![Startup messages fade into a desktop. Open a few windows. I’ll show you what I’ve been doing.](assets/profile-display-services.svg)
 
+![I’m Justin. I build small tools that take friction out of everyday work, and I like experimenting with how work feels on screen.](assets/profile-about.svg)
+
 [▶ Listen to hello mono | visualizer on YouTube](https://www.youtube.com/watch?v=4deDga_hTig)
-
-## About me
-
-![I’m Justin. I like building small tools that take friction out of everyday work. When I’m deep in a coding session, I want the tools I use to help me keep my train of thought. I also like experimenting with how work feels on screen. This little desktop is one of those experiments. I wanted my profile to feel like sitting down and showing you what I’ve been working on.](assets/profile-about.svg)
 
 ## Featured project
 

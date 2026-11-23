@@ -1,19 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="432" viewBox="0 0 640 432" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="300" viewBox="0 0 920 300" role="img" aria-labelledby="title description">
   <title id="title">About me</title>
-  <desc id="description">I’m Justin. I like building small tools that take friction out of everyday work. When I’m deep in a coding session, I want the tools I use to help me keep my train of thought. I also like experimenting with how work feels on screen. This little desktop is one of those experiments. I wanted my profile to feel like sitting down and showing you what I’ve been working on.</desc>
+  <desc id="description">I’m Justin. I build small tools that take friction out of everyday work, and I like experimenting with how work feels on screen.</desc>
   <style>
-    .copy { font: 22px Georgia, serif; }
-    .heading { font: bold 38px Georgia, serif; }
-    .mono { font: 17px monospace; }
+    .win, .cursor { visibility: hidden; }
+    @media (prefers-reduced-motion: no-preference) {
+      .win, .cursor { visibility: visible; }
+      .win { transform-origin: 727px 40px; animation: open 380ms ease-out 26500ms both; }
+      .cursor { animation: enter 1500ms ease-in-out 25400ms both; }
+      @keyframes open { from { opacity: 0; transform: scale(.6); } to { opacity: 1; transform: none; } }
+      @keyframes enter {
+        0% { transform: translate(730px, -20px) scale(.38); }
+        60% { transform: translate(712px, 30px) scale(.38); }
+        70% { transform: translate(712px, 30px) scale(.33); }
+        80% { transform: translate(712px, 30px) scale(.38); opacity: 1; }
+        100% { transform: translate(760px, 120px) scale(.38); opacity: 0; }
+      }
+    }
+    @media (prefers-reduced-motion: reduce) { .win { visibility: visible; } }
   </style>
-  <rect x="22" y="18" width="602" height="403" rx="6" fill="#252128" opacity=".28"/>
-  <rect x="16" y="12" width="602" height="403" rx="6" fill="#f4e7d1" stroke="#987d65"/>
-  <path d="M16 18q0-6 6-6h590q6 0 6 6v28H16z" fill="#703d3c"/>
-  <text class="mono" x="39" y="34" fill="#fff7e6">about.txt</text>
-  <g fill="#382a23">
-    <text class="heading" x="42" y="99">About me</text>
-    <path d="M42 117H590" stroke="#b79980"/>
-    <text class="copy" x="42" y="153"><tspan x="42" dy="0">I’m Justin. I like building small tools that</tspan> <tspan x="42" dy="29">take friction out of everyday work. When I’m</tspan> <tspan x="42" dy="29">deep in a coding session, I want the tools I use</tspan> <tspan x="42" dy="29">to help me keep my train of thought.</tspan></text>
-    <text class="copy" x="42" y="277"><tspan x="42" dy="0">I also like experimenting with how work feels on</tspan> <tspan x="42" dy="29">screen. This little desktop is one of those</tspan> <tspan x="42" dy="29">experiments. I wanted my profile to feel like</tspan> <tspan x="42" dy="29">sitting down and showing you what I’ve been</tspan> <tspan x="42" dy="29">working on.</tspan></text>
+  <g class="win" font-family="'Courier New', monospace" fill="#171916">
+    <rect x="557" y="15" width="348" height="250" rx="2" fill="#24241f"/>
+    <rect x="553" y="10" width="348" height="250" rx="2" fill="#fbfaf4" stroke="#171916" stroke-width="1.4"/>
+    <path d="M554 16H900M554 20H900M554 24H900M554 28H900" stroke="#abb1ba"/>
+    <path d="M553 34H901" stroke="#171916"/>
+    <rect x="562" y="13" width="90" height="18" fill="#fbfaf4"/>
+    <text x="566" y="26" font-size="13" font-weight="700">about.txt</text>
+    <text font-size="14">
+      <tspan x="567" y="66">I’m Justin.</tspan>
+      <tspan x="567" y="96">- small tools, less friction</tspan>
+      <tspan x="567" y="116">- keep my train of thought</tspan>
+      <tspan x="567" y="136">- how work feels on screen</tspan>
+      <tspan x="567" y="166">This desktop is one of</tspan>
+      <tspan x="567" y="182">those experiments.</tspan>
+    </text>
+  </g>
+  <g class="cursor" aria-hidden="true">
+    <path d="M0 0L37 31L20 33L28 49L19 53L11 37L0 46Z" fill="#242522" stroke="#fbf4e3" stroke-width="2.5" stroke-linejoin="round"/>
   </g>
 </svg>
