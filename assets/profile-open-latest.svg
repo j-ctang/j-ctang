@@ -13,7 +13,7 @@
       .cc-pet { transform-box: fill-box; transform-origin: bottom; animation: cc-hop 1.6s ease-in-out 34000ms infinite; }
       .cc-caret { animation: cc-blink 1s steps(1) 34000ms infinite, cc-type 1680ms steps(21, end) 34900ms both; }
       .cc-ph { animation: cc-hide 1ms step-end 34900ms both; }
-      .cc-cover { animation: cc-reveal 1680ms steps(21, end) 34900ms both; }
+      .cc-typed { animation: cc-typing 1680ms steps(21, end) 34900ms both; }
       .cc-hint { animation: cc-hide 1ms step-end 36900ms both; }
       .cc-status { animation: cc-show 1ms step-end 36900ms both; }
       .cc-pipe { animation: cc-fade 500ms ease-out 37000ms both; }
@@ -27,9 +27,8 @@
     @keyframes cc-blink { 50% { opacity: 0; } }
     .cc-caret { transform: translateX(164px); }
     .cc-ph, .cc-hint { opacity: 0; }
-    @media (prefers-reduced-motion: reduce) { .cc-cover { display: none; } }
     @keyframes cc-type { from { transform: none; } to { transform: translateX(164px); } }
-    @keyframes cc-reveal { from { transform: none; } to { transform: translateX(164px); } }
+    @keyframes cc-typing { from { clip-path: inset(-4px 100% -4px 0); } to { clip-path: inset(-4px -4px -4px 0); } }
     @keyframes cc-hide { from { opacity: 1; } to { opacity: 0; } }
     @keyframes cc-show { from { opacity: 0; } to { opacity: 1; } }
     @keyframes cc-fade { from { opacity: 0; } }
@@ -1526,8 +1525,7 @@
       <text x="316" y="1858" fill="#3d7a5e">jev-prune: on · context clean</text>
       <rect x="316" y="1876" width="528" height="34" fill="none" stroke="#171916"/>
       <text x="330" y="1898" fill="#171916">&gt; <tspan class="cc-ph" x="345.6" fill="#7d7d75" textLength="203" lengthAdjust="spacingAndGlyphs">what should we build next?</tspan></text>
-      <text x="345.6" y="1898" fill="#171916" textLength="163.8" lengthAdjust="spacingAndGlyphs">grow a tangerine tree</text>
-      <rect class="cc-cover" x="345" y="1884" width="172" height="20" fill="#fbfaf4"/>
+      <text class="cc-typed" x="345.6" y="1898" fill="#171916" textLength="163.8" lengthAdjust="spacingAndGlyphs">grow a tangerine tree</text>
       <g class="cc-pet" fill="#d97757"><rect x="758" y="1774" width="4" height="4"/><rect x="762" y="1774" width="4" height="4"/><rect x="766" y="1774" width="4" height="4"/><rect x="770" y="1774" width="4" height="4"/><rect x="774" y="1774" width="4" height="4"/><rect x="778" y="1774" width="4" height="4"/><rect x="782" y="1774" width="4" height="4"/><rect x="786" y="1774" width="4" height="4"/><rect x="758" y="1778" width="4" height="4"/><rect x="762" y="1778" width="4" height="4"/><rect x="766" y="1778" width="4" height="4"/><rect x="770" y="1778" width="4" height="4"/><rect x="774" y="1778" width="4" height="4"/><rect x="778" y="1778" width="4" height="4"/><rect x="782" y="1778" width="4" height="4"/><rect x="786" y="1778" width="4" height="4"/><rect x="750" y="1782" width="4" height="4"/><rect x="754" y="1782" width="4" height="4"/><rect x="758" y="1782" width="4" height="4"/><rect x="762" y="1782" width="4" height="4"/><rect x="766" y="1782" width="4" height="4"/><rect x="770" y="1782" width="4" height="4"/><rect x="774" y="1782" width="4" height="4"/><rect x="778" y="1782" width="4" height="4"/><rect x="782" y="1782" width="4" height="4"/><rect x="786" y="1782" width="4" height="4"/><rect x="790" y="1782" width="4" height="4"/><rect x="794" y="1782" width="4" height="4"/><rect x="750" y="1786" width="4" height="4"/><rect x="754" y="1786" width="4" height="4"/><rect x="758" y="1786" width="4" height="4"/><rect x="762" y="1786" width="4" height="4"/><rect x="766" y="1786" width="4" height="4"/><rect x="770" y="1786" width="4" height="4"/><rect x="774" y="1786" width="4" height="4"/><rect x="778" y="1786" width="4" height="4"/><rect x="782" y="1786" width="4" height="4"/><rect x="786" y="1786" width="4" height="4"/><rect x="790" y="1786" width="4" height="4"/><rect x="794" y="1786" width="4" height="4"/><rect x="758" y="1790" width="4" height="4"/><rect x="762" y="1790" width="4" height="4"/><rect x="766" y="1790" width="4" height="4"/><rect x="770" y="1790" width="4" height="4"/><rect x="774" y="1790" width="4" height="4"/><rect x="778" y="1790" width="4" height="4"/><rect x="782" y="1790" width="4" height="4"/><rect x="786" y="1790" width="4" height="4"/><rect x="758" y="1794" width="4" height="4"/><rect x="762" y="1794" width="4" height="4"/><rect x="766" y="1794" width="4" height="4"/><rect x="770" y="1794" width="4" height="4"/><rect x="774" y="1794" width="4" height="4"/><rect x="778" y="1794" width="4" height="4"/><rect x="782" y="1794" width="4" height="4"/><rect x="786" y="1794" width="4" height="4"/><rect x="758" y="1798" width="4" height="4"/><rect x="766" y="1798" width="4" height="4"/><rect x="778" y="1798" width="4" height="4"/><rect x="786" y="1798" width="4" height="4"/><rect x="758" y="1802" width="4" height="4"/><rect x="766" y="1802" width="4" height="4"/><rect x="778" y="1802" width="4" height="4"/><rect x="786" y="1802" width="4" height="4"/><rect x="766" y="1778" width="4" height="6.0" fill="#171916"/><rect x="778" y="1778" width="4" height="6.0" fill="#171916"/></g>
       <rect class="cc-caret" x="348" y="1886" width="8" height="15" fill="#171916"/>
       <text class="cc-hint" x="316" y="1934" fill="#7d7d75" font-size="11">? for shortcuts</text>
