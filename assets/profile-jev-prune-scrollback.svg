@@ -1,0 +1,297 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="682" viewBox="0 0 640 682" role="img" aria-labelledby="title description">
+  <title id="title">Jev Prune for Claude Code</title>
+  <desc id="description">Jev Prune trims stale tool results and keeps visible chat intact. The terminal illustrates the stats and doctor commands, including pruning defaults and installation requirements. A TODO notes the plan to explore a local model in place of TypeSafe. Install from the GitHub repository with npm link.</desc>
+  <style>
+    .install-second, .check-command, .prompt-caret, .scrollback { display: none; }
+    .transcript { transform: translateY(-429px); }
+    @media (prefers-reduced-motion: no-preference) {
+      .ls-check { animation: reveal-ls 15s step-end infinite; }
+      .ls-input { animation: type-ls 15s linear infinite; }
+      .ls-caret { animation: caret-ls 15s linear infinite; }
+      .ls-output-1 { animation: ls-output-1 15s step-end infinite; }
+      .ls-output-2 { animation: ls-output-2 15s step-end infinite; }
+      .ls-output-3 { animation: ls-output-3 15s step-end infinite; }
+      .audit-check { animation: reveal-audit 15s step-end infinite; }
+      .audit-input { animation: type-audit 15s linear infinite; }
+      .audit-caret { animation: caret-audit 15s linear infinite; }
+      .audit-output-1 { animation: audit-output-1 15s step-end infinite; }
+      .report-command { animation: type-report var(--typing) steps(var(--chars), end) var(--at) both; }
+      .stats-call { animation: type-stats 15s linear infinite; }
+      .doctor-call { animation: type-doctor 15s linear infinite; }
+      .stats-caret { animation: caret-stats 15s linear infinite; }
+      .doctor-caret { animation: caret-doctor 15s linear infinite; }
+      .transcript-result { animation: 15s step-end infinite; }
+      .stats-result-1 { animation-name: show-stats-1; }
+      .stats-result-2 { animation-name: show-stats-2; }
+      .stats-result-3 { animation-name: show-stats-3; }
+      .doctor-result-1 { animation-name: show-doctor-1; }
+      .doctor-result-2 { animation-name: show-doctor-2; }
+      .install-second, .check-command, .prompt-caret, .scrollback { display: inline; }
+      .install-first { animation: reveal-first 15s step-end infinite; }
+      .install-second { animation: reveal-second 15s step-end infinite; }
+      .transcript { animation: advance-terminal 15s step-end infinite; }
+      .first-input { animation: type-first 15s linear infinite; }
+      .second-input { animation: type-second 15s linear infinite; }
+      .first-caret { animation: caret-first 15s linear infinite; }
+      .second-caret { animation: caret-second 15s linear infinite; }
+      .line-1 { animation: line-1 15s step-end infinite; }
+      .line-2 { animation: line-2 15s step-end infinite; }
+      .line-3 { animation: line-3 15s step-end infinite; }
+      .line-4 { animation: line-4 15s step-end infinite; }
+      .line-5 { animation: line-5 15s step-end infinite; }
+      .line-6 { animation: line-6 15s step-end infinite; }
+      .line-7 { animation: line-7 15s step-end infinite; }
+      .line-8 { animation: line-8 15s step-end infinite; }
+      .line-9 { animation: line-9 15s step-end infinite; }
+      .line-10 { animation: line-10 15s step-end infinite; }
+      .line-11 { animation: line-11 15s step-end infinite; }
+      .line-12 { animation: line-12 15s step-end infinite; }
+      .line-13 { animation: line-13 15s step-end infinite; }
+      .line-14 { animation: line-14 15s step-end infinite; }
+      .line-15 { animation: line-15 15s step-end infinite; }
+      .line-16 { animation: line-16 15s step-end infinite; }
+      .line-17 { animation: line-17 15s step-end infinite; }
+      .line-18 { animation: line-18 15s step-end infinite; }
+    }
+    @keyframes type-report { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0); } }
+    @keyframes type-stats {
+      0% { clip-path: inset(0 100% 0 0); }
+      18.3333333% { clip-path: inset(0 100% 0 0); animation-timing-function: steps(19, end); }
+      22.7333333%, 100% { clip-path: inset(0); }
+    }
+    @keyframes type-doctor {
+      0% { clip-path: inset(0 100% 0 0); }
+      52.8000000% { clip-path: inset(0 100% 0 0); animation-timing-function: steps(20, end); }
+      57.9333333%, 100% { clip-path: inset(0); }
+    }
+    @keyframes caret-stats {
+      0% { opacity: 0; animation-timing-function: step-end; }
+      18.3333333% { opacity: 1; transform: translateX(0); animation-timing-function: steps(19, end); }
+      22.7333333% { opacity: 1; transform: translateX(160px); animation-timing-function: step-end; }
+      23.4666667%, 100% { opacity: 0; }
+    }
+    @keyframes show-stats-1 { 0% { opacity: 0; } 23.4666667%, 100% { opacity: 1; } }
+    @keyframes show-stats-2 { 0% { opacity: 0; } 24.2733333%, 100% { opacity: 1; } }
+    @keyframes show-stats-3 { 0% { opacity: 0; } 25.0800000%, 100% { opacity: 1; } }
+    @keyframes caret-doctor {
+      0% { opacity: 0; animation-timing-function: step-end; }
+      52.8000000% { opacity: 1; transform: translateX(0); animation-timing-function: steps(20, end); }
+      57.9333333% { opacity: 1; transform: translateX(169px); animation-timing-function: step-end; }
+      58.6666667%, 100% { opacity: 0; }
+    }
+    @keyframes show-doctor-1 { 0% { opacity: 0; } 58.6666667%, 100% { opacity: 1; } }
+    @keyframes show-doctor-2 { 0% { opacity: 0; } 59.4733333%, 100% { opacity: 1; } }
+    @keyframes reveal-first { 0% { opacity: 0; } 1.8666670%, 100% { opacity: 1; } }
+    @keyframes reveal-second { 0% { opacity: 0; } 30.9999998%, 100% { opacity: 1; } }
+    @keyframes advance-terminal {
+      0% { transform: translateY(0px); }
+      1.8666670% { transform: translateY(-28px); }
+      10.3333333% { transform: translateY(-56px); }
+      11.0800001% { transform: translateY(-84px); }
+      11.8266669% { transform: translateY(-112px); }
+      12.5733337% { transform: translateY(-140px); }
+      13.3199997% { transform: translateY(-168px); }
+      14.0666665% { transform: translateY(-196px); }
+      14.8133333% { transform: translateY(-224px); }
+      15.5600001% { transform: translateY(-252px); }
+      16.3066669% { transform: translateY(-280px); }
+      18.3333333% { transform: translateY(-307px); }
+      23.4666667% { transform: translateY(-334px); }
+      24.2733333% { transform: translateY(-358px); }
+      25.0800000% { transform: translateY(-382px); }
+      30.9999998% { transform: translateY(-410px); }
+      42.6666665% { transform: translateY(-438px); }
+      43.4133333% { transform: translateY(-466px); }
+      44.1600001% { transform: translateY(-494px); }
+      44.9066669% { transform: translateY(-522px); }
+      45.6533330% { transform: translateY(-550px); }
+      46.3999998% { transform: translateY(-578px); }
+      47.1466666% { transform: translateY(-606px); }
+      47.8933334% { transform: translateY(-634px); }
+      48.6400002% { transform: translateY(-662px); }
+      52.8000000% { transform: translateY(-689px); }
+      58.6666667% { transform: translateY(-716px); }
+      59.4733333% { transform: translateY(-740px); }
+      63.3333333% { transform: translateY(-768px); }
+      69.4000000% { transform: translateY(-796px); }
+      70.2666667% { transform: translateY(-824px); }
+      71.1333333% { transform: translateY(-852px); }
+      77.3333333% { transform: translateY(-880px); }
+      84.7333333% { transform: translateY(-908px); }
+      100% { transform: translateY(-908px); }
+    }
+    @keyframes line-1 { 0% { opacity: 0; } 10.3333333%, 100% { opacity: 1; } }
+    @keyframes line-2 { 0% { opacity: 0; } 11.0800001%, 100% { opacity: 1; } }
+    @keyframes line-3 { 0% { opacity: 0; } 11.8266669%, 100% { opacity: 1; } }
+    @keyframes line-4 { 0% { opacity: 0; } 12.5733337%, 100% { opacity: 1; } }
+    @keyframes line-5 { 0% { opacity: 0; } 13.3199997%, 100% { opacity: 1; } }
+    @keyframes line-6 { 0% { opacity: 0; } 14.0666665%, 100% { opacity: 1; } }
+    @keyframes line-7 { 0% { opacity: 0; } 14.8133333%, 100% { opacity: 1; } }
+    @keyframes line-8 { 0% { opacity: 0; } 15.5600001%, 100% { opacity: 1; } }
+    @keyframes line-9 { 0% { opacity: 0; } 16.3066669%, 100% { opacity: 1; } }
+    @keyframes line-10 { 0% { opacity: 0; } 42.6666665%, 100% { opacity: 1; } }
+    @keyframes line-11 { 0% { opacity: 0; } 43.4133333%, 100% { opacity: 1; } }
+    @keyframes line-12 { 0% { opacity: 0; } 44.1600001%, 100% { opacity: 1; } }
+    @keyframes line-13 { 0% { opacity: 0; } 44.9066669%, 100% { opacity: 1; } }
+    @keyframes line-14 { 0% { opacity: 0; } 45.6533330%, 100% { opacity: 1; } }
+    @keyframes line-15 { 0% { opacity: 0; } 46.3999998%, 100% { opacity: 1; } }
+    @keyframes line-16 { 0% { opacity: 0; } 47.1466666%, 100% { opacity: 1; } }
+    @keyframes line-17 { 0% { opacity: 0; } 47.8933334%, 100% { opacity: 1; } }
+    @keyframes line-18 { 0% { opacity: 0; } 48.6400002%, 100% { opacity: 1; } }
+    @keyframes type-first {
+      0% { clip-path: inset(0 100% 0 0); }
+      1.8666670% { clip-path: inset(0 100% 0 0); animation-timing-function: steps(11, end); }
+      9.7333331%, 100% { clip-path: inset(0); }
+    }
+    @keyframes caret-first {
+      0% { opacity: 0; animation-timing-function: step-end; }
+      1.8666670% { opacity: 1; transform: translateX(0); animation-timing-function: steps(11, end); }
+      9.7333331% { opacity: 1; transform: translateX(93px); animation-timing-function: step-end; }
+      10.0666669%, 100% { opacity: 0; transform: translateX(93px); }
+    }
+    @keyframes type-second {
+      0% { clip-path: inset(0 100% 0 0); }
+      30.9999998% { clip-path: inset(0 100% 0 0); animation-timing-function: steps(37, end); }
+      41.9999998%, 100% { clip-path: inset(0); }
+    }
+    @keyframes caret-second {
+      0% { opacity: 0; animation-timing-function: step-end; }
+      30.9999998% { opacity: 1; transform: translateX(0); animation-timing-function: steps(37, end); }
+      41.9999998% { opacity: 1; transform: translateX(312px); animation-timing-function: step-end; }
+      42.3333335%, 100% { opacity: 0; transform: translateX(312px); }
+    }
+    @keyframes reveal-ls { 0% { opacity: 0; } 63.3333333%, 100% { opacity: 1; } }
+    @keyframes type-ls {
+      0% { clip-path: inset(0 100% 0 0); }
+      63.3333333% { clip-path: inset(0 100% 0 0); animation-timing-function: steps(16, end); }
+      68.6666667%, 100% { clip-path: inset(0); }
+    }
+    @keyframes caret-ls {
+      0% { opacity: 0; animation-timing-function: step-end; }
+      63.3333333% { opacity: 1; transform: translateX(0); animation-timing-function: steps(16, end); }
+      68.6666667% { opacity: 1; transform: translateX(135px); animation-timing-function: step-end; }
+      69.4000000%, 100% { opacity: 0; transform: translateX(135px); }
+    }
+    @keyframes ls-output-1 { 0% { opacity: 0; } 69.4000000%, 100% { opacity: 1; } }
+    @keyframes ls-output-2 { 0% { opacity: 0; } 70.2666667%, 100% { opacity: 1; } }
+    @keyframes ls-output-3 { 0% { opacity: 0; } 71.1333333%, 100% { opacity: 1; } }
+    @keyframes reveal-audit { 0% { opacity: 0; } 77.3333333%, 100% { opacity: 1; } }
+    @keyframes type-audit {
+      0% { clip-path: inset(0 100% 0 0); }
+      77.3333333% { clip-path: inset(0 100% 0 0); animation-timing-function: steps(20, end); }
+      84.0000000%, 100% { clip-path: inset(0); }
+    }
+    @keyframes caret-audit {
+      0% { opacity: 0; animation-timing-function: step-end; }
+      77.3333333% { opacity: 1; transform: translateX(0); animation-timing-function: steps(20, end); }
+      84.0000000% { opacity: 1; transform: translateX(169px); animation-timing-function: step-end; }
+      84.7333333%, 100% { opacity: 0; transform: translateX(169px); }
+    }
+    @keyframes audit-output-1 { 0% { opacity: 0; } 84.7333333%, 100% { opacity: 1; } }
+  </style>
+  <defs>
+    <pattern id="chrome-stripes" width="5" height="5" patternUnits="userSpaceOnUse">
+      <rect width="5" height="5" fill="#ffffff"/>
+      <path d="M0 2.5H5" stroke="#9fd3f2" stroke-width=".8"/>
+    </pattern>
+    <clipPath id="terminal"><rect x="16" y="109" width="608" height="434"/></clipPath>
+  </defs>
+  <g font-family="monospace" fill="#17232e">
+    <rect x="21" y="18" width="608" height="656" rx="8" fill="#9fd3f2" opacity=".85"/>
+    <rect x="16" y="12" width="608" height="656" rx="8" fill="#fff" stroke="#9fd3f2" stroke-width="2"/>
+    <path d="M16 20q0-8 8-8h592q8 0 8 8v22H16z" fill="url(#chrome-stripes)"/>
+    <path d="M16 42H624" stroke="#9fd3f2"/>
+    <rect x="226" y="17" width="188" height="20" fill="#fff"/>
+    <path d="M585 23h6m4-5h7v7h-7zm10 0 7 7m0-7-7 7" fill="none" stroke="#4b799c" stroke-width="1.2"/>
+    <text x="320" y="30" text-anchor="middle" fill="#17232e" font-size="12">tmux — jev-prune</text>
+    <g clip-path="url(#terminal)" aria-hidden="true" transform="translate(18 0)">
+      <g class="transcript" font-size="14" fill="#345c7d">
+        <g class="scrollback">
+          <text x="26" y="118">npm http fetch GET 200 @types/node</text>
+          <text x="26" y="146">npm http fetch GET 200 undici-types</text>
+          <text x="26" y="174">npm info unpacked type declarations</text>
+          <text x="26" y="202">npm info updated package-lock.json</text>
+          <text x="26" y="230">added 3 packages in 419ms</text>
+          <text x="26" y="258">audited 46 packages</text>
+          <text x="26" y="286">found 0 vulnerabilities</text>
+          <text x="24" y="313" fill="#346b93">$ jev-prune --doctor</text>
+          <text x="26" y="340">Node.js 20+ and Claude Code</text>
+          <text x="26" y="364">TypeSafe API key and local proxy configuration</text>
+          <text x="24" y="392" fill="#346b93">$ </text>
+          <text x="43" y="392" fill="#346b93">npm ls --depth=0</text>
+          <text x="26" y="420">jev-prune-demo@0.1.0</text>
+          <text x="26" y="448">├── @types/node@22.14.0</text>
+          <text x="26" y="476">└── typescript@5.8.3</text>
+          <text x="24" y="504" fill="#346b93">$ </text>
+          <text x="43" y="504" fill="#346b93">npm audit --omit=dev</text>
+          <text x="26" y="532">found 0 vulnerabilities</text>
+        </g>
+        <g class="install-first">
+          <text x="24" y="560" fill="#346b93">$ </text><text class="first-input" x="43" y="560" fill="#346b93">npm install</text>
+          <rect class="prompt-caret first-caret" x="43" y="549" width="7" height="14" fill="#9fd3f2"/>
+          <text class="line-1" x="26" y="588">npm info using npm@10.9.4</text>
+          <text class="line-2" x="26" y="616">npm info using node@v22.14.0</text>
+          <text class="line-3" x="26" y="644">npm http fetch GET 200 registry.npmjs.org</text>
+          <text class="line-4" x="26" y="672">npm http fetch GET 200 picocolors</text>
+          <text class="line-5" x="26" y="700">npm http fetch GET 200 minimist</text>
+          <text class="line-6" x="26" y="728">npm info building dependency tree</text>
+          <text class="line-7" x="26" y="756">added 42 packages in 682ms</text>
+          <text class="line-8" x="26" y="784">audited 43 packages</text>
+          <text class="line-9" x="26" y="812">found 0 vulnerabilities</text>
+          <text class="stats-call" x="24" y="839" fill="#346b93">$ jev-prune --stats</text>
+          <rect class="prompt-caret stats-caret" x="24" y="828" width="7" height="14" fill="#9fd3f2"/>
+          <text class="transcript-result stats-result-1" x="26" y="866">Tokens pruned: 0 (demo session)</text>
+          <text class="transcript-result stats-result-2" x="26" y="890">Auto-prune threshold: ~120K tokens</text>
+          <text class="transcript-result stats-result-3" x="26" y="914">Recent tool results kept: 5 (default)</text>
+        </g>
+        <g class="install-second">
+          <text x="24" y="942" fill="#346b93">$ </text><text class="second-input" x="43" y="942" fill="#346b93">npm install -D typescript @types/node</text>
+          <rect class="prompt-caret second-caret" x="43" y="931" width="7" height="14" fill="#9fd3f2"/>
+          <text class="line-10" x="26" y="970">npm info resolving devDependencies</text>
+          <text class="line-11" x="26" y="998">npm http fetch GET 200 typescript</text>
+          <text class="line-12" x="26" y="1026">npm http fetch GET 200 @types/node</text>
+          <text class="line-13" x="26" y="1054">npm http fetch GET 200 undici-types</text>
+          <text class="line-14" x="26" y="1082">npm info unpacked type declarations</text>
+          <text class="line-15" x="26" y="1110">npm info updated package-lock.json</text>
+          <text class="line-16" x="26" y="1138">added 3 packages in 419ms</text>
+          <text class="line-17" x="26" y="1166">audited 46 packages</text>
+          <text class="line-18" x="26" y="1194">found 0 vulnerabilities</text>
+          <text class="doctor-call" x="24" y="1221" fill="#346b93">$ jev-prune --doctor</text>
+          <rect class="prompt-caret doctor-caret" x="24" y="1210" width="7" height="14" fill="#9fd3f2"/>
+          <text class="transcript-result doctor-result-1" x="26" y="1248">Node.js 20+ and Claude Code</text>
+          <text class="transcript-result doctor-result-2" x="26" y="1272">TypeSafe API key and local proxy configuration</text>
+        </g>
+        <g class="check-command ls-check">
+          <text x="24" y="1300" fill="#346b93">$ </text><text class="ls-input" x="43" y="1300" fill="#346b93">npm ls --depth=0</text>
+          <rect class="prompt-caret ls-caret" x="43" y="1289" width="7" height="14" fill="#9fd3f2"/>
+          <text class="ls-output-1" x="26" y="1328">jev-prune-demo@0.1.0</text>
+          <text class="ls-output-2" x="26" y="1356">├── @types/node@22.14.0</text>
+          <text class="ls-output-3" x="26" y="1384">└── typescript@5.8.3</text>
+        </g>
+        <g class="check-command audit-check">
+          <text x="24" y="1412" fill="#346b93">$ </text><text class="audit-input" x="43" y="1412" fill="#346b93">npm audit --omit=dev</text>
+          <rect class="prompt-caret audit-caret" x="43" y="1401" width="7" height="14" fill="#9fd3f2"/>
+          <text class="audit-output-1" x="26" y="1440">found 0 vulnerabilities</text>
+        </g>
+      </g>
+    </g>
+    <text x="42" y="77" font-size="24" font-weight="bold">Jev Prune for Claude Code</text>
+    <text x="42" y="101" font-size="14" fill="#346b93">Trim stale tool results. Keep visible chat intact.</text>
+    <g font-size="14">
+      <rect x="17" y="543" width="606" height="25" fill="#fff"/>
+      <path d="M17 543H623" stroke="#9fd3f2"/>
+      <text x="42" y="560" font-size="13" fill="#346b93"># TODO: Try a local model in place of TypeSafe.</text>
+      <g class="install-strip" font-size="11.5">
+        <rect x="17" y="568" width="606" height="73" fill="#f5faff"/>
+        <path d="M17 568H623" stroke="#9fd3f2"/>
+        <text x="608" y="589" fill="#346b93" text-anchor="end">Install from source</text>
+        <text class="report-command" x="42" y="589" style="--at: 2230ms; --typing: 1100ms; --chars: 60">$ git clone https://github.com/j-ctang/claude-code-jev-prune</text>
+        <text class="report-command" x="42" y="610" style="--at: 3460ms; --typing: 490ms; --chars: 26">$ cd claude-code-jev-prune</text>
+        <text class="report-command" x="42" y="629" style="--at: 4070ms; --typing: 350ms; --chars: 10">$ npm link</text>
+      </g>
+    </g>
+    <path d="M16 641h608v19q0 8-8 8H24q-8 0-8-8z" fill="#f0f8fd" stroke="#9fd3f2"/>
+    <text x="30" y="658" fill="#345c7d" font-size="12">[jev-prune] 78 sessions</text>
+    <text x="608" y="658" text-anchor="end" fill="#345c7d" font-size="12">tmux</text>
+  </g>
+</svg>
