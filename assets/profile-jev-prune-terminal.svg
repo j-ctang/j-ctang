@@ -2,10 +2,16 @@
   <title id="title">Jev Prune for Claude Code</title>
   <desc id="description">Long coding sessions pile up tool output you may never need again. Jev Prune clears stale tool output from the session while keeping the visible conversation intact, so you can still go back and read how you got there.</desc>
   <style>
+    .panel-frames > rect, .keep-panel {
+      fill: #fff;
+      stroke: #9fd3f2;
+      stroke-width: 1.2;
+      filter: drop-shadow(2px 3px 0 #c3e4f7);
+    }
     .demo-step { display: none; }
     .demo-step:first-of-type { display: inline; }
     .install-second, .prompt-caret, .scrollback { display: none; }
-    .transcript { transform: translateY(-350px); }
+    .transcript { transform: translateY(-574px); }
     @media (prefers-reduced-motion: no-preference) {
       .demo-step { display: inline; animation: demo-cycle 12s step-end var(--phase) infinite; }
       .install-second, .prompt-caret, .scrollback { display: inline; }
@@ -42,27 +48,27 @@
     @keyframes demo-cycle { 0% { opacity: 1; } 33.333% { opacity: 0; } }
     @keyframes advance-terminal {
       0% { transform: translateY(0); }
-      2.545455% { transform: translateY(-120px); }
-      14.090909% { transform: translateY(-136px); }
-      15.109091% { transform: translateY(-162px); }
-      16.127273% { transform: translateY(-188px); }
-      17.145455% { transform: translateY(-214px); }
-      18.163636% { transform: translateY(-240px); }
-      19.181818% { transform: translateY(-266px); }
-      20.200000% { transform: translateY(-292px); }
-      21.218182% { transform: translateY(-318px); }
-      22.236364% { transform: translateY(-344px); }
-      42.272727% { transform: translateY(-464px); }
-      58.181818% { transform: translateY(-480px); }
-      59.200000% { transform: translateY(-506px); }
-      60.218182% { transform: translateY(-532px); }
-      61.236364% { transform: translateY(-558px); }
-      62.254545% { transform: translateY(-584px); }
-      63.272727% { transform: translateY(-610px); }
-      64.290909% { transform: translateY(-636px); }
-      65.309091% { transform: translateY(-662px); }
-      66.327273% { transform: translateY(-688px); }
-      100% { transform: translateY(-688px); }
+      2.545455% { transform: translateY(-344px); }
+      14.090909% { transform: translateY(-360px); }
+      15.109091% { transform: translateY(-386px); }
+      16.127273% { transform: translateY(-412px); }
+      17.145455% { transform: translateY(-438px); }
+      18.163636% { transform: translateY(-464px); }
+      19.181818% { transform: translateY(-490px); }
+      20.200000% { transform: translateY(-516px); }
+      21.218182% { transform: translateY(-542px); }
+      22.236364% { transform: translateY(-568px); }
+      42.272727% { transform: translateY(-912px); }
+      58.181818% { transform: translateY(-928px); }
+      59.200000% { transform: translateY(-954px); }
+      60.218182% { transform: translateY(-980px); }
+      61.236364% { transform: translateY(-1006px); }
+      62.254545% { transform: translateY(-1032px); }
+      63.272727% { transform: translateY(-1058px); }
+      64.290909% { transform: translateY(-1084px); }
+      65.309091% { transform: translateY(-1110px); }
+      66.327273% { transform: translateY(-1136px); }
+      100% { transform: translateY(-1136px); }
     }
     @keyframes line-1 { 0% { opacity: 0; } 14.090909%, 100% { opacity: 1; } }
     @keyframes line-2 { 0% { opacity: 0; } 15.109091%, 100% { opacity: 1; } }
@@ -106,67 +112,70 @@
     }
   </style>
   <defs>
-    <clipPath id="terminal"><rect x="16" y="109" width="608" height="337"/></clipPath>
+    <pattern id="chrome-stripes" width="5" height="5" patternUnits="userSpaceOnUse">
+      <rect width="5" height="5" fill="#ffffff"/>
+      <path d="M0 2.5H5" stroke="#9fd3f2" stroke-width=".8"/>
+    </pattern>
+    <clipPath id="terminal"><rect x="16" y="109" width="608" height="532"/></clipPath>
   </defs>
-  <g font-family="monospace" fill="#e4ebf5">
-    <rect x="16" y="12" width="608" height="656" rx="8" fill="#121820" stroke="#46576b"/>
-    <path d="M16 20q0-8 8-8h592q8 0 8 8v20H16z" fill="#27313d"/>
-    <g aria-hidden="true">
-      <circle cx="31" cy="26" r="4" fill="#ee7169"/>
-      <circle cx="45" cy="26" r="4" fill="#e7b66a"/>
-      <circle cx="59" cy="26" r="4" fill="#80bb82"/>
-    </g>
-    <text x="320" y="30" text-anchor="middle" fill="#c8d2de" font-size="12">tmux — jev-prune</text>
-    <g clip-path="url(#terminal)" aria-hidden="true">
-      <g class="transcript" font-size="14" fill="#7c90a6">
+  <g font-family="monospace" fill="#17232e">
+    <rect x="21" y="18" width="608" height="656" rx="8" fill="#9fd3f2" opacity=".85"/>
+    <rect x="16" y="12" width="608" height="656" rx="8" fill="#fff" stroke="#9fd3f2" stroke-width="2"/>
+    <path d="M16 20q0-8 8-8h592q8 0 8 8v22H16z" fill="url(#chrome-stripes)"/>
+    <path d="M16 42H624" stroke="#9fd3f2"/>
+    <rect x="226" y="17" width="188" height="20" fill="#fff"/>
+    <path d="M585 23h6m4-5h7v7h-7zm10 0 7 7m0-7-7 7" fill="none" stroke="#4b799c" stroke-width="1.2"/>
+    <text x="320" y="30" text-anchor="middle" fill="#17232e" font-size="12">tmux — jev-prune</text>
+    <g clip-path="url(#terminal)" aria-hidden="true" transform="translate(18 0)">
+      <g class="transcript" font-size="14" fill="#345c7d">
         <g class="scrollback">
-          <text x="24" y="131" fill="#8bcba3">$ </text><text x="43" y="131" fill="#8bcba3">npm install -D typescript @types/node</text>
-          <text x="26" y="165">npm info resolving devDependencies</text>
-          <text x="26" y="199">npm http fetch GET 200 typescript</text>
-          <text x="26" y="233">npm http fetch GET 200 @types/node</text>
-          <text x="26" y="267">npm http fetch GET 200 undici-types</text>
-          <text x="26" y="301">npm info unpacked type declarations</text>
-          <text x="26" y="335">npm info updated package-lock.json</text>
-          <text x="26" y="369">added 3 packages in 419ms</text>
-          <text x="26" y="403">audited 46 packages</text>
-          <text x="26" y="437">found 0 vulnerabilities</text>
+          <text x="24" y="131" fill="#346b93">$ </text><text x="43" y="131" fill="#346b93">npm install -D typescript @types/node</text>
+          <text x="26" y="187">npm info resolving devDependencies</text>
+          <text x="26" y="243">npm http fetch GET 200 typescript</text>
+          <text x="26" y="299">npm http fetch GET 200 @types/node</text>
+          <text x="26" y="355">npm http fetch GET 200 undici-types</text>
+          <text x="26" y="411">npm info unpacked type declarations</text>
+          <text x="26" y="467">npm info updated package-lock.json</text>
+          <text x="26" y="523">added 3 packages in 419ms</text>
+          <text x="26" y="579">audited 46 packages</text>
+          <text x="26" y="635">found 0 vulnerabilities</text>
         </g>
         <g class="install-first">
-          <text x="24" y="475" fill="#8bcba3">$ </text><text class="first-input" x="43" y="475" fill="#8bcba3">npm install</text>
-          <rect class="prompt-caret first-caret" x="43" y="464" width="7" height="14" fill="#9bd6af"/>
-          <text class="line-1" x="26" y="509">npm info using npm@10.9.4</text>
-          <text class="line-2" x="26" y="543">npm info using node@v22.14.0</text>
-          <text class="line-3" x="26" y="577">npm http fetch GET 200 registry.npmjs.org</text>
-          <text class="line-4" x="26" y="611">npm http fetch GET 200 picocolors</text>
-          <text class="line-5" x="26" y="645">npm http fetch GET 200 minimist</text>
-          <text class="line-6" x="26" y="679">npm info building dependency tree</text>
-          <text class="line-7" x="26" y="713">added 42 packages in 682ms</text>
-          <text class="line-8" x="26" y="747">audited 43 packages</text>
-          <text class="line-9" x="26" y="781">found 0 vulnerabilities</text>
+          <text x="24" y="699" fill="#346b93">$ </text><text class="first-input" x="43" y="699" fill="#346b93">npm install</text>
+          <rect class="prompt-caret first-caret" x="43" y="688" width="7" height="14" fill="#9fd3f2"/>
+          <text class="line-1" x="26" y="755">npm info using npm@10.9.4</text>
+          <text class="line-2" x="26" y="811">npm info using node@v22.14.0</text>
+          <text class="line-3" x="26" y="867">npm http fetch GET 200 registry.npmjs.org</text>
+          <text class="line-4" x="26" y="923">npm http fetch GET 200 picocolors</text>
+          <text class="line-5" x="26" y="979">npm http fetch GET 200 minimist</text>
+          <text class="line-6" x="26" y="1035">npm info building dependency tree</text>
+          <text class="line-7" x="26" y="1091">added 42 packages in 682ms</text>
+          <text class="line-8" x="26" y="1147">audited 43 packages</text>
+          <text class="line-9" x="26" y="1203">found 0 vulnerabilities</text>
         </g>
         <g class="install-second">
-          <text x="24" y="819" fill="#8bcba3">$ </text><text class="second-input" x="43" y="819" fill="#8bcba3">npm install -D typescript @types/node</text>
-          <rect class="prompt-caret second-caret" x="43" y="808" width="7" height="14" fill="#9bd6af"/>
-          <text class="line-10" x="26" y="853">npm info resolving devDependencies</text>
-          <text class="line-11" x="26" y="887">npm http fetch GET 200 typescript</text>
-          <text class="line-12" x="26" y="921">npm http fetch GET 200 @types/node</text>
-          <text class="line-13" x="26" y="955">npm http fetch GET 200 undici-types</text>
-          <text class="line-14" x="26" y="989">npm info unpacked type declarations</text>
-          <text class="line-15" x="26" y="1023">npm info updated package-lock.json</text>
-          <text class="line-16" x="26" y="1057">added 3 packages in 419ms</text>
-          <text class="line-17" x="26" y="1091">audited 46 packages</text>
-          <text class="line-18" x="26" y="1125">found 0 vulnerabilities</text>
+          <text x="24" y="1267" fill="#346b93">$ </text><text class="second-input" x="43" y="1267" fill="#346b93">npm install -D typescript @types/node</text>
+          <rect class="prompt-caret second-caret" x="43" y="1256" width="7" height="14" fill="#9fd3f2"/>
+          <text class="line-10" x="26" y="1323">npm info resolving devDependencies</text>
+          <text class="line-11" x="26" y="1379">npm http fetch GET 200 typescript</text>
+          <text class="line-12" x="26" y="1435">npm http fetch GET 200 @types/node</text>
+          <text class="line-13" x="26" y="1491">npm http fetch GET 200 undici-types</text>
+          <text class="line-14" x="26" y="1547">npm info unpacked type declarations</text>
+          <text class="line-15" x="26" y="1603">npm info updated package-lock.json</text>
+          <text class="line-16" x="26" y="1659">added 3 packages in 419ms</text>
+          <text class="line-17" x="26" y="1715">audited 46 packages</text>
+          <text class="line-18" x="26" y="1771">found 0 vulnerabilities</text>
         </g>
       </g>
     </g>
-    <g fill="#1b2531" stroke="#596f86">
+    <g class="panel-frames">
       <rect x="63" y="57" width="518" height="47" rx="6"/>
       <rect x="32" y="450" width="553" height="125" rx="6"/>
-      <rect x="92" y="586" width="506" height="48" rx="6" fill="#101822"/>
+      <rect x="92" y="586" width="506" height="48" rx="6"/>
     </g>
     <text x="82" y="87" font-size="23" font-weight="bold">Jev Prune for Claude Code</text>
-    <rect x="302" y="432" width="296" height="39" rx="6" fill="#1b2531" stroke="#596f86"/>
-    <text x="320" y="457" fill="#bbd5fb" font-size="18">keep(visibleChat)</text>
+    <rect class="keep-panel" x="302" y="421" width="296" height="34" rx="6"/>
+    <text x="320" y="443" fill="#346b93" font-size="18">keep(visibleChat)</text>
     <text x="47" y="475" font-size="17">
       <tspan x="47">Long coding sessions pile up tool output you may</tspan>
       <tspan x="47" dy="22">never need again. Jev Prune clears stale tool</tspan>
@@ -176,20 +185,20 @@
     </text>
     <g aria-hidden="true" font-size="15">
       <g class="demo-step" style="--phase: 0s">
-        <text x="111" y="605" fill="#a9dcae">$ read session.log</text>
-        <text x="111" y="624" fill="#c6d4e4">Visible conversation loaded.</text>
+        <text x="111" y="605" fill="#346b93">$ read session.log</text>
+        <text x="111" y="624" fill="#17232e">Visible conversation loaded.</text>
       </g>
       <g class="demo-step" style="--phase: -8s">
-        <text x="111" y="605" fill="#a9dcae">$ scan tool-output</text>
-        <text x="111" y="624" fill="#c6d4e4">Stale tool results located.</text>
+        <text x="111" y="605" fill="#346b93">$ scan tool-output</text>
+        <text x="111" y="624" fill="#17232e">Stale tool results located.</text>
       </g>
       <g class="demo-step" style="--phase: -4s">
-        <text x="111" y="605" fill="#a9dcae">$ prune --keep-visible-chat</text>
-        <text x="111" y="624" fill="#c6d4e4">Tool output trimmed. Chat history kept.</text>
+        <text x="111" y="605" fill="#346b93">$ prune --keep-visible-chat</text>
+        <text x="111" y="624" fill="#17232e">Tool output trimmed. Chat history kept.</text>
       </g>
     </g>
-    <path d="M16 641h608v19q0 8-8 8H24q-8 0-8-8z" fill="#243c3a"/>
-    <text x="30" y="658" fill="#d1e8db" font-size="12">[jev-prune] 0:session*</text>
-    <text x="608" y="658" text-anchor="end" fill="#d1e8db" font-size="12">tmux</text>
+    <path d="M16 641h608v19q0 8-8 8H24q-8 0-8-8z" fill="#f0f8fd" stroke="#9fd3f2"/>
+    <text x="30" y="658" fill="#345c7d" font-size="12">[jev-prune] 0:session*</text>
+    <text x="608" y="658" text-anchor="end" fill="#345c7d" font-size="12">tmux</text>
   </g>
 </svg>
