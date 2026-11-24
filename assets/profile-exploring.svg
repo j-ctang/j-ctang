@@ -34,7 +34,9 @@
       .stream { animation: stream-on 7500ms linear 1450ms both; }
       .stream path { animation: flow 600ms linear infinite; }
       .splash { animation: stream-on 7300ms linear 1600ms both; }
-      .packets { animation: packets 2s linear infinite, beat 2s ease-in-out infinite; }
+      .packets { animation: packet-flow 2s linear 500ms infinite; }
+      .packet-highlight { opacity: 1; }
+      .packet-wave { animation: packet-wave 2s linear 500ms infinite both; }
       .beat { animation: beat 2s ease-in-out infinite; }
     }
     @keyframes win-open { from { opacity: 0; transform: scale(.92); } to { opacity: 1; transform: none; } }
@@ -42,7 +44,8 @@
     @keyframes pour { 0% { transform: none; } 6%, 94% { transform: rotate(-24deg); } 100% { transform: none; } }
     @keyframes stream-on { 0% { opacity: 0; } 3%, 96% { opacity: 1; } 100% { opacity: 0; } }
     @keyframes flow { to { stroke-dashoffset: -16; } }
-    @keyframes packets { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -40; } }
+    @keyframes packet-flow { to { stroke-dashoffset: -40; } }
+    @keyframes packet-wave { 0% { transform: translateY(-32px); } 85%, 100% { transform: translateY(148px); } }
     @keyframes beat { 0%, 100% { opacity: .35; } 12% { opacity: 1; } 40% { opacity: .5; } }
     @keyframes wind {
       0%, 50%, 100% { transform: translateX(0); }
@@ -622,8 +625,21 @@
   </g>
   <g class="drop" aria-hidden="true">
     <path d="M470 -40V58" stroke="#3a3f47" stroke-width="8" fill="none"/>
-    <!-- Keep the packet phase continuous across the viewport edge. -->
-    <path class="packets" d="M470 -50V58" stroke="#ffa65f" stroke-width="3" stroke-dasharray="6 14" fill="none"/>
+    <!-- Start at the terminal outlet in shared coordinates. The viewport clips the hidden lead-in. -->
+    <defs>
+      <linearGradient id="packet-glow-water" x2="0%" y2="100%">
+        <stop offset="0" stop-color="white" stop-opacity="0"/>
+        <stop offset=".4" stop-color="white" stop-opacity=".55"/>
+        <stop offset=".65" stop-color="white"/>
+        <stop offset=".8" stop-color="white"/>
+        <stop offset="1" stop-color="white" stop-opacity="0"/>
+      </linearGradient>
+      <mask id="packet-mask-water" maskUnits="userSpaceOnUse" x="466" y="-90" width="8" height="148">
+        <rect class="packet-wave" x="466" y="-90" width="8" height="32" fill="url(#packet-glow-water)"/>
+      </mask>
+    </defs>
+    <path class="packets" d="M470 -90V58" stroke="#ffa65f" stroke-width="3" stroke-dasharray="8 12" stroke-opacity=".48" fill="none"/>
+    <path class="packets packet-highlight" d="M470 -90V58" stroke="#ffd493" stroke-width="3" stroke-dasharray="8 12" fill="none" mask="url(#packet-mask-water)" opacity="0"/>
     <rect x="462" y="50" width="16" height="8" rx="1" fill="#3a3f47"/>
     <circle class="beat" cx="572" cy="68" r="3" fill="#ffa65f"/>
   </g>
