@@ -17,7 +17,9 @@
       .cc-hint { animation: cc-hide 150ms linear 36900ms both; }
       .cc-status { animation: cc-show 150ms linear 36900ms both; }
       .cc-pipe { animation: cc-fade 500ms ease-out 37000ms both; }
-      .packets { animation: packets 2s linear infinite, beat 2s ease-in-out infinite; }
+      .packets { animation: packet-flow 2s linear 37500ms infinite; }
+      .packet-highlight { opacity: 1; }
+      .packet-wave { animation: packet-wave 2s linear 37500ms infinite both; }
       .beat { animation: beat 2s ease-in-out infinite; }
       .featured-terminal { animation: open-featured 420ms cubic-bezier(.2,.66,.3,1) 31600ms both; }
     }
@@ -32,7 +34,8 @@
     @keyframes cc-hide { from { opacity: 1; } to { opacity: 0; } }
     @keyframes cc-show { from { opacity: 0; } to { opacity: 1; } }
     @keyframes cc-fade { from { opacity: 0; } }
-    @keyframes packets { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -40; } }
+    @keyframes packet-flow { to { stroke-dashoffset: -40; } }
+    @keyframes packet-wave { 0% { transform: translateY(-32px); } 85%, 100% { transform: translateY(148px); } }
     @keyframes beat { 0%, 100% { opacity: .35; } 12% { opacity: 1; } 40% { opacity: .5; } }
     @keyframes retire-roaming-pointer { to { opacity: 0; } }
     @keyframes open-latest-pointer {
@@ -1540,7 +1543,20 @@
   <g class="cc-pipe" aria-hidden="true">
     <rect x="600" y="1950" width="20" height="8" rx="1" fill="#3a3f47"/>
     <path d="M610 1950V2000" stroke="#3a3f47" stroke-width="8" fill="none"/>
-    <path class="packets" d="M610 1950V2000" stroke="#ffa65f" stroke-width="3" stroke-dasharray="6 14" fill="none"/>
+    <defs>
+      <linearGradient id="packet-glow-terminal" x2="0%" y2="100%">
+        <stop offset="0" stop-color="white" stop-opacity="0"/>
+        <stop offset=".4" stop-color="white" stop-opacity=".55"/>
+        <stop offset=".65" stop-color="white"/>
+        <stop offset=".8" stop-color="white"/>
+        <stop offset="1" stop-color="white" stop-opacity="0"/>
+      </linearGradient>
+      <mask id="packet-mask-terminal" maskUnits="userSpaceOnUse" x="606" y="1950" width="8" height="50">
+        <rect class="packet-wave" x="606" y="1950" width="8" height="32" fill="url(#packet-glow-terminal)"/>
+      </mask>
+    </defs>
+    <path class="packets" d="M610 1950V2000" stroke="#ffa65f" stroke-width="3" stroke-dasharray="8 12" stroke-opacity=".48" fill="none"/>
+    <path class="packets packet-highlight" d="M610 1950V2000" stroke="#ffd493" stroke-width="3" stroke-dasharray="8 12" fill="none" mask="url(#packet-mask-terminal)" opacity="0"/>
     <circle class="beat" cx="836" cy="1934" r="3" fill="#d8742b"/>
   </g>
   <g class="handoff-cursor" aria-hidden="true">
